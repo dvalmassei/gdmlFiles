@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE gdml [
+  <!ENTITY matrices SYSTEM "matrices.xml">
+]>
+
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+ <define>
+  <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
+
+  <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
+  <rotation name="lightguide1_quartz_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="lightguide2_quartz_pos" unit="mm" x="-(180-60)" y="120" z="0" />
+  <rotation name="lightguide2_quartz_rot" unit="radian" x="0" y="0" z="0" />
+
+  <position name="pmt1_window_pos" unit="mm" x="180-60" y="120" z="5+3.0/2.0" />
+  <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt2_window_pos" unit="mm" x="-(180-60)" y="120" z="5+3.0/2.0" />
+  <rotation name="pmt2_window_rot" unit="radian" x="0" y="0" z="0" />
+
+  <position name="pmt1_cathode_pos" unit="mm" x="180-60" y="120" z="5+3+3e-06/2.0" />
+  <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt2_cathode_pos" unit="mm" x="-(180-60)" y="120" z="5+3+3e-06/2.0" />
+  <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
+
+  &matrices;
+ </define>
+
+ <materials>
+  <define>
+   <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
+  </define>
+  <element Z="8" formula="O" name="Oxygen" >
+   <atom value="16" />
+  </element>
+  <element Z="7" formula="N" name="Nitrogen" >
+   <atom value="14.01" />
+  </element>
+  <element Z="14" formula="Si" name="Silicon" >
+   <atom value="28.085" />
+  </element>
+  <element Z="51" formula="Sb" name="Antimony" >
+   <atom value="121.760" />
+  </element>
+  <element Z="55" formula="Cs" name="Caesium" >
+   <atom value="132.90545" />
+  </element>
+  <element Z="19" formula="K" name="Potassium" >
+   <atom value="39.0983" />
+  </element>
+  <material formula="noFormula" name="Air" >
+   <property name="RINDEX" ref="Air_RINDEX"/>
+   <D value="0.00129" />
+   <fraction n="0.3" ref="Oxygen" />
+   <fraction n="0.7" ref="Nitrogen" />
+  </material>
+  <material Z="1" name="vacuum" >
+   <T value="2.73" />
+   <P value=" 3.0E-18" unit="pascal" />
+   <Dref ref="universe_mean_density" />
+   <atom value="1.01" />
+  </material>
+  <material formula="SiO2" name="Quartz" >
+   <property name="RINDEX" ref="Quartz_RINDEX"/>
+   <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
+   <D value="2.203" />
+   <composite n="1" ref="Silicon" />
+   <composite n="2" ref="Oxygen" />
+  </material>
+  <material formula="K2CsSb" name="Bialkali" >
+   <D value="3.46" />
+   <composite n="2" ref="Potassium" />
+   <composite n="1" ref="Caesium" />
+   <composite n="1" ref="Antimony" />
+  </material>
+ </materials>
+
+ <solids>
+   <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
+   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <trd name="quartz" x1="18.5" x2="12.5" y1="19.5" y2="19.5" z="3" lunit="mm"/>
+   <!-- Light Guide -->
+   <box name="frontPlate_1" x="0.5/2"  y="21.06/2" z="7.06/2" lunit="mm" />
+   <box name="frontPlate_2" x="0.5/2"  y="20.0/2 + 0.1" z="7.0/2 + 0.1" lunit="mm" />
+
+   <box name="topPlate_1" x="12.5/2" y="21.06/2" z="0.5/2" lunit="mm" />
+   <box name="topPlate_2" x="45.27/2" y="21.6/2" z="0.5/2" lunit="mm" />
+   <box name="topPlate_3" x="300.78/2" y="21.06/2" z="0.5/2" lunit="mm" />
+
+   <box name="botPlate_1" x="19.56/2" y="21.06/2" z="0.5/2" lunit="mm" />
+   <box name="botPlate_2" x="355.1/2 - 19.56" y="21.06/2" z="0.5/2" lunit="mm" />
+
+   <trd name="rightPlate_1" x1="10.0" x2="10.0" y1="20.0" y2="1.0" z="5.0" lunit="mm" />
+
+
+
+ </solids>
+
+  <structure>
+    <!--Quartz-->
+    <volume name="quartz_vol">
+      <materialref ref="Quartz" />
+      <solidref ref="quartz" />
+    </volume>
+    <!--Quartz-->
+    <!--Light Guide-->
+    <volume name="rightPlate_1_vol">
+      <materialref ref="Quartz"/>
+      <solidref ref="rightPlate_1"/>
+    </volume>
+
+
+
+
+
+    <!--Light Guide-->
+
+
+
+    <volume name="World" >
+      <materialref ref="Air" />
+      <solidref ref="WorldBox" />
+      <physvol name="quartz_phys"
+        <volumeref ref="rightPlate_1_vol" />
+        <positionref ref="quartz_pos" />
+        <rotationref ref="quartz_rot" />
+      </physvol>
+
+    </volume>
+  </structure>
+
+
+  <setup name="Default" version="1.0" >
+   <world ref="World" />
+  </setup>
+<gdml>
