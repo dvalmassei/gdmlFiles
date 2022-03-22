@@ -26,7 +26,7 @@
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
-  <position name="rightPlate_2_pos" unit="mm" x="15.255" y="0" z="0"/>
+  <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
 
 
   &matrices;
@@ -103,7 +103,7 @@
      v4x="0" v4y="10.2" v5x="0" v5y="0" v6x="167.1" v6y="0" v7x="131.5" v7y="10.2"
      v8x="0" v8y="10.2" dz="0.5/2" lunit= "mm"/>
 
-   <box name="rightPlate_2" x="7.9" y="10.2" z="0.5" lunit="mm"/>
+   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="mm"/>
 
 
 
@@ -141,13 +141,13 @@
 
       <physvol name="rightPlate_1_phys">
         <volumeref ref="rightPlate_1_vol" />
-        <positionref ref="quartz_pos" />
+        <positionref ref="right_plate_1_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
 
       <physvol name="rightPlate_2_phys">
         <volumeref ref="rightPlate_2_vol" />
-        <positionref ref="quartz_pos" />
+        <positionref ref="rightPlate_2_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
 
