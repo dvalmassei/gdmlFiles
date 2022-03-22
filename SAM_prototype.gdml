@@ -95,7 +95,7 @@
    <box name="botPlate_1" x="19.56/2" y="21.06/2" z="0.5/2" lunit="mm" />
    <box name="botPlate_2" x="355.1/2 - 19.56" y="21.06/2" z="0.5/2" lunit="mm" />
  -->
-   <trap name = "rightPlate_1" z="5.0" theta="0" phi="0" y1="84.0/2" x1="1671.0/2" x2="1671.0/2" alpha1="0" y2="84.0/2" x3="1671.0/2" x4="479.5" alpha2="0" aunit="rad" lunit= "mm" />
+   <trap name = "rightPlate_1" z="5.0" theta="0" phi="0" y1="8.40" x1="167.10" x2="47.95" alpha1="0" y2="8.40/2" x3="167.10/2" x4="47.95" alpha2="0" aunit="rad" lunit= "mm" />
 
 
 
