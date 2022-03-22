@@ -95,9 +95,9 @@
    <box name="botPlate_1" x="19.56/2" y="21.06/2" z="0.5/2" lunit="mm" />
    <box name="botPlate_2" x="355.1/2 - 19.56" y="21.06/2" z="0.5/2" lunit="mm" />
  -->
-   <Arb8 name = "rightPlate_1" v1x="0" v1y="0" v2x="171.5" v2y="0" v3x="135.9" v3y="1.02"
-     v4x="0" v4y="1.02" v5x="0" v5y="0" v6x="171.5" v6y="0" v7x="135.9" v7y="1.02"
-     v8x="0" v8y="1.02" dz="5.0" lunit= "mm"/>
+   <arb8 name = "rightPlate_1" v1x="0" v1y="0" v2x="171.5" v2y="0" v3x="135.9" v3y="10.2"
+     v4x="0" v4y="10.2" v5x="0" v5y="0" v6x="171.5" v6y="0" v7x="135.9" v7y="10.2"
+     v8x="0" v8y="10.2" dz="5.0/2" lunit= "mm"/>
 
 
 
