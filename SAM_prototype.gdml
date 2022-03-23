@@ -7,6 +7,8 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
+  <rotation name="World_rot" unit="deg" x="90" y="0" z="0" />
+
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
 
@@ -27,16 +29,16 @@
 
 
   <position name="botPlate_pos" unit="mm" x="(156.5 + 5.3)/2" y="0" z="-0.5/2"/>
-  <rotation name="botPlate_rot" unit="deg" x="90" y="90" z="0" />
+  <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
   <position name="rightPlate_tot_pos" unit="mm" x="156" y="0" z="-(8.4/2 + 0.5/2)"/>
-  <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="8.4/2 - 0.5/2"/>
-  <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
 
 
