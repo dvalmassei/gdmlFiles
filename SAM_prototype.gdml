@@ -29,6 +29,13 @@
   <position name="botPlate_pos" unit="mm" x="156.5/2" y="0" z="-0.5/2"/>
   <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
 
+  <position name="topPlate_1_pos" unit="mm" x="156.5 - 7.9/2" y="0" z="10.2 + 0.5/2"/>
+  <rotation name="topPlate_1_rot" unit="deg" x="90" y="0" z="0" />
+
+  <position name="topPlate_2_pos" unit="mm" x="(156.5 - 7.9 - 17.1)/2"  y="0" z="5.3 + 0.5/2"/>
+  <rotation name="topPlate_2_rot" unit="deg" x="90" y="0" z="0" />
+
+
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
@@ -110,12 +117,12 @@
 
    <!--Light Guide-->
 
-   <box name="topPlate_1" x="156.5 - 7.9 - 1.71" y="8.4" z="0.5" lunit="mm"/>
+   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="mm"/>
    <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="mm"/>
    <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="mm"/>
 
    <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm"/>
-   <box name="frontPlate_1" x="17.1" y="8.4" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
+   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
 
 
 
@@ -166,6 +173,16 @@
       <solidref ref="rightPlate_bool_2"/>
     </volume>
 
+    <volume name="topPlate_1_vol">
+      <materialref ref="Aluminum"/>
+      <solidref ref="topPlate_1"/>
+    </volume>
+
+    <volume name="topPlate_2_vol">
+      <materialref ref="Aluminum"/>
+      <solidref ref="topPlate_2"/>
+    </volume>
+
 
 
 
@@ -189,6 +206,17 @@
         <rotationref ref="botPlate_rot" />
       </physvol>
 
+      <physvol name="topPlate_1_phys">
+        <volumeref ref="topPlate_1_vol" />
+        <positionref ref="topPlate_1_pos" />
+        <rotationref ref="topPlate_1_rot" />
+      </physvol>
+
+      <physvol name="topPlate_2_phys">
+        <volumeref ref="topPlate_2_vol" />
+        <positionref ref="topPlate_2_pos" />
+        <rotationref ref="topPlate_2_rot" />
+      </physvol>
 
       <physvol name="rightPlate_bool_2_phys">
         <volumeref ref="rightPlate_bool_2_vol" />
