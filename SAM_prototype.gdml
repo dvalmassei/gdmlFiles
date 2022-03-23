@@ -29,7 +29,10 @@
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
   <position name="rightPlate_tot_pos" unit="mm" x="0" y="0" z="-(19.0/2 + 0.5/2)"/>
-  <rotation name="rightPlate_tot_rot" unit="deg" x="180" y="0" z="0" />
+  <rotation name="rightPlate_tot_rot" unit="deg" x="180" y="90" z="0" />
+
+  <position name="leftPlate_tot_pos" unit="mm" x="0" y="0" z="19.0/2 + 0.5/2"/>
+  <rotation name="leftPlate_tot_rot" unit="deg" x="180" y="90" z="0" />
 
 
 
@@ -152,6 +155,7 @@
 
 
 
+
     <!--Light Guide-->
 
 
@@ -166,6 +170,11 @@
         <rotationref ref="rightPlate_tot_rot" />
       </physvol>
 
+      <physvol name="leftPlate_bool_2_phys">
+        <volumeref ref="rightPlate_bool_2_vol" />
+        <positionref ref="leftPlate_tot_pos" />
+        <rotationref ref="leftPlate_tot_rot" />
+      </physvol>
 
 
     </volume>
