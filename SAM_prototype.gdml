@@ -156,14 +156,15 @@
         <positionref ref="rightPlate_1_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
-
+<!--
       <physvol name="rightPlate_2_phys">
         <volumeref ref="rightPlate_2_vol" />
         <positionref ref="rightPlate_2_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
-
+-->
     </volume>
+
   </structure>
 
 
