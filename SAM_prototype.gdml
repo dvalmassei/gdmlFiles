@@ -25,13 +25,17 @@
   <position name="pmt2_cathode_pos" unit="mm" x="-(180-60)" y="120" z="5+3+3e-06/2.0" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
+
+  <position name="botPlate_pos" unit="mm" x="0" y="0" z="-0.5/2"/>
+  <rotation name="botPlate_rot" unit="deg" x="0" y="0" z="0" />
+  
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
-  <position name="rightPlate_tot_pos" unit="mm" x="156" y="0" z="-(19.0/2 + 0.5/2)"/>
+  <position name="rightPlate_tot_pos" unit="mm" x="156" y="0" z="-(8.4/2 + 0.5/2)"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="19.0/2 - 0.5/2"/>
+  <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="8.4/2 - 0.5/2"/>
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
 
@@ -91,22 +95,14 @@
 
  <solids>
    <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
-<!--
+
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <trd name="quartz" x1="18.5" x2="12.5" y1="19.5" y2="19.5" z="3" lunit="mm"/>
 
+   <!--Light Guide-->
+   <box name="botPlate" x="156.5 + 5.3" y="8.4" z="0.5" lunit="mm"/>
 
-   <box name="frontPlate_1" x="0.5/2"  y="21.06/2" z="7.06/2" lunit="mm" />
-   <box name="frontPlate_2" x="0.5/2"  y="20.0/2 + 0.1" z="7.0/2 + 0.1" lunit="mm" />
-
-   <box name="topPlate_1" x="12.5/2" y="21.06/2" z="0.5/2" lunit="mm" />
-   <box name="topPlate_2" x="45.27/2" y="21.6/2" z="0.5/2" lunit="mm" />
-   <box name="topPlate_3" x="300.78/2" y="21.06/2" z="0.5/2" lunit="mm" />
-
-   <box name="botPlate_1" x="19.56/2" y="21.06/2" z="0.5/2" lunit="mm" />
-   <box name="botPlate_2" x="355.1/2 - 19.56" y="21.06/2" z="0.5/2" lunit="mm" />
- -->
    <arb8 name="rightPlate_1" v1x="0" v1y="0" v2x="167.1" v2y="0" v3x="131.5" v3y="10.2"
      v4x="0" v4y="10.2" v5x="0" v5y="0" v6x="167.1" v6y="0" v7x="131.5" v7y="10.2"
      v8x="0" v8y="10.2" dz="0.5/2" lunit= "mm"/>
@@ -144,6 +140,11 @@
     Quartz-->
     <!--Light Guide-->
 
+    <volume name="botPlate_vol">
+      <materialref ref="Quartz"/>
+      <solidref ref="botPlate"/>
+    </volume>
+
     <volume name="rightPlate_bool_2_vol">
       <materialref ref="Quartz"/>
       <solidref ref="rightPlate_bool_2"/>
@@ -163,6 +164,15 @@
     <volume name="World" >
       <materialref ref="Air" />
       <solidref ref="WorldBox" />
+
+
+      <!--Light Guide-->
+      <physvol name="botPlate_phys">
+        <volumeref ref="botPlate_vol" />
+        <positionref ref="botPlate_pos" />
+        <rotationref ref="botPlate_rot" />
+      </physvol>
+
 
       <physvol name="rightPlate_bool_2_phys">
         <volumeref ref="rightPlate_bool_2_vol" />
