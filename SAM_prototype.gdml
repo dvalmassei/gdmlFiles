@@ -104,9 +104,9 @@
      v4x="0" v4y="10.2" v5x="0" v5y="0" v6x="167.1" v6y="0" v7x="131.5" v7y="10.2"
      v8x="0" v8y="10.2" dz="0.5/2" lunit= "mm"/>
 
-   <arb8 name="rightPlate_subtract" v1x="0" v1y="0" v2x="100.0" v2y="0" v3x="100.0" v3y="10.2"
-     v4x="0" v4y="10.2" v5x="0" v5y="0" v6x="100.0" v6y="0" v7x="100.0" v7y="10.2"
-     v8x="0" v8y="10.2" dz="0.5/2" lunit= "mm"/>
+   <arb8 name="rightPlate_subtract" v1x="0" v1y="-0.1" v2x="100.0" v2y="-0.1" v3x="100.0" v3y="10.2"
+     v4x="0" v4y="10.2" v5x="0" v5y="-0.1" v6x="100.0" v6y="-0.1" v7x="100.0" v7y="10.2"
+     v8x="0" v8y="10.2" dz="0.7/2" lunit= "mm"/>
 
    <subtraction name="rightPlate_bool" >
      <first ref="rightPlate_1"/>
