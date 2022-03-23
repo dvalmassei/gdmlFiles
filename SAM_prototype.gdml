@@ -129,14 +129,19 @@
     </volume>
     Quartz-->
     <!--Light Guide-->
-    <volume name="rightPlate_bool_vol">
+    <volume name="rightPlate_1_vol">
       <materialref ref="Quartz"/>
-      <solidref ref="rightPlate_bool"/>
+      <solidref ref="rightPlate_1"/>
     </volume>
 
     <volume name="rightPlate_2_vol">
       <materialref ref="Quartz"/>
       <solidref ref="rightPlate_2"/>
+    </volume>
+
+    <volume name="rightPlate_subtract_vol">
+      <materialref ref="Quartz"/>
+      <solidref ref="rightPlate_subtract"/>
     </volume>
 
 
@@ -151,8 +156,8 @@
       <materialref ref="Air" />
       <solidref ref="WorldBox" />
 
-      <physvol name="rightPlate_bool_phys">
-        <volumeref ref="rightPlate_bool_vol" />
+      <physvol name="rightPlate_1_phys">
+        <volumeref ref="rightPlate_1_vol" />
         <positionref ref="rightPlate_1_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
@@ -163,6 +168,13 @@
         <rotationref ref="quartz_rot" />
       </physvol>
 -->
+
+      <physvol name="rightPlate_subtract_phys">
+        <volumeref ref="rightPlate_subtract_vol" />
+        <positionref ref="rightPlate_subtract_pos" />
+        <rotationref ref="quartz_rot" />
+      </physvol>
+
     </volume>
 
   </structure>
