@@ -191,6 +191,16 @@
       <solidref ref="topPlate_2"/>
     </volume>
 
+    <volume name="frontPlate_1_vol">
+      <materialref ref="Aluminum"/>
+      <solidref ref="frontPlate_1"/>
+    </volume>
+
+    <volume name="frontPlate_2_vol">
+      <materialref ref="Aluminum"/>
+      <solidref ref="frontPlate_2"/>
+    </volume>
+
 
 
 
@@ -232,6 +242,18 @@
         <volumeref ref="rightPlate_bool_2_vol" />
         <positionref ref="leftPlate_tot_pos" />
         <rotationref ref="leftPlate_tot_rot" />
+      </physvol>
+
+      <physvol name="frontPlate_1_phys">
+        <volumeref ref="frontPlate_1_vol" />
+        <positionref ref="frontPlate_1_pos" />
+        <rotationref ref="frontPlate_1_rot" />
+      </physvol>
+
+      <physvol name="frontPlate_2_phys">
+        <volumeref ref="frontPlate_2_vol" />
+        <positionref ref="frontPlate_2_pos" />
+        <rotationref ref="frontPlate_2_rot" />
       </physvol>
 
 
