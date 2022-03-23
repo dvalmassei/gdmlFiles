@@ -28,6 +28,10 @@
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
+  <position name="rightPlate_tot_pos" unit="mm" x="0" y="0" z="-(19.0/2 + 0.5/2)"/>
+  <rotation name="rightPlate_tot_rot" unit="deg" x="180" y="0" z="0" />
+
+
 
 
   &matrices;
@@ -137,20 +141,11 @@
     Quartz-->
     <!--Light Guide-->
 
-    <volume name="rightPlate_bool_vol">
-      <materialref ref="Quartz"/>
-      <solidref ref="rightPlate_bool"/>
-    </volume>
-
     <volume name="rightPlate_bool_2_vol">
       <materialref ref="Quartz"/>
       <solidref ref="rightPlate_bool_2"/>
     </volume>
 
-    <volume name="rightPlate_2_vol">
-      <materialref ref="Quartz"/>
-      <solidref ref="rightPlate_2"/>
-    </volume>
 
 
 
@@ -167,16 +162,10 @@
 
       <physvol name="rightPlate_bool_2_phys">
         <volumeref ref="rightPlate_bool_2_vol" />
-        <positionref ref="rightPlate_1_pos" />
-        <rotationref ref="quartz_rot" />
+        <positionref ref="rightPlate_tot_pos" />
+        <rotationref ref="rightPlate_tot_rot" />
       </physvol>
-<!--
-      <physvol name="rightPlate_2_phys">
-        <volumeref ref="rightPlate_2_vol" />
-        <positionref ref="rightPlate_2_pos" />
-        <rotationref ref="quartz_rot" />
-      </physvol>
--->
+
 
 
     </volume>
