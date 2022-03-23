@@ -119,7 +119,10 @@
 
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
-   <trd name="quartz" x1="18.5" x2="12.5" y1="19.5" y2="19.5" z="3" lunit="mm"/>
+
+   <arb8 name="quartz" v1x="0" v1y="0" v2x="18.5" v2y="0" v3x="12.5" v3y="6.0"
+     v4x="0" v4y="6.0" v5x="0" v5y="0" v6x="18.5" v6y="0" v7x="12.5" v7y="6.0"
+     v8x="0" v8y="6.0" dz="0.5/2" lunit= "mm"/>
 
    <!--Light Guide Plates-->
 
@@ -162,12 +165,11 @@
  </solids>
 
   <structure>
-    <!--Quartz
+    <!--Quartz-->
     <volume name="quartz_vol">
       <materialref ref="Quartz" />
       <solidref ref="quartz" />
     </volume>
-    Quartz-->
 
     <!--Light Guide Plates Physical Volumes-->
 
