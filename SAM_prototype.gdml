@@ -7,6 +7,10 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
+
+  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="radian" x="0" y="90" z="0" />
+
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
 
@@ -116,6 +120,8 @@
 
  <solids>
    <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
+   <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
+
 
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
@@ -209,10 +215,10 @@
 
 
 
-    <!--World Assembly-->
-    <volume name="World" >
+    <!--Detector Assembly-->
+    <volume name="DetBox_vol" >
       <materialref ref="Air" />
-      <solidref ref="WorldBox" />
+      <solidref ref="DetBox" />
 
       <physvol name="quartz_phys">
         <volumeref ref="quartz_vol" />
@@ -265,6 +271,20 @@
       </physvol>
 
 
+
+
+    </volume>
+
+    <!--World Assembly-->
+    <volume name="WorldBox" >
+      <materialref ref="Air" />
+      <solidref ref="WorldBox" />
+
+      <physvol name="DetBox_phys" >
+        <volumeref ref="DetBox_vol" />
+        <positionref ref="DetBox_pos"/>
+        <rotationref ref="DetBox_rot"/>
+      </physvol>
     </volume>
 
   </structure>
