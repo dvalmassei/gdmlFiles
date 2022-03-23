@@ -9,7 +9,7 @@
  <define>
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="DetBox_rot" unit="radian" x="0" y="90" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
@@ -276,7 +276,7 @@
     </volume>
 
     <!--World Assembly-->
-    <volume name="WorldBox" >
+    <volume name="World" >
       <materialref ref="Air" />
       <solidref ref="WorldBox" />
 
