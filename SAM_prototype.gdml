@@ -8,7 +8,7 @@
 
  <define>
 
-  <position name="DetBox_pos" unit="mm" x="-0.5" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="-5.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
@@ -30,7 +30,7 @@
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
   <!--Light Guide Plate positions and rotations-->
-  <position name="botPlate_pos" unit="mm" x="156.5/2" y="-0.5/2" z=""/>
+  <position name="botPlate_pos" unit="mm" x="156.5/2" y="-0.5" z=""/>
   <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="topPlate_1_pos" unit="mm" x="131.5/2 + 7.9 + 17.1" y="10.2 + 0.5/2" z="0"/>
