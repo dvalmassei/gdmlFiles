@@ -295,6 +295,15 @@
       <skinsurface name="topPlate_2_skinsrf" surfaceproperty="surf3" >
         <volumeref ref="topPlate_2_vol"/>
       </skinsurface>
+      <skinsurface name="frontPlate_1_skinsrf" surfaceproperty="surf3" >
+        <volumeref ref="frontPlate_1_vol"/>
+      </skinsurface>
+      <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
+        <volumeref ref="frontPlate_2_vol"/>
+      </skinsurface>
+      <skinsurface name="rightPlate_bool_2_skinsrf" surfaceproperty="surf3" >
+        <volumeref ref="rightPlate_bool_2_vol"/>
+      </skinsurface>
 
 
 
