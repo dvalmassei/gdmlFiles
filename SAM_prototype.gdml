@@ -49,7 +49,7 @@
   <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="8.4/2 + 0.5/2 +0.01"/>
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="frontPlate_1_pos" unit="mm" x="0*(-0.5/2 - 0.01)" y="5.3/2" z="0"/>
+  <position name="frontPlate_1_pos" unit="mm" x="-0.5/2 - 0.01" y="5.3/2" z="0"/>
   <rotation name="frontPlate_1_rot" unit="deg" x="90" y="90" z="0" />
 
 
