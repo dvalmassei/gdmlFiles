@@ -8,7 +8,7 @@
 
  <define>
 
-  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="-0.5" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
@@ -269,7 +269,7 @@
         <positionref ref="frontPlate_2_pos" />
         <rotationref ref="frontPlate_2_rot" />
       </physvol>
-    
+
 
 
 
