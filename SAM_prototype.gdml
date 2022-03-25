@@ -113,7 +113,7 @@
   </material>
   <material formula="Al" name="Aluminum" >
    <D value="2.6982" />
-   <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity">
+   <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
   </material>
  </materials>
@@ -286,30 +286,11 @@
 
 
 
-      <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="botPlate_vol"/>
-      </skinsurface>
-      <skinsurface name="topPlate_1_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="topPlate_1_vol"/>
-      </skinsurface>
-      <skinsurface name="topPlate_2_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="topPlate_2_vol"/>
-      </skinsurface>
-      <skinsurface name="frontPlate_1_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="frontPlate_1_vol"/>
-      </skinsurface>
-      <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="frontPlate_2_vol"/>
-      </skinsurface>
-      <skinsurface name="rightPlate_bool_2_skinsrf" surfaceproperty="surf3" >
-        <volumeref ref="rightPlate_bool_2_vol"/>
-      </skinsurface>
-
-
-
-
-
     </volume>
+
+
+
+
 
     <!--World Assembly-->
     <volume name="World" >
@@ -322,6 +303,25 @@
         <rotationref ref="DetBox_rot"/>
       </physvol>
     </volume>
+
+    <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="botPlate_vol"/>
+    </skinsurface>
+    <skinsurface name="topPlate_1_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="topPlate_1_vol"/>
+    </skinsurface>
+    <skinsurface name="topPlate_2_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="topPlate_2_vol"/>
+    </skinsurface>
+    <skinsurface name="frontPlate_1_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="frontPlate_1_vol"/>
+    </skinsurface>
+    <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="frontPlate_2_vol"/>
+    </skinsurface>
+    <skinsurface name="rightPlate_bool_2_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="rightPlate_bool_2_vol"/>
+    </skinsurface>
 
   </structure>
 
