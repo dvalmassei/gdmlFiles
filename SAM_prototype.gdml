@@ -177,7 +177,7 @@
    </opticalsurface>
    <!--Aluminum-->
    <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
-     <property name="REFLECTIVITY" ref="Aluminum_Surf_Reflectivity" />
+     <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
    </opticalsurface>
 
 
