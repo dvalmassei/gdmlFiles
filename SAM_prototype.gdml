@@ -4,7 +4,7 @@
   <!ENTITY matrices SYSTEM "matrices.xml">
 ]>
 
-<gdml xmlns:gdml="http://cern.ch/Schemas/GDML" xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
+<gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
 
   <position name="DetBox_pos" unit="mm" x="-5.0" y="0" z="0" />
@@ -325,6 +325,10 @@
       </physvol>
     </volume>
 
+
+    <skinsurface name="skinsrf1" surfaceproperty="surf1" >
+      <volumeref ref="quartz_vol"/>
+    </skinsurface>
     <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
       <volumeref ref="botPlate_vol"/>
     </skinsurface>
