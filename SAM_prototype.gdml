@@ -10,11 +10,8 @@
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
-<<<<<<< HEAD
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
-=======
   <position name="quartz_pos" unit="mm" x="-4.6" y="0" z="0" />
->>>>>>> parent of ed3877b (Update SAM_prototype.gdml)
   <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
@@ -43,17 +40,14 @@
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
   <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
-<<<<<<< HEAD
   <position name="rightPlate_tot_pos" unit="mm" x="156" y="0" z="-(8.4/2 + 0.5/2  + 0.01)"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="8.4/2 + 0.5/2 +0.01"/>
-=======
   <position name="rightPlate_tot_pos" unit="mm" x="156.5" y="0" z="-(8.4/2 + 0.5/2  + 0.01)"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="leftPlate_tot_pos" unit="mm" x="156.5" y="0" z="8.4/2 + 0.5/2 +0.01"/>
->>>>>>> parent of ed3877b (Update SAM_prototype.gdml)
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="frontPlate_1_pos" unit="mm" x="-0.5/2 - 0.01" y="5.3/2" z="0"/>
@@ -135,18 +129,6 @@
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="5.3" v3x="12.5" v3y="5.3"
       v4x="18.5" v4y="0" v5x="0" v5y="0" v6x="0" v6y="5.3" v7x="12.5" v7y="5.3"
-<<<<<<< HEAD
-      v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm*25.4"/>
-
-   <!--Light Guide Plates-->
-
-   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="mm*25.4"/>
-   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="mm*25.4"/>
-   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="mm*25.4"/>
-
-   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm*25.4"/>
-   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm*25.4"/>  <!--Slanted front plate-->
-=======
       v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm"/>
 
    <!--Light Guide Plates-->
@@ -157,26 +139,27 @@
 
    <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm"/>
    <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
->>>>>>> parent of ed3877b (Update SAM_prototype.gdml)
+
+   <!--Light Guide Plates-->
+
+   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="mm"/>
+   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="mm"/>
+   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="mm"/>
+
+   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm"/>
+   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
 
 
 
    <!--NOTE: left and right plates are the same shape, so let's only do this once-->
    <arb8 name="rightPlate_1" v1x="0" v1y="0" v2x="0" v2y="10.2" v3x="131.5" v3y="10.2"
      v4x="167.1" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10.2" v7x="131.5" v7y="10.2"
-<<<<<<< HEAD
-     v8x="167.1" v8y="0" dz="0.5/2" lunit= "mm*25.4"/>
-
-   <arb8 name="rightPlate_subtract" v1x="0" v1y="-0.1" v2x="0" v2y="10.2" v3x="100.0" v3y="10.2"
-     v4x="100.0" v4y="-0.1" v5x="0" v5y="-0.1" v6x="0" v6y="10.2" v7x="100.0" v7y="10.2"
-     v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "mm*25.4"/>
-=======
      v8x="167.1" v8y="0" dz="0.5/2" lunit= "mm"/>
+
 
    <arb8 name="rightPlate_subtract" v1x="0" v1y="-0.1" v2x="0" v2y="10.2" v3x="100.0" v3y="10.2"
      v4x="100.0" v4y="-0.1" v5x="0" v5y="-0.1" v6x="0" v6y="10.2" v7x="100.0" v7y="10.2"
      v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "mm"/>
->>>>>>> parent of ed3877b (Update SAM_prototype.gdml)
 
    <subtraction name="rightPlate_bool" >
      <first ref="rightPlate_1"/>
@@ -185,11 +168,8 @@
      <rotationref ref="quartz_rot"/>
    </subtraction>
 
-<<<<<<< HEAD
-   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="mm*25.4"/>
-=======
+
    <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="mm"/>
->>>>>>> parent of ed3877b (Update SAM_prototype.gdml)
 
    <union name="rightPlate_bool_2" >
      <first ref="rightPlate_bool"/>
