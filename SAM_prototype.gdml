@@ -57,6 +57,8 @@
   <position name="frontPlate_2_pos" unit="mm" x="7.9 + 17.1/2"  y="5.3 + (10.2-5.3)/2 + 0.5/2 + 0.01" z="0"/>
   <rotation name="frontPlate_2_rot" unit="deg" x="90" y="16.6" z="0" />
 
+  <scale name="mm_to_in" x="25.4" y="25.4" z="25.4" />
+
 
 
   &matrices;
@@ -291,13 +293,13 @@
         <positionref ref="leftPlate_tot_pos" />
         <rotationref ref="leftPlate_tot_rot" />
       </physvol>
-<!--
+
       <physvol name="frontPlate_1_phys">
         <volumeref ref="frontPlate_1_vol" />
         <positionref ref="frontPlate_1_pos" />
         <rotationref ref="frontPlate_1_rot" />
       </physvol>
--->
+
       <physvol name="frontPlate_2_phys">
         <volumeref ref="frontPlate_2_vol" />
         <positionref ref="frontPlate_2_pos" />
@@ -338,6 +340,7 @@
         <volumeref ref="DetBox_vol" />
         <positionref ref="DetBox_pos"/>
         <rotationref ref="DetBox_rot"/>
+        <scale ref="mm_to_in"/>
       </physvol>
     </volume>
 
