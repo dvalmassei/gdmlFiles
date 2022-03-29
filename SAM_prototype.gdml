@@ -12,7 +12,7 @@
 
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <position name="quartz_pos" unit="mm" x="-4.6" y="0" z="0" />
-  <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
+  <rotation name="quartz_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
   <rotation name="lightguide1_quartz_rot" unit="radian" x="0" y="0" z="0" />
@@ -129,9 +129,9 @@
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
-   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="5.3" v3x="12.5" v3y="5.3"
-      v4x="18.5" v4y="0" v5x="0" v5y="0" v6x="0" v6y="5.3" v7x="12.5" v7y="5.3"
-      v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm"/>
+   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="13" v3x="20" v3y="13"
+      v4x="33" v4y="0" v5x="0" v5y="0" v6x="0" v6y="13" v7x="20" v7y="13"
+      v8x="33" v8y="0" dz=".84/2 * 25.4" lunit= "mm"/>
 
    <!--Light Guide Plates-->
 
