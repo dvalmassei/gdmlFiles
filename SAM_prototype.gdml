@@ -124,27 +124,27 @@
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="5.3" v3x="12.5" v3y="5.3"
       v4x="18.5" v4y="0" v5x="0" v5y="0" v6x="0" v6y="5.3" v7x="12.5" v7y="5.3"
-      v8x="18.5" v8y="0" dz="8.4/2" lunit= "in"/>
+      v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm*25.4"/>
 
    <!--Light Guide Plates-->
 
-   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="in"/>
-   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="in"/>
-   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="in"/>
+   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="mm*25.4"/>
+   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="mm*25.4"/>
+   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="mm*25.4"/>
 
-   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="in"/>
-   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="in"/>  <!--Slanted front plate-->
+   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm*25.4"/>
+   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm*25.4"/>  <!--Slanted front plate-->
 
 
 
    <!--NOTE: left and right plates are the same shape, so let's only do this once-->
    <arb8 name="rightPlate_1" v1x="0" v1y="0" v2x="0" v2y="10.2" v3x="131.5" v3y="10.2"
      v4x="167.1" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10.2" v7x="131.5" v7y="10.2"
-     v8x="167.1" v8y="0" dz="0.5/2" lunit= "in"/>
+     v8x="167.1" v8y="0" dz="0.5/2" lunit= "mm*25.4"/>
 
    <arb8 name="rightPlate_subtract" v1x="0" v1y="-0.1" v2x="0" v2y="10.2" v3x="100.0" v3y="10.2"
      v4x="100.0" v4y="-0.1" v5x="0" v5y="-0.1" v6x="0" v6y="10.2" v7x="100.0" v7y="10.2"
-     v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "in"/>
+     v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "mm*25.4"/>
 
    <subtraction name="rightPlate_bool" >
      <first ref="rightPlate_1"/>
@@ -153,7 +153,7 @@
      <rotationref ref="quartz_rot"/>
    </subtraction>
 
-   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="in"/>
+   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="mm*25.4"/>
 
    <union name="rightPlate_bool_2" >
      <first ref="rightPlate_bool"/>
