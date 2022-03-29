@@ -51,6 +51,9 @@
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="leftPlate_tot_pos" unit="mm" x="156" y="0" z="8.4/2 + 0.5/2 +0.01"/>
+<<<<<<< HEAD
+>>>>>>> parent of 57a66d1 (Update SAM_prototype.gdml)
+=======
 >>>>>>> parent of 57a66d1 (Update SAM_prototype.gdml)
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
