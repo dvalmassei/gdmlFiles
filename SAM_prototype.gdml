@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="quartz_pos" unit="mm" x="-4.6" y="0" z="0" />
+  <position name="quartz_pos" unit="mm" x="-4.6*2.54" y="0" z="0" />
   <rotation name="quartz_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
@@ -18,38 +18,38 @@
   <position name="lightguide2_quartz_pos" unit="mm" x="-(180-60)" y="120" z="0" />
   <rotation name="lightguide2_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_window_pos" unit="mm" x="156.5+3.0/2" y="10.2/2" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="(156.5+3.0/2)*2.54" y="10.2/2*2.54" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="156.5+3+3e-06/2.0" y="10.2/2" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="(156.5+3)*2.54 +3e-06/2.0" y="10.2/2*2.54" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
 
 
   <!--Light Guide Plate positions and rotations-->
-  <position name="botPlate_pos" unit="mm" x="156.5/2" y="-0.5/2 - 0.01" z=""/>
+  <position name="botPlate_pos" unit="mm" x="(156.5/2)*2.54" y="-0.5/2" z="0"/>
   <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="topPlate_1_pos" unit="mm" x="131.5/2 + 7.9 + 17.1" y="10.2 + 0.5/2 + 0.01" z="0"/>
+  <position name="topPlate_1_pos" unit="mm" x="(131.5/2 + 7.9 + 17.1)*2.54" y="(10.2)*2.54 + 0.5/2" z="0"/>
   <rotation name="topPlate_1_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="topPlate_2_pos" unit="mm" x="7.9/2"  y="5.3 + 0.5/2 + 0.01" z=""/>
+  <position name="topPlate_2_pos" unit="mm" x="(7.9/2)*2.54"  y="(5.3 + 0.01)*2.54 + 0.5/2" z="0"/>
   <rotation name="topPlate_2_rot" unit="deg" x="90" y="0" z="0" />
 
 
   <position name="rightPlate_1_pos" unit="mm" x="0" y="0" z="0"/>
-  <position name="rightPlate_subtract_pos" unit="mm" x="148.6" y="0" z="0"/>
-  <position name="rightPlate_2_pos" unit="mm" x="152.55" y="5.3/2" z="0"/>
-  <position name="rightPlate_tot_pos" unit="mm" x="156.5" y="0" z="-(8.4/2 + 0.5/2  + 0.01)"/>
+  <position name="rightPlate_subtract_pos" unit="mm" x="(148.6)*2.54" y="0" z="0"/>
+  <position name="rightPlate_2_pos" unit="mm" x="(152.55)*2.54" y="(5.3/2)*2.54" z="0"/>
+  <position name="rightPlate_tot_pos" unit="mm" x="(156.5)*2.54" y="0" z="-(8.4/2)*2.54 - 0.5/2"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="leftPlate_tot_pos" unit="mm" x="156.5" y="0" z="8.4/2 + 0.5/2 +0.01"/>
+  <position name="leftPlate_tot_pos" unit="mm" x="(156.5)*2.54" y="0" z="(8.4/2)*2.54 + 0.5/2"/>
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="frontPlate_1_pos" unit="mm" x="-0.5/2 - 0.01" y="5.3/2" z="0"/>
+  <position name="frontPlate_1_pos" unit="mm" x="-0.5/2" y="(5.3/2)*2.54" z="0"/>
   <rotation name="frontPlate_1_rot" unit="deg" x="90" y="90" z="0" />
 
 
-  <position name="frontPlate_2_pos" unit="mm" x="7.9 + 17.1/2"  y="5.3 + (10.2-5.3)/2 + 0.5/2 + 0.01" z="0"/>
+  <position name="frontPlate_2_pos" unit="mm" x="(7.9 + 17.1/2)*2.54"  y="(5.3 + (10.2-5.3)/2)*2.54 + 0.5/2" z="0"/>
   <rotation name="frontPlate_2_rot" unit="deg" x="90" y="16.6" z="0" />
 
 
@@ -124,27 +124,27 @@
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="5.3" v3x="12.5" v3y="5.3"
       v4x="18.5" v4y="0" v5x="0" v5y="0" v6x="0" v6y="5.3" v7x="12.5" v7y="5.3"
-      v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm"/>
+      v8x="18.5" v8y="0" dz="8.4/2" lunit= "in"/>
 
    <!--Light Guide Plates-->
 
-   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="mm"/>
-   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="mm"/>
-   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="mm"/>
+   <box name="topPlate_1" x="156.5 - 7.9 - 17.1" y="8.4" z="0.5" lunit="in"/>
+   <box name="topPlate_2" x="7.9" y="8.4" z="0.5" lunit="in"/>
+   <box name="botPlate" x="156.5" y="8.4" z="0.5" lunit="in"/>
 
-   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="mm"/>
-   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
+   <box name="frontPlate_1" x="5.3" y="8.4" z="0.5" lunit="in"/>
+   <box name="frontPlate_2" x="17.1" y="8.4" z="0.5" lunit="in"/>  <!--Slanted front plate-->
 
 
 
    <!--NOTE: left and right plates are the same shape, so let's only do this once-->
    <arb8 name="rightPlate_1" v1x="0" v1y="0" v2x="0" v2y="10.2" v3x="131.5" v3y="10.2"
      v4x="167.1" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10.2" v7x="131.5" v7y="10.2"
-     v8x="167.1" v8y="0" dz="0.5/2" lunit= "mm"/>
+     v8x="167.1" v8y="0" dz="0.5/2" lunit= "in"/>
 
    <arb8 name="rightPlate_subtract" v1x="0" v1y="-0.1" v2x="0" v2y="10.2" v3x="100.0" v3y="10.2"
      v4x="100.0" v4y="-0.1" v5x="0" v5y="-0.1" v6x="0" v6y="10.2" v7x="100.0" v7y="10.2"
-     v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "mm"/>
+     v8x="100.0" v8y="-0.1" dz="0.7/2" lunit= "in"/>
 
    <subtraction name="rightPlate_bool" >
      <first ref="rightPlate_1"/>
@@ -153,7 +153,7 @@
      <rotationref ref="quartz_rot"/>
    </subtraction>
 
-   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="mm"/>
+   <box name="rightPlate_2" x="7.9" y="5.3" z="0.5" lunit="in"/>
 
    <union name="rightPlate_bool_2" >
      <first ref="rightPlate_bool"/>
@@ -281,13 +281,13 @@
         <positionref ref="leftPlate_tot_pos" />
         <rotationref ref="leftPlate_tot_rot" />
       </physvol>
-<!--
+
       <physvol name="frontPlate_1_phys">
         <volumeref ref="frontPlate_1_vol" />
         <positionref ref="frontPlate_1_pos" />
         <rotationref ref="frontPlate_1_rot" />
       </physvol>
--->
+
       <physvol name="frontPlate_2_phys">
         <volumeref ref="frontPlate_2_vol" />
         <positionref ref="frontPlate_2_pos" />
