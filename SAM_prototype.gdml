@@ -118,10 +118,10 @@
    <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
    <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
 
-
+<!---
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
-
+-->
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="5.3" v3x="12.5" v3y="5.3"
       v4x="18.5" v4y="0" v5x="0" v5y="0" v6x="0" v6y="5.3" v7x="12.5" v7y="5.3"
       v8x="18.5" v8y="0" dz="8.4/2" lunit= "mm"/>
