@@ -132,7 +132,7 @@
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="13" v3x="20" v3y="13"
       v4x="33" v4y="0" v5x="0" v5y="0" v6x="0" v6y="13" v7x="20" v7y="13"
-      v8x="33" v8y="0" dz=".84/2 * 25.4" lunit= "mm"/>
+      v8x="33" v8y="0" dz="20/2" lunit= "mm"/>
 
    <!--Light Guide Plates-->
 
