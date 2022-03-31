@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="quartz_pos" unit="mm" x="-0.0 + 0.5/2.54" y="0" z="10" />
+  <position name="quartz_pos" unit="mm" x="0.5/2.54" y="0.5/2.54" z="0" />
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
@@ -126,8 +126,8 @@
    <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
 
 
-   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
-   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_window" rmin="0" rmax="38.1/2.54" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1/2.54" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="13/2.54" v3x="20/2.54" v3y="13/2.54"
       v4x="33/2.54" v4y="0" v5x="0" v5y="0" v6x="0" v6y="13/2.54" v7x="20/2.54" v7y="13/2.54"
