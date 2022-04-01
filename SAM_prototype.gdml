@@ -129,8 +129,8 @@
    <tube name="solid_pmt_window" rmin="0" rmax="38.1/2.54" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1/2.54" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
-   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="13/2.54" v3x="20/2.54" v3y="13/2.54"
-      v4x="33/2.54" v4y="0" v5x="0" v5y="0" v6x="0" v6y="13/2.54" v7x="20/2.54" v7y="13/2.54"
+   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="6/2.54" v3x="20/2.54" v3y="6/2.54"
+      v4x="33/2.54" v4y="0" v5x="0" v5y="0" v6x="0" v6y="6/2.54" v7x="20/2.54" v7y="6/2.54"
       v8x="33/2.54" v8y="0" dz="(20/2)/2.54" lunit= "mm"/>
 
    <!--Light Guide Plates-->
