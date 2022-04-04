@@ -119,6 +119,7 @@
    <D value="2.6982" />
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
+   <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
   </material>
  </materials>
 
