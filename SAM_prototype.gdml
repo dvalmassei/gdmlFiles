@@ -90,8 +90,7 @@
    <atom value="39.0983" />
   </element>
   <material formula="noFormula" name="Air" >
-   <property name="RINDEX2" ref="Air_RINDEX"/>
-   <property name="ABSLENGTH2" ref="CO2_ABSLENGTH"/>
+   <property name="RINDEX" ref="Air_RINDEX"/>
    <D value="0.00129" />
    <fraction n="0.3" ref="Oxygen" />
    <fraction n="0.7" ref="Nitrogen" />
