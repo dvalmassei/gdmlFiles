@@ -116,7 +116,7 @@
    <composite n="1" ref="Antimony" />
    <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
    <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
-
+   
   </material>
   <material formula="Al" name="Aluminum" >
    <D value="2.6982" />
