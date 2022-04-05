@@ -120,7 +120,7 @@
 
  <solids>
    <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
-   <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
+   <box lunit="mm" name="DetBox" x="800" y="800" z="800"/>
 
 
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
