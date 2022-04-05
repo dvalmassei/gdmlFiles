@@ -354,7 +354,7 @@
       <volumeref ref="rightPlate_bool_2_vol"/>
     </skinsurface>
 
-    <bordersurface name="bordersrf1" surfaceproperty="surf2" >
+    <bordersurface name="bordersrf1" surfaceproperty="surf3" >
       <physvolref ref="pmt1_window_phys"/>
       <physvolref ref="pmt1_cathode_phys"/>
     </bordersurface>
