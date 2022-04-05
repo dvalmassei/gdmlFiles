@@ -184,7 +184,7 @@
 
    <!--Optical Properties-->
    <!--Quartz-->
-   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.02" />
+   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98" />
    <!--Cathode-->
    <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
