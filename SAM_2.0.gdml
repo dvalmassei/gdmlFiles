@@ -50,7 +50,7 @@
   <rotation name="frontPlate_1_rot" unit="deg" x="90" y="90" z="0" />
 
 
-  <position name="frontPlate_2_pos" unit="mm" x="(0.74 + 1.75/2)*25.4"  y="(0.54 + (1.02-0.53)/2)*25.4 + (0.5/2)" z="0"/>
+  <position name="frontPlate_2_pos" unit="mm" x="(0.76 + 1.75/2)*25.4"  y="(0.54 + (1.02-0.53)/2)*25.4 + (0.5/2)" z="0"/>
   <rotation name="frontPlate_2_rot" unit="deg" x="90" y="16.5" z="0" />
 
   <scale name="mm_to_in" x="254" y="254" z="254" />
