@@ -172,12 +172,12 @@
    <!--Optical Properties-->
    <!--Quartz-->
    <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98" />
-   <!--Cathode
+   <!--Cathode-->
    <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
      <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
    </opticalsurface>
-   Aluminum-->
+   <!--Aluminum-->
    <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
    </opticalsurface>
@@ -354,7 +354,7 @@
       <volumeref ref="rightPlate_bool_2_vol"/>
     </skinsurface>
 
-    <bordersurface name="bordersrf1" surfaceproperty="surf3" >
+    <bordersurface name="bordersrf1" surfaceproperty="surf2" >
       <physvolref ref="pmt1_window_phys"/>
       <physvolref ref="pmt1_cathode_phys"/>
     </bordersurface>
