@@ -334,7 +334,7 @@
 
     <!--World Assembly-->
     <volume name="World" >
-      <materialref ref="Air" />
+      <materialref ref="vacuum" />
       <solidref ref="WorldBox" />
 
       <physvol name="DetBox_phys" >
