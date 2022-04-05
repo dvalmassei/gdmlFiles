@@ -178,8 +178,8 @@
      <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
    </opticalsurface>
    <!--Aluminum-->
-   <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="0.20">
-     <property name="REFLECTIVITY2" ref="Aluminium_Surf_Reflectivity" />
+   <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="0.0">
+     <property name="REFLECTIVITY2" ref="Cathode_Surf_Reflectivity" />
    </opticalsurface>
 
 
