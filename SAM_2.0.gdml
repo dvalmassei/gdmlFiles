@@ -8,7 +8,7 @@
  <define>
 
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
-  <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="180" y="0" z="0" />
 
   <position name="quartz_pos" unit="mm" x="0.5" y="0.5" z="0" />
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
@@ -51,7 +51,7 @@
 
 
   <position name="frontPlate_2_pos" unit="mm" x="(0.76 + 1.75/2)*25.4"  y="(0.535 + (1.02-0.53)/2)*25.4 + (0.5/2)" z="0"/>
-  <rotation name="frontPlate_2_rot" unit="deg" x="90" y="16.35" z="0" />
+  <rotation name="frontPlate_2_rot" unit="deg" x="90" y="16.0" z="0" />
 
   <scale name="mm_to_in" x="254" y="254" z="254" />
 
