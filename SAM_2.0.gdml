@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="270" y="0" z="0" />
 
-  <position name="quartz_pos" unit="mm" x="0.5" y="0.5" z="0" />
+  <position name="quartz_pos" unit="mm" x="0.5" y="0.5/2" z="0" />
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
