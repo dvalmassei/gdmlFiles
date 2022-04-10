@@ -7,7 +7,7 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
 
-  <position name="DetBox_pos" unit="mm" x="-70.0" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="270" y="0" z="0" />
 
   <position name="quartz_pos" unit="mm" x="0.5/2" y="0.5/2" z="0" />
@@ -250,7 +250,7 @@
 
     <!--Detector Assembly-->
     <volume name="DetBox_vol" >
-      <materialref ref="vacuum" />
+      <materialref ref="Air" />
       <solidref ref="DetBox" />
 
       <physvol name="quartz_phys">
