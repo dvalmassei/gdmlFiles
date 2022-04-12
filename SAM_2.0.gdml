@@ -324,14 +324,15 @@
 
     <!--World Assembly-->
     <volume name="World" >
-      <materialref ref="vacuum" />
+      <materialref ref="Air" />
       <solidref ref="WorldBox" />
-
+<!--
       <physvol name="DetBox_phys" >
         <volumeref ref="DetBox_vol" />
         <positionref ref="DetBox_pos"/>
         <rotationref ref="DetBox_rot"/>
       </physvol>
+-->
     </volume>
 
 
