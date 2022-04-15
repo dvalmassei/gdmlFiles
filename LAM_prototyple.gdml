@@ -57,6 +57,7 @@
    <fraction n="0.7" ref="Nitrogen" />
   </material>
   <material Z="1" name="vacuum" >
+   <property name="RINDEX" ref="Vacuum_RINDEX"/>
    <T value="2.73" />
    <P value=" 3.0E-18" unit="pascal" />
    <Dref ref="universe_mean_density" />
