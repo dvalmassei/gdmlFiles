@@ -172,6 +172,8 @@
 
   </volume>
 
+
+
   <volume name="World" >
     <materialref ref="vacuum" />
     <solidref ref="WorldBox" />
