@@ -7,6 +7,9 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
+  <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="270" y="0" z="0" />
+
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
@@ -80,6 +83,7 @@
 
  <solids>
   <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
+  <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
@@ -120,9 +124,9 @@
    <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
 
-  <volume name="World" >
+  <volume name="DetBox_vol" >
    <materialref ref="vacuum" />
-   <solidref ref="WorldBox" />
+   <solidref ref="DetBox" />
 
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
@@ -165,6 +169,18 @@
     <positionref ref="pmt2_cathode_pos" />
     <rotationref ref="pmt2_cathode_rot" />
    </physvol>
+
+  </volume>
+
+  <volume name="World" >
+    <materialref ref="vacuum" />
+    <solidref ref="WorldBox" />
+
+    <physvol name="DetBox_phys" >
+      <volumeref ref="DetBox_vol" />
+      <positionref ref="DetBox_pos"/>
+      <rotationref ref="DetBox_rot"/>
+    </physvol>
 
   </volume>
 
