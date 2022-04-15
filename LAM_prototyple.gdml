@@ -7,8 +7,8 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
-  <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
-  <rotation name="DetBox_rot" unit="deg" x="270" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
