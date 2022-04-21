@@ -10,7 +10,7 @@
   <constant name="thickness" value="10" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="6" z="0" />
 
   <position name="AlBox_pos" unit="mm" x="0" y="0" z="60" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
