@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="AlBox_pos" unit="mm" x="0" y="0" z="40" />
+  <position name="AlBox_pos" unit="mm" x="0" y="0" z="60" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
@@ -97,7 +97,7 @@
   <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
-  <box lunit="mm" name="AlBox" x="200" y="200" z="63.5"/>
+  <box lunit="mm" name="AlBox" x="400" y="400" z="63.5"/>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
