@@ -139,22 +139,23 @@
    <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
 
-<!--
+
   <volume name="AlBox_vol" >
    <materialref ref="Aluminum" />
    <solidref ref="AlBox" />
   </volume>
--->
+
   <volume name="DetBox_vol" >
    <materialref ref="vacuum" />
    <solidref ref="DetBox" />
 
+<!--
    <physvol name="AlBox_phys">
     <volumeref ref="AlBox_vol" />
     <positionref ref="AlBox_pos" />
     <rotationref ref="AlBox_rot" />
    </physvol>
-
+-->
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
     <positionref ref="radiator_quartz_pos" />
