@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="AlBox_pos" unit="mm" x="0" y="0" z="60" />
+  <position name="AlBox_pos" unit="mm" x="0" y="0" z="100" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
