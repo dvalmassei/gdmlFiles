@@ -14,10 +14,10 @@
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
 
-  <position name="pmt1_window_pos" unit="mm" x="257.28+3.0/2" y="20/2" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="258.28+3.0/2" y="20/2" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="257.28 +3 +3e-06/2.0" y="20/2" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="258.28 +3 +3e-06/2.0" y="20/2" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
 
 
@@ -130,7 +130,7 @@
    <box name="botPlate" x="257.28" y="20" z="0.5" lunit="mm"/>
 
    <box name="frontPlate_1" x="6.02" y="20" z="0.5" lunit="mm"/>
-   <box name="frontPlate_2" x="36.37" y="20" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
+   <box name="frontPlate_2" x="35.37" y="20" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
 
 
 
