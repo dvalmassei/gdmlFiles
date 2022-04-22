@@ -153,6 +153,7 @@
     <rotationref ref="AlBox_rot" />
    </physvol>
 
+<!--
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
     <positionref ref="radiator_quartz_pos" />
@@ -194,7 +195,7 @@
     <positionref ref="pmt2_cathode_pos" />
     <rotationref ref="pmt2_cathode_rot" />
    </physvol>
-
+-->
   </volume>
 
 
