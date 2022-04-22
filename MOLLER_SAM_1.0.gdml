@@ -35,10 +35,10 @@
   <position name="rightPlate_box_pos" unit="mm" x="0" y="0" z="0"/>
   <position name="rightPlate_subtract_pos" unit="mm" x="(257.28/2)-(257.28-213.72)" y="10" z="0"/>
 
-  <position name="rightPlate_tot_pos" unit="mm" x="257.28/2" y="0" z="-(20/2 + 0.5/2)"/>
+  <position name="rightPlate_tot_pos" unit="mm" x="257.28/2" y="10" z="-(20/2 + 0.5/2)"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="leftPlate_tot_pos" unit="mm" x="257.28/2" y="0" z="20/2 + 0.5/2 "/>
+  <position name="leftPlate_tot_pos" unit="mm" x="257.28/2" y="10" z="20/2 + 0.5/2 "/>
   <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
 
   <position name="frontPlate_1_pos" unit="mm" x="-0.5/2" y="6/2" z="0"/>
@@ -313,7 +313,7 @@
         <positionref ref="DetBox_pos"/>
         <rotationref ref="DetBox_rot"/>
       </physvol>
-      
+
     </volume>
 
 
