@@ -261,13 +261,13 @@
       </physvol>
 
       <physvol name="rightPlate_bool_2_phys">
-        <volumeref ref="rightPlate_bool_2_vol" />
+        <volumeref ref="rightPlate_bool_vol" />
         <positionref ref="rightPlate_tot_pos" />
         <rotationref ref="rightPlate_tot_rot" />
       </physvol>
 
       <physvol name="leftPlate_bool_2_phys">
-        <volumeref ref="rightPlate_bool_2_vol" />
+        <volumeref ref="rightPlate_bool_vol" />
         <positionref ref="leftPlate_tot_pos" />
         <rotationref ref="leftPlate_tot_rot" />
       </physvol>
@@ -335,8 +335,8 @@
     <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
       <volumeref ref="frontPlate_2_vol"/>
     </skinsurface>
-    <skinsurface name="rightPlate_bool_2_skinsrf" surfaceproperty="surf3" >
-      <volumeref ref="rightPlate_bool_2_vol"/>
+    <skinsurface name="rightPlate_bool_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="rightPlate_bool_vol"/>
     </skinsurface>
 
     <bordersurface name="bordersrf1" surfaceproperty="surf2" >
