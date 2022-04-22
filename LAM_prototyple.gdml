@@ -146,7 +146,7 @@
 
 
   <volume name="AlBox_vol" >
-   <materialref ref="Pb_mat" />
+   <materialref ref="alu" />
    <solidref ref="AlBox" />
   </volume>
 
