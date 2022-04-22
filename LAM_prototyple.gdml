@@ -59,6 +59,9 @@
   <element Z="19" formula="K" name="Potassium" >
    <atom value="39.0983" />
   </element>
+  <element Z="82" formula="Pb" name="Lead" >
+   <atom value="206.14" />
+  </element>
   <material formula="noFormula" name="Air" >
    <property name="RINDEX" ref="Air_RINDEX"/>
    <D value="0.00129" />
@@ -89,6 +92,10 @@
    <D value="2.6982" />
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
+  </material>
+  <material formula="Pb" name="Pb_mat" >
+   <D value="11.34" />
+   <composite n="1" ref="Lead" />
   </material>
  </materials>
 
@@ -139,7 +146,7 @@
 
 
   <volume name="AlBox_vol" >
-   <materialref ref="alu" />
+   <materialref ref="Pb_mat" />
    <solidref ref="AlBox" />
   </volume>
 
