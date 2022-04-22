@@ -86,7 +86,7 @@
    <composite n="1" ref="Antimony" />
   </material>
   <material formula="Al" name="alu" >
-   <D value="1.6982" />
+   <D value="10.6982" />
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
   </material>
