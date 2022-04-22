@@ -86,7 +86,7 @@
    <composite n="1" ref="Antimony" />
   </material>
   <material formula="Al" name="alu" >
-   <D value="26.982" />
+   <D value="2.6982" />
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
   </material>
@@ -97,7 +97,7 @@
   <box lunit="mm" name="DetBox" x="800" y="800" z="800"/>
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
-  <box lunit="mm" name="AlBox" x="400" y="400" z="63.5"/>
+  <box lunit="mm" name="AlBox" x="400" y="400" z="6.35"/>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
