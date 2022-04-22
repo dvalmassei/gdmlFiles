@@ -153,7 +153,7 @@
     <rotationref ref="AlBox_rot" />
    </physvol>
 
-<!--
+
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
     <positionref ref="radiator_quartz_pos" />
@@ -195,7 +195,7 @@
     <positionref ref="pmt2_cathode_pos" />
     <rotationref ref="pmt2_cathode_rot" />
    </physvol>
--->
+
   </volume>
 
 
@@ -213,7 +213,7 @@
   </volume>
 
 
-<!--
+
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
@@ -228,7 +228,7 @@
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
--->
+
 
  </structure>
  <setup name="Default" version="1.0" >
