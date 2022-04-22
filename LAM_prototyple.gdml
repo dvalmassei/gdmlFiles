@@ -213,6 +213,7 @@
   </volume>
 
 
+<!--
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
@@ -227,7 +228,7 @@
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
-
+-->
 
  </structure>
  <setup name="Default" version="1.0" >
