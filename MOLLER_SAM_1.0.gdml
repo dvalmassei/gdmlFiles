@@ -48,6 +48,9 @@
   <position name="frontPlate_2_pos" unit="mm" x="10.59 + 32.96/2 + 0.2"  y="6.5 + (20-6.5)/2 + (0.5/2)" z="0"/>
   <rotation name="frontPlate_2_rot" unit="deg" x="90" y="22.5" z="0" />
 
+  <position name="frontPlate_3_pos" unit="mm" x="10.592"  y="6.5" z="0"/>
+  <rotation name="frontPlate_3_rot" unit="deg" x="0" y="0" z="0" />
+
 
 
   &matrices;
@@ -131,6 +134,9 @@
 
    <box name="frontPlate_1" x="6.02" y="20" z="0.5" lunit="mm"/>
    <box name="frontPlate_2" x="34.37" y="20" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
+   <arb8 name="frontPlate_3" v1x="0" v1y="0" v2x="0" v2y="0.5" v3x="32.969" v3y="14.013"
+      v4x="32.969" v4y="13.513" v5x="0" v5y="0" v6x="0" v6y="6" v7x="32.969" v7y="14.013"
+      v8x="32.969" v8y="13.513" dz="20/2" lunit= "mm"/>
 
 
 
@@ -204,9 +210,9 @@
       <solidref ref="frontPlate_1"/>
     </volume>
 
-    <volume name="frontPlate_2_vol">
+    <volume name="frontPlate_3_vol">
       <materialref ref="Al_mat"/>
-      <solidref ref="frontPlate_2"/>
+      <solidref ref="frontPlate_3"/>
     </volume>
 
 
@@ -278,10 +284,10 @@
         <rotationref ref="frontPlate_1_rot" />
       </physvol>
 
-      <physvol name="frontPlate_2_phys">
-        <volumeref ref="frontPlate_2_vol" />
-        <positionref ref="frontPlate_2_pos" />
-        <rotationref ref="frontPlate_2_rot" />
+      <physvol name="frontPlate_3_phys">
+        <volumeref ref="frontPlate_3_vol" />
+        <positionref ref="frontPlate_3_pos" />
+        <rotationref ref="frontPlate_3_rot" />
       </physvol>
 
 
@@ -332,8 +338,8 @@
     <skinsurface name="frontPlate_1_skinsrf" surfaceproperty="surf3" >
       <volumeref ref="frontPlate_1_vol"/>
     </skinsurface>
-    <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
-      <volumeref ref="frontPlate_2_vol"/>
+    <skinsurface name="frontPlate_3_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="frontPlate_3_vol"/>
     </skinsurface>
     <skinsurface name="rightPlate_bool_skinsrf" surfaceproperty="surf3" >
       <volumeref ref="rightPlate_bool_vol"/>
