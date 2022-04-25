@@ -135,7 +135,7 @@
    <box name="frontPlate_1" x="6.02" y="20" z="0.5" lunit="mm"/>
    <box name="frontPlate_2" x="34.37" y="20" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
    <arb8 name="frontPlate_3" v1x="0" v1y="0" v2x="0" v2y="0.5" v3x="32.969" v3y="14.013"
-      v4x="32.969" v4y="13.513" v5x="0" v5y="0" v6x="0" v6y="6" v7x="32.969" v7y="14.013"
+      v4x="32.969" v4y="13.513" v5x="0" v5y="0" v6x="0" v6y="0.5" v7x="32.969" v7y="14.013"
       v8x="32.969" v8y="13.513" dz="20/2" lunit= "mm"/>
 
 
