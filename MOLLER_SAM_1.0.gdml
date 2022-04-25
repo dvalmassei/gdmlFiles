@@ -48,7 +48,7 @@
   <position name="frontPlate_2_pos" unit="mm" x="10.59 + 32.96/2 + 0.2"  y="6.5 + (20-6.5)/2 + (0.5/2)" z="0"/>
   <rotation name="frontPlate_2_rot" unit="deg" x="90" y="22.5" z="0" />
 
-  <position name="frontPlate_3_pos" unit="mm" x="10.592"  y="6.5" z="0"/>
+  <position name="frontPlate_3_pos" unit="mm" x="10.592 + 0.5"  y="6.5" z="0"/>
   <rotation name="frontPlate_3_rot" unit="deg" x="0" y="0" z="0" />
 
 
