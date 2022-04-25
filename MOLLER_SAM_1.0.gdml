@@ -28,7 +28,7 @@
   <position name="topPlate_1_pos" unit="mm" x="10.59+32.96+(213.78/2)" y="20 + (0.5/2)" z="0"/>
   <rotation name="topPlate_1_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="topPlate_2_pos" unit="mm" x="10.59/2"  y=" 6.5 + (0.5/2)" z="0"/>
+  <position name="topPlate_2_pos" unit="mm" x="10.59/2 + 0.5"  y=" 6.5 + (0.5/2)" z="0"/>
   <rotation name="topPlate_2_rot" unit="deg" x="90" y="0" z="0" />
 
 
