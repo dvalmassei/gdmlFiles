@@ -88,7 +88,7 @@
    <composite n="1" ref="Caesium" />
    <composite n="1" ref="Antimony" />
   </material>
-  <material formula="Al" name="alu" >
+  <material formula="Al" name="Al_mat" >
    <D value="2.6982" />
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
@@ -146,7 +146,7 @@
 
 
   <volume name="AlBox_vol" >
-   <materialref ref="alu" />
+   <materialref ref="Al_mat" />
    <solidref ref="AlBox" />
   </volume>
 
