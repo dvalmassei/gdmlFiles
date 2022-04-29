@@ -10,7 +10,7 @@
    <constant name="d2" value="213.78" />
    <constant name="d4" value="10.59" />
    <constant name="d5" value="6.5" />
-   <constant name="d6" value="18" />
+   <constant name="d6" value="19.5" />
 
 
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
