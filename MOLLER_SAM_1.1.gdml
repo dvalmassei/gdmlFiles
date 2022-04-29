@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE gdml [
+  <!ENTITY matrices SYSTEM "matrices.xml">
+]>
+
+<gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
+ <define>
+   <constant name="d1" value="257.28" />
+   <constant name="d2" value="213.78" />
+   <constant name="d3" value="80" />
+   <constant name="d4" value="10.59" />
+   <constant name="d5" value="6.5" />
+   <constant name="d6" value="20" />
+
+
+  <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="0" />
+
+  <position name="quartz_pos" unit="mm" x="0.5/2" y="0.5/2" z="0" />
+  <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
+
+
+  <position name="pmt1_window_pos" unit="mm" x="d1 +3.0/2" y="20/2" z="0" />
+  <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
+
+  <position name="pmt1_cathode_pos" unit="mm" x="d1 +3 +3e-06/2.0" y="20/2" z="0" />
+  <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
+
+
+  <!--Light Guide Plate positions and rotations-->
+  <position name="botPlate_pos" unit="mm" x="d1/2" y="-0.5/2" z="0"/>
+  <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
+
+  <position name="topPlate_1_pos" unit="mm" x="(d1-d2)+d4+(d2/2)" y="d6 + (0.5/2)" z="0"/>
+  <rotation name="topPlate_1_rot" unit="deg" x="90" y="0" z="0" />
+
+  <position name="topPlate_2_pos" unit="mm" x="d4/2"  y="d5 + (0.5/2)" z="0"/>
+  <rotation name="topPlate_2_rot" unit="deg" x="90" y="0" z="0" />
+
+
+  <position name="rightPlate_box_pos" unit="mm" x="0" y="0" z="0"/>
+  <position name="rightPlate_subtract_pos" unit="mm" x="(d1/2)-(d1-d2)" y="10" z="0"/>
+
+  <position name="rightPlate_tot_pos" unit="mm" x="d1/2" y="d6/2" z="-(20/2 + 0.5/2)"/>
+  <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
+
+  <position name="leftPlate_tot_pos" unit="mm" x="d1/2" y="d6/2" z="20/2 + 0.5/2 "/>
+  <rotation name="leftPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
+
+  <position name="frontPlate_1_pos" unit="mm" x="-0.5/2" y="d5/2" z="0"/>
+  <rotation name="frontPlate_1_rot" unit="deg" x="90" y="90" z="0" />
+
+
+  <position name="frontPlate_2_pos" unit="mm" x="d4 + (d1-d2)/2"  y="d5 + (d6-d5)/2 + (0.5/2)" z="0"/>
+  <rotation name="frontPlate_2_rot" unit="deg" x="90" y="22.5" z="0" />
+
+
+
+
+  &matrices;
+ </define>
+
+ <materials>
+  <define>
+   <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
+  </define>
+  <element Z="8" formula="O" name="Oxygen" >
+   <atom value="16" />
+  </element>
+  <element Z="7" formula="N" name="Nitrogen" >
+   <atom value="14.01" />
+  </element>
+  <element Z="14" formula="Si" name="Silicon" >
+   <atom value="28.085" />
+  </element>
+  <element Z="13" formula="Al" name="Aluminum" >
+   <atom value="26.982" />
+  </element>
+  <element Z="51" formula="Sb" name="Antimony" >
+   <atom value="121.760" />
+  </element>
+  <element Z="55" formula="Cs" name="Caesium" >
+   <atom value="132.90545" />
+  </element>
+  <element Z="19" formula="K" name="Potassium" >
+   <atom value="39.0983" />
+  </element>
+  <material formula="noFormula" name="Air" >
+   <property name="RINDEX" ref="Air_RINDEX"/>
+   <property name="ABSLENGTH" ref="AIR_ABSLENGTH"/>
+   <D value="0.00129" />
+   <fraction n="0.3" ref="Oxygen" />
+   <fraction n="0.7" ref="Nitrogen" />
+  </material>
+  <material Z="1" name="vacuum" >
+   <T value="2.73" />
+   <P value=" 3.0E-18" unit="pascal" />
+   <Dref ref="universe_mean_density" />
+   <atom value="1.01" />
+  </material>
+  <material formula="SiO2" name="Quartz" >
+   <property name="RINDEX" ref="Quartz_RINDEX"/>
+   <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
+   <D value="2.203" />
+   <composite n="1" ref="Silicon" />
+   <composite n="2" ref="Oxygen" />
+  </material>
+  <material formula="K2CsSb" name="Bialkali" >
+   <D value="3.46" />
+   <composite n="2" ref="Potassium" />
+   <composite n="1" ref="Caesium" />
+   <composite n="1" ref="Antimony" />
+  </material>
+  <material formula="Al" name="Al_mat" >
+   <D value="2.6982" />
+   <!--need to add properties-->
+   <composite n="1" ref="Aluminum" />
+  </material>
+ </materials>
+
+ <solids>
+   <box lunit="mm" name="WorldBox" x="1500" y="1500" z="1500"/>
+   <box lunit="mm" name="DetBox" x="1000" y="1000" z="1000"/>
+
+
+   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+
+   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="6" v3x="10" v3y="6"
+      v4x="16" v4y="0" v5x="0" v5y="0" v6x="0" v6y="6" v7x="10" v7y="6"
+      v8x="16" v8y="0" dz="20/2" lunit= "mm"/>
+
+   <!--Light Guide Plates-->
+
+   <box name="topPlate_1" x="d2" y="20" z="0.5" lunit="mm"/>
+   <box name="topPlate_2" x="d4" y="20" z="0.5" lunit="mm"/>
+   <box name="botPlate" x="d1" y="20" z="0.5" lunit="mm"/>
+
+   <box name="frontPlate_1" x="d5" y="20" z="0.5" lunit="mm"/>
+   <box name="frontPlate_2" x="34.37" y="20" z="0.5" lunit="mm"/>  <!--Slanted front plate-->
+   <arb8 name="frontPlate_3" v1x="0" v1y="0" v2x="0" v2y="0.5" v3x="32.969" v3y="14.013"
+      v4x="32.969" v4y="13.513" v5x="0" v5y="0" v6x="0" v6y="0.5" v7x="32.969" v7y="14.013"
+      v8x="32.969" v8y="13.513" dz="20/2" lunit= "mm"/>
+
+
+
+   <!--NOTE: left and right plates are the same shape, so let's only do this once-->
+   <box name="rightPlate_box" x="d1" y="20" z="0.5" lunit= "mm"/>
+
+
+   <arb8 name="rightPlate_subtract" v1x="0" v1y="0" v2x="d1-d2" v2y="0" v3x="d1-d2" v3y="-(d6-d5)"
+     v4x="(d1-d2)-d4" v4y="-(d6-d5)" v5x="0" v5y="0" v6x="d1-d2" v6y="0" v7x="d1-d2" v7y="-(d6-d5)"
+     v8x="(d1-d2)-d4" v8y="-(d6-d5)" dz="0.7/2" lunit= "mm"/>
+
+   <subtraction name="rightPlate_bool" >
+     <first ref="rightPlate_box"/>
+     <second ref="rightPlate_subtract"/>
+     <positionref ref="rightPlate_subtract_pos"/>
+     <rotation unit="deg" x="0" y="0" z="0"/>
+   </subtraction>
+
+
+   <!--Optical Properties-->
+   <!--Quartz-->
+   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98">
+   </opticalsurface>
+   <!--Aluminum-->
+   <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+     <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
+   </opticalsurface>
+
+   <!--Cathode-->
+   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+     <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
+     <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
+   </opticalsurface>
+
+
+
+
+ </solids>
+
+  <structure>
+    <!--Quartz-->
+    <volume name="quartz_vol">
+      <materialref ref="Quartz" />
+      <solidref ref="quartz" />
+    </volume>
+
+    <!--Light Guide Plates Physical Volumes-->
+
+    <volume name="botPlate_vol">
+      <materialref ref="Al_mat"/>
+      <solidref ref="botPlate"/>
+    </volume>
+
+    <volume name="rightPlate_bool_vol"> <!--Just copy this for left plate and change position-->
+      <materialref ref="Al_mat"/>
+      <solidref ref="rightPlate_bool"/>
+    </volume>
+
+    <volume name="topPlate_1_vol">
+      <materialref ref="Al_mat"/>
+      <solidref ref="topPlate_1"/>
+    </volume>
+
+    <volume name="topPlate_2_vol">
+      <materialref ref="Al_mat"/>
+      <solidref ref="topPlate_2"/>
+    </volume>
+
+    <volume name="frontPlate_1_vol">
+      <materialref ref="Al_mat"/>
+      <solidref ref="frontPlate_1"/>
+    </volume>
+
+    <volume name="frontPlate_2_vol">
+      <materialref ref="Al_mat"/>
+      <solidref ref="frontPlate_2"/>
+    </volume>
+
+
+    <volume name="pmt_window_vol" >
+     <materialref ref="Quartz" />
+     <solidref ref="solid_pmt_window" />
+     <auxiliary auxtype="Color" auxvalue="red"/>
+    </volume>
+    <volume name="pmt_cathode_vol" >
+     <materialref ref="Bialkali" />
+     <solidref ref="solid_pmt_cathode" />
+     <auxiliary auxtype="SensDet" auxvalue="PhotoCathode"/>
+     <auxiliary auxtype="Color" auxvalue="blue"/>
+    </volume>
+
+
+
+
+
+
+
+
+    <!--Detector Assembly-->
+    <volume name="DetBox_vol" >
+      <materialref ref="Air" />
+      <solidref ref="DetBox" />
+
+      <physvol name="quartz_phys">
+        <volumeref ref="quartz_vol" />
+        <positionref ref="quartz_pos" />
+        <rotationref ref="quartz_rot" />
+      </physvol>
+
+
+      <!--Light Guide Assembly-->
+      <physvol name="botPlate_phys">
+        <volumeref ref="botPlate_vol" />
+        <positionref ref="botPlate_pos" />
+        <rotationref ref="botPlate_rot" />
+      </physvol>
+
+      <physvol name="topPlate_1_phys">
+        <volumeref ref="topPlate_1_vol" />
+        <positionref ref="topPlate_1_pos" />
+        <rotationref ref="topPlate_1_rot" />
+      </physvol>
+
+      <physvol name="topPlate_2_phys">
+        <volumeref ref="topPlate_2_vol" />
+        <positionref ref="topPlate_2_pos" />
+        <rotationref ref="topPlate_2_rot" />
+      </physvol>
+
+      <physvol name="rightPlate_bool_2_phys">
+        <volumeref ref="rightPlate_bool_vol" />
+        <positionref ref="rightPlate_tot_pos" />
+        <rotationref ref="rightPlate_tot_rot" />
+      </physvol>
+
+      <physvol name="leftPlate_bool_2_phys">
+        <volumeref ref="rightPlate_bool_vol" />
+        <positionref ref="leftPlate_tot_pos" />
+        <rotationref ref="leftPlate_tot_rot" />
+      </physvol>
+
+      <physvol name="frontPlate_1_phys">
+        <volumeref ref="frontPlate_1_vol" />
+        <positionref ref="frontPlate_1_pos" />
+        <rotationref ref="frontPlate_1_rot" />
+      </physvol>
+
+      <physvol name="frontPlate_2_phys">
+        <volumeref ref="frontPlate_2_vol" />
+        <positionref ref="frontPlate_2_pos" />
+        <rotationref ref="frontPlate_2_rot" />
+      </physvol>
+
+
+      <physvol name="pmt1_window_phys">
+       <volumeref ref="pmt_window_vol" />
+       <positionref ref="pmt1_window_pos" />
+       <rotationref ref="pmt1_window_rot" />
+      </physvol>
+      <physvol name="pmt1_cathode_phys">
+       <volumeref ref="pmt_cathode_vol" />
+       <positionref ref="pmt1_cathode_pos" />
+       <rotationref ref="pmt1_cathode_rot" />
+      </physvol>
+
+
+    </volume>
+
+
+
+
+
+    <!--World Assembly-->
+    <volume name="World" >
+      <materialref ref="Air" />
+      <solidref ref="WorldBox" />
+
+      <physvol name="DetBox_phys" >
+        <volumeref ref="DetBox_vol" />
+        <positionref ref="DetBox_pos"/>
+        <rotationref ref="DetBox_rot"/>
+      </physvol>
+
+    </volume>
+
+
+    <skinsurface name="skinsrf1" surfaceproperty="surf1" >
+      <volumeref ref="quartz_vol"/>
+    </skinsurface>
+    <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="botPlate_vol"/>
+    </skinsurface>
+    <skinsurface name="topPlate_1_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="topPlate_1_vol"/>
+    </skinsurface>
+    <skinsurface name="topPlate_2_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="topPlate_2_vol"/>
+    </skinsurface>
+    <skinsurface name="frontPlate_1_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="frontPlate_1_vol"/>
+    </skinsurface>
+    <skinsurface name="frontPlate_2_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="frontPlate_2_vol"/>
+    </skinsurface>
+    <skinsurface name="rightPlate_bool_skinsrf" surfaceproperty="surf3" >
+      <volumeref ref="rightPlate_bool_vol"/>
+    </skinsurface>
+
+    <bordersurface name="bordersrf1" surfaceproperty="surf2" >
+      <physvolref ref="pmt1_window_phys"/>
+      <physvolref ref="pmt1_cathode_phys"/>
+    </bordersurface>
+
+  </structure>
+
+
+  <setup name="Default" version="1.0" >
+   <world ref="World" />
+  </setup>
+</gdml>
