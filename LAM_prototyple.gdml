@@ -10,7 +10,7 @@
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="300" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="AlBox_pos" unit="mm" x="0" y="-1010" z="0" />
+  <position name="AlBox_pos" unit="mm" x="0" y="-1016" z="0" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
@@ -101,7 +101,7 @@
 
  <solids>
   <box lunit="mm" name="WorldBox" x="3000" y="3000" z="3000"/>
-  <box lunit="mm" name="DetBox" x="800" y="800" z="800"/>
+  <box lunit="mm" name="DetBox" x="500" y="500" z="500"/>
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
 
