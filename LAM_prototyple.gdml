@@ -7,7 +7,7 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
-  <constant name="offset" value="40" />
+  <constant name="offset" value="80" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="300" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
