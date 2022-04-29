@@ -52,8 +52,8 @@
   <rotation name="frontPlate_1_rot" unit="deg" x="90" y="90" z="0" />
 
 
-  <position name="frontPlate_2_pos" unit="mm" x="d4 + (d1-d2)/2"  y="d5 + (d6-d5)/2 + (0.5/2)" z="0"/>
-  <rotation name="frontPlate_2_rot" unit="deg" x="90" y="22.5" z="0" />
+  <position name="frontPlate_2_pos" unit="mm" x="d4"  y="d5" z="0"/>
+  <rotation name="frontPlate_2_rot" unit="deg" x="0" y="0" z="0" />
 
 
 
