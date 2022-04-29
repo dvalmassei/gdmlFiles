@@ -104,7 +104,11 @@
   <box lunit="mm" name="DetBox" x="800" y="800" z="800"/>
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
-  <box lunit="mm" name="AlBox" x="400" y="400" z="63.5"/>
+
+  <polycone aunit="deg" startphi="0" deltaphi="360" lunit="mm" name="solid_DSwindow_flange">
+              <zplane rmin="1011.428" rmax="1397.0" z="0"/>
+              <zplane rmin="1067.562" rmax="1397.0" z="63.5"/><!-- These numbers are from DK's design -->
+  </polycone>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
@@ -145,17 +149,18 @@
   </volume>
 
 
-  <volume name="AlBox_vol" >
-   <materialref ref="Al_mat" />
-   <solidref ref="AlBox" />
+  <volume name="logic_DSwindow_flange">
+   <materialref ref="Al_mat"/>
+   <solidref ref="solid_DSwindow_flange"/>
+   <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
 
   <volume name="DetBox_vol" >
    <materialref ref="vacuum" />
    <solidref ref="DetBox" />
 
-   <physvol name="AlBox_phys">
-    <volumeref ref="AlBox_vol" />
+   <physvol name="DSwindow_flange_phys">
+    <volumeref ref="logic_DSwindow_flange" />
     <positionref ref="AlBox_pos" />
     <rotationref ref="AlBox_rot" />
    </physvol>
