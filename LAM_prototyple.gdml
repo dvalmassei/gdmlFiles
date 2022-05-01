@@ -9,13 +9,13 @@
  <define>
   <constant name="offset" value="80" />
 
-  <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="300" />
+  <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="63.5 + 150 + 10 + 50" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="AlBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="10" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="PbBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="63.5+10.2 + 150/2" />
+  <position name="PbBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="63.5/2 + 10 + 150/2" />
   <rotation name="PbBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
