@@ -227,12 +227,13 @@
     <materialref ref="vacuum" />
     <solidref ref="WorldBox" />
 
-
+<!--
     <physvol name="DSwindow_flange_phys">
      <volumeref ref="logic_DSwindow_flange" />
      <positionref ref="AlBox_pos" />
      <rotationref ref="AlBox_rot" />
     </physvol>
+-->
 
     <physvol name="Collar2_OuterRing_phys">
      <volumeref ref="logic_Collar2_OuterRing" />
