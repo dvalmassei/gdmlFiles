@@ -15,7 +15,7 @@
   <position name="AlBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="10" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="PbBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="10 + 150/2" />
+  <position name="PbBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="150/2" />
   <rotation name="PbBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
