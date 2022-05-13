@@ -258,8 +258,8 @@
 
     <physvol name="DetBox2_phys" >
       <volumeref ref="DetBox2_vol" />
-      <positionref ref="DetBox_pos"/>
-      <rotationref ref="DetBox_rot"/>
+      <positionref ref="DetBox2_pos"/>
+      <rotationref ref="DetBox2_rot"/>
     </physvol>
 
   </volume>
