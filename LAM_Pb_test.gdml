@@ -232,20 +232,20 @@
    <materialref ref="vacuum" />
    <solidref ref="DetBox2" />
 
-<!--
+
    <physvol name="DetBox_phys" >
      <volumeref ref="DetBox_vol" />
      <positionref ref="DetBox_pos"/>
      <rotationref ref="DetBox_rot"/>
    </physvol>
--->
 
+<!--
    <physvol name="Collar2_OuterRing_phys">
     <volumeref ref="logic_Collar2_OuterRing" />
     <positionref ref="PbBox_pos" />
     <rotationref ref="PbBox_rot" />
    </physvol>
-
+-->
   </volume>
 
 
