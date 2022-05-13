@@ -108,9 +108,9 @@
  </materials>
 
  <solids>
-  <box lunit="mm" name="WorldBox" x="5000" y="5000" z="5000"/>
+  <box lunit="mm" name="WorldBox" x="7000" y="7000" z="7000"/>
   <box lunit="mm" name="DetBox" x="500" y="500" z="30"/>
-  <box lunit="mm" name="DetBox2" x="4000" y="4500" z="4000"/>
+  <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
