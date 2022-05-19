@@ -20,10 +20,10 @@
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
 
-  <position name="pmt1_window_pos" unit="mm" x="d1 +3.0/2" y="10/2" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="d1 +3.0/2" y="d6/2" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="d1 +3 +3e-06/2.0" y="10/2" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="d1 +3 +3e-06/2.0" y="d6/2" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
 
 
@@ -119,7 +119,7 @@
  </materials>
 
  <solids>
-   <box lunit="mm" name="WorldBox" x="1500" y="1500" z="1500"/>
+   <box lunit="mm" name="WorldBox" x="3000" y="1500" z="1500"/>
    <box lunit="mm" name="DetBox" x="1000" y="1000" z="1000"/>
 
 
