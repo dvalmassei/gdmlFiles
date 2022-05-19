@@ -144,7 +144,7 @@
 
 
    <!--NOTE: left and right plates are the same shape, so let's only do this once-->
-   <box name="rightPlate_box" x="d1" y="10" z="0.5" lunit= "mm"/>
+   <box name="rightPlate_box" x="d1" y="d6" z="0.5" lunit= "mm"/>
 
 
    <arb8 name="rightPlate_subtract" v1x="0" v1y="0" v2x="d1-d2" v2y="0" v3x="d1-d2" v3y="-(d6-d5)"
