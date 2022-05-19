@@ -39,7 +39,7 @@
 
 
   <position name="rightPlate_box_pos" unit="mm" x="0" y="0" z="0"/>
-  <position name="rightPlate_subtract_pos" unit="mm" x="(d1/2)-(d1-d2)" y="10" z="0"/>
+  <position name="rightPlate_subtract_pos" unit="mm" x="(d1/2)-(d1-d2)" y="d5" z="0"/>
 
   <position name="rightPlate_tot_pos" unit="mm" x="d1/2" y="d6/2" z="-(10/2 + 0.5/2)"/>
   <rotation name="rightPlate_tot_rot" unit="deg" x="0" y="180" z="0" />
