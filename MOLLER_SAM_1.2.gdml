@@ -12,7 +12,7 @@
    <constant name="d4" value="10.59" />
    <constant name="d5" value="6.5" />
    <constant name="d6" value="19.5" />
-   <constant name="zAngle" value="|%zangle%|" />
+   <constant name="zAngle" value="%zangle%" />
 
 
 
