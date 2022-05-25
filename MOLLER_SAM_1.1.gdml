@@ -7,7 +7,7 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
    <constant name="d1" value="257.28" />
-   <constant name="d2" value="213.78" />
+   <constant name="d2" value="211" />
    <constant name="d4" value="10.59" />
    <constant name="d5" value="6.5" />
    <constant name="d6" value="19.5" />
