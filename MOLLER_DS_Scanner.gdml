@@ -7,10 +7,10 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
    <constant name="d1" value="500" />
-   <constant name="d2" value="452" />
-   <constant name="d4" value="10.5" />
-   <constant name="d5" value="10.5" />
-   <constant name="d6" value="24.8" />
+   <constant name="d2" value="442" />
+   <constant name="d4" value="20.5" />
+   <constant name="d5" value="20.5" />
+   <constant name="d6" value="34.8" />
 
 
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
@@ -126,9 +126,9 @@
    <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
    <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
-   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="10" v3x="10" v3y="10"
-      v4x="20" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10" v7x="10" v7y="10"
-      v8x="20" v8y="0" dz="10/2" lunit= "mm"/>
+   <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="20" v3x="20" v3y="20"
+      v4x="40" v4y="0" v5x="0" v5y="0" v6x="0" v6y="20" v7x="20" v7y="20"
+      v8x="40" v8y="0" dz="10/2" lunit= "mm"/>
 
    <!--Light Guide Plates-->
 
