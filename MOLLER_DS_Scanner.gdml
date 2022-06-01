@@ -168,13 +168,11 @@
      <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
    </opticalsurface>
 
-<!--
-
+   <!--Cathode-->
    <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
      <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
    </opticalsurface>
--->
 
 
 
@@ -349,12 +347,11 @@
       <volumeref ref="rightPlate_bool_vol"/>
     </skinsurface>
 
-<!--
     <bordersurface name="bordersrf1" surfaceproperty="surf2" >
       <physvolref ref="pmt1_window_phys"/>
       <physvolref ref="pmt1_cathode_phys"/>
     </bordersurface>
--->
+
   </structure>
 
 
