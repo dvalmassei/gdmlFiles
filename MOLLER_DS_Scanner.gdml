@@ -7,10 +7,10 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
    <constant name="d1" value="500" />
-   <constant name="d2" value="456" />
+   <constant name="d2" value="452" />
    <constant name="d4" value="10.5" />
    <constant name="d5" value="10.5" />
-   <constant name="d6" value="23.5" />
+   <constant name="d6" value="24.8" />
 
 
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
@@ -168,12 +168,13 @@
      <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
    </opticalsurface>
 
-   <!--Cathode-->
+<!--
+
    <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
      <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
    </opticalsurface>
-
+-->
 
 
 
