@@ -4,6 +4,11 @@
   <!ENTITY matrices SYSTEM "matrices.xml">
 ]>
 
+<!--This is the verison I've used most recently-->
+<!--All dimensions, except quartz, are defined by constants d1-6. Simply edit these-->
+<!--To edit rotation, change the z-coord of DetBox_rot (negative mimic beam angles)-->
+
+
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
    <constant name="d1" value="800" />
