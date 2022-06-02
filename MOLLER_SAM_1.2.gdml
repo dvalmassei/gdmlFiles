@@ -12,11 +12,11 @@
    <constant name="d4" value="10.59" />
    <constant name="d5" value="6.5" />
    <constant name="d6" value="19.5" />
-   <constant name="zAngle" value="%zangle%" />
+   <constant name="zAngle" value="-0.46" />
 
 
 
-  <position name="DetBox_pos" unit="mm" x="-50.0" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="-257.0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="90" y="0" z="zAngle" />
 
   <position name="quartz_pos" unit="mm" x="0.5/2" y="0.5/2" z="0" />
@@ -253,7 +253,7 @@
       </physvol>
 
 
-      <!--Light Guide Assembly-->
+      <!--Light Guide Assembly
       <physvol name="botPlate_phys">
         <volumeref ref="botPlate_vol" />
         <positionref ref="botPlate_pos" />
@@ -307,6 +307,8 @@
        <positionref ref="pmt1_cathode_pos" />
        <rotationref ref="pmt1_cathode_rot" />
       </physvol>
+
+    -->
 
 
     </volume>
