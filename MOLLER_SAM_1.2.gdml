@@ -295,7 +295,7 @@
         <positionref ref="frontPlate_2_pos" />
         <rotationref ref="frontPlate_2_rot" />
       </physvol>
-
+    -->
 
       <physvol name="pmt1_window_phys">
        <volumeref ref="pmt_window_vol" />
@@ -308,7 +308,7 @@
        <rotationref ref="pmt1_cathode_rot" />
       </physvol>
 
-    -->
+
 
 
     </volume>
