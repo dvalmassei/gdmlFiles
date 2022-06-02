@@ -253,7 +253,7 @@
       </physvol>
 
 
-      <!--Light Guide Assembly
+      <!--Light Guide Assembly-->
       <physvol name="botPlate_phys">
         <volumeref ref="botPlate_vol" />
         <positionref ref="botPlate_pos" />
@@ -295,7 +295,7 @@
         <positionref ref="frontPlate_2_pos" />
         <rotationref ref="frontPlate_2_rot" />
       </physvol>
-    -->
+
 
       <physvol name="pmt1_window_phys">
        <volumeref ref="pmt_window_vol" />
