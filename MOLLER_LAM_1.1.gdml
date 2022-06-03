@@ -7,13 +7,13 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
-  <constant name="offset" value="103" />
+  <constant name="offset" value="0" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="10 + 63.5 + 150 + 20/2" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="DetBox2_rot" unit="deg" x="-6" y="0" z="0" />
+  <rotation name="DetBox2_rot" unit="deg" x="-4.5" y="0" z="0" />
 
   <position name="AlBox_pos" unit="mm" x="0" y="-1011.428 - offset" z="10" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
