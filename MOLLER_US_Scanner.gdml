@@ -12,10 +12,10 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
    <constant name="d1" value="800" />
-   <constant name="d2" value="733.7" />
+   <constant name="d2" value="733.6" />
    <constant name="d4" value="10.5" />
    <constant name="d5" value="20.5" />
-   <constant name="d6" value="42.5" />
+   <constant name="d6" value="42.2" />
 
 
   <position name="DetBox_pos" unit="mm" x="-6.0" y="0" z="0" />
