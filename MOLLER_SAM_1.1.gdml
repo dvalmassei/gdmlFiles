@@ -128,8 +128,8 @@
    <box lunit="mm" name="DetBox" x="1000" y="1000" z="1000"/>
 
 
-   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
-   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_window" rmin="0" rmax="25.4" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <tube name="solid_pmt_cathode" rmin="0" rmax="25.4" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
    <arb8 name="quartz" v1x="0" v1y="0" v2x="0" v2y="6" v3x="10" v3y="6"
       v4x="16" v4y="0" v5x="0" v5y="0" v6x="0" v6y="6" v7x="10" v7y="6"
