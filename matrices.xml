@@ -5259,7 +5259,7 @@
 7.75340582427197*eV 0
 7.75389038185113*eV 0"/>
 
-<matrix name="R375_Surf_Efficiency" coldim="2" values"
+<matrix name="R375_Surf_Efficiency" coldim="2" values="
   1.88*eV 0.24962900000000002
   1.91*eV 0.247014
   1.94*eV 0.247014
