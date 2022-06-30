@@ -115,8 +115,8 @@
   <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
   <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
 
-  <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
-  <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+  <tube name="solid_pmt_window" rmin="0" rmax="25.4" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+  <tube name="solid_pmt_cathode" rmin="0" rmax="25.4" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
 
   <polycone aunit="deg" startphi="0" deltaphi="360" lunit="mm" name="solid_DSwindow_flange">
@@ -132,7 +132,7 @@
 
   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
     <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
-    <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
+    <property name="EFFICIENCY" ref="R375_Surf_Efficiency" />
   </opticalsurface>
 
  </solids>
