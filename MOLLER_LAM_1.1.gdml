@@ -7,6 +7,7 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
+   <constant name="thickness" value="5" />
   <constant name="offset" value="60" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="10 + 63.5 + 150 + 20/2" />
@@ -29,14 +30,14 @@
   <position name="lightguide2_quartz_pos" unit="mm" x="-(180-60)" y="120" z="0" />
   <rotation name="lightguide2_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_window_pos" unit="mm" x="180-60" y="120" z="5+3.0/2.0" />
+  <position name="pmt1_window_pos" unit="mm" x="180-60" y="120" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_window_pos" unit="mm" x="-(180-60)" y="120" z="5+3.0/2.0" />
+  <position name="pmt2_window_pos" unit="mm" x="-(180-60)" y="120" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt2_window_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="180-60" y="120" z="5+3+3e-06/2.0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="180-60" y="120" z="thickness/2 +3+3e-06/2.0" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_cathode_pos" unit="mm" x="-(180-60)" y="120" z="5+3+3e-06/2.0" />
+  <position name="pmt2_cathode_pos" unit="mm" x="-(180-60)" y="120" z="thickness/2 +3+3e-06/2.0" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
   &matrices;
@@ -112,8 +113,8 @@
   <box lunit="mm" name="DetBox" x="500" y="500" z="20"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
-  <box lunit="mm" name="radiator_quartz" x="360" y="120" z="10"/>
-  <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="10"/>
+  <box lunit="mm" name="radiator_quartz" x="360" y="120" z="thickness"/>
+  <box lunit="mm" name="lightguide_quartz" x="120" y="120" z="thickness"/>
 
   <tube name="solid_pmt_window" rmin="0" rmax="25.4" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="25.4" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
