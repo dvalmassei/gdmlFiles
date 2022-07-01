@@ -25,13 +25,8 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="right_rad_cut_pos" unit="mm" x="180 - 30/2" y="0" z="10/2" />
+  <position name="right_rad_cut_pos" unit="mm" x="180 - 30/2" y="-65" z="10/2" />
   <rotation name="right_rad_cut_rot" unit="deg" x="90" y="0" z="0" />
-
-  <position name="lightguide1_quartz_pos" unit="mm" x="180-60" y="120" z="0" />
-  <rotation name="lightguide1_quartz_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="lightguide2_quartz_pos" unit="mm" x="-(180-60)" y="120" z="0" />
-  <rotation name="lightguide2_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="pmt1_window_pos" unit="mm" x="180-60" y="120" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
