@@ -25,8 +25,11 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="right_rad_cut_pos" unit="mm" x="180 - 30/2" y="130/2 - 10" z="10/2" />
+  <position name="right_rad_cut_pos" unit="mm" x="180 - 60" y="130/2 - 10" z="10/2" />
   <rotation name="right_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
+
+  <position name="left_rad_cut_pos" unit="mm" x="-(180 - 60)" y="130/2 - 10" z="10/2" />
+  <rotation name="left_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="pmt1_window_pos" unit="mm" x="180-60" y="120" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
@@ -113,15 +116,22 @@
 
   <box lunit="mm" name="radiator_quartz" x="360" y="130" z="thickness"/>
 
-  <arb8 name="radiator_cut" v1x="0" v1y="0" v2x="0" v2y="10" v3x="30" v3y="10"
-    v4x="30" v4y="0" v5x="0" v5y="10" v6x="0" v6y="10" v7x="30" v7y="10"
-    v8x="30" v8y="10" dz="10/2" lunit= "mm"/>
+  <arb8 name="radiator_cut" v1x="0" v1y="0" v2x="0" v2y="10" v3x="60" v3y="10"
+    v4x="60" v4y="0" v5x="0" v5y="10" v6x="0" v6y="10" v7x="60" v7y="10"
+    v8x="60" v8y="10" dz="10/2" lunit= "mm"/>
 
   <subtraction name="radiator_1_cut" >
     <first ref="radiator_quartz"/>
     <second ref="radiator_cut"/>
     <positionref ref="right_rad_cut_pos"/>
     <rotationref ref="right_rad_cut_rot"/>
+  </subtraction>
+
+  <subtraction name="radiator_2_cut" >
+    <first ref="radiator_2_cut"/>
+    <second ref="radiator_cut"/>
+    <positionref ref="left_rad_cut_pos"/>
+    <rotationref ref="left_rad_cut_rot"/>
   </subtraction>
 
 
