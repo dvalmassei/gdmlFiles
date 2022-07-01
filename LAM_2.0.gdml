@@ -128,7 +128,7 @@
   </subtraction>
 
   <subtraction name="radiator_2_cut" >
-    <first ref="radiator_2_cut"/>
+    <first ref="radiator_1_cut"/>
     <second ref="radiator_cut"/>
     <positionref ref="left_rad_cut_pos"/>
     <rotationref ref="left_rad_cut_rot"/>
