@@ -201,17 +201,6 @@
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
 
-   <physvol name="lightguide1_quartz_phys">
-    <volumeref ref="lightguide_quartz_vol" />
-    <positionref ref="lightguide1_quartz_pos" />
-    <rotationref ref="lightguide1_quartz_rot" />
-   </physvol>
-
-   <physvol name="lightguide2_quartz_phys">
-    <volumeref ref="lightguide_quartz_vol" />
-    <positionref ref="lightguide2_quartz_pos" />
-    <rotationref ref="lightguide2_quartz_rot" />
-   </physvol>
 
    <physvol name="pmt1_window_phys">
     <volumeref ref="pmt_window_vol" />
@@ -291,9 +280,7 @@
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
-  <skinsurface name="skinsrf2" surfaceproperty="surf1" >
-    <volumeref ref="lightguide_quartz_vol"/>
-  </skinsurface>
+
   <bordersurface name="bordersrf1" surfaceproperty="surf2" >
     <physvolref ref="pmt1_window_phys"/>
     <physvolref ref="pmt1_cathode_phys"/>
