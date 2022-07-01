@@ -12,7 +12,7 @@
  <define>
    <constant name="d1" value="600" />
    <constant name="d2" value="523.5" />
-   <constant name="d4" value="20.5" />
+   <constant name="d4" value="10.5" />
    <constant name="d5" value="20.5" />
    <constant name="d6" value="42" />
 
