@@ -184,12 +184,12 @@
     v4x="d1" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10" v7x="d1" v7y="10"
     v8x="d1" v8y="0" dz="0.7/2" lunit= "mm"/>
 
-  <addition name="lightguide_outter" >
+  <union name="lightguide_outter" >
     <first ref="lightguide_outter_1"/>
     <second ref="lightguide_outter_2"/>
     <position unit="mm" x="0" y="0" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
-  </addition>
+  </union>
 
   <subtraction name="lightguide_inner" >
     <first ref="lightguide_outter"/>
