@@ -53,10 +53,10 @@
 
 
   <position name="rightOutterPlate_pos" unit="mm" x="180" y="65" z="thickness/2" />
-  <rotation name="rightOutterPlate_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="rightOutterPlate_rot" unit="deg" x="90" y="0" z="90" />
 
   <position name="rightInnerPlate_pos" unit="mm" x="180 - 60" y="65" z="thickness/2" />
-  <rotation name="rightInnerPlate_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="0" z="90" />
 
   <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65" z="thickness/2" />
   <rotation name="rightRefPlate_rot" unit="deg" x="0" y="90" z="0" />
@@ -144,7 +144,7 @@
 
  <solids>
   <box lunit="mm" name="WorldBox" x="7000" y="7000" z="7000"/>
-  <box lunit="mm" name="DetBox" x="500" y="500" z="20"/>
+  <box lunit="mm" name="DetBox" x="500" y="500" z="200"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
   <box lunit="mm" name="radiator_quartz" x="360" y="130" z="thickness"/>
@@ -304,12 +304,13 @@
    <materialref ref="vacuum" />
    <solidref ref="DetBox" />
 
+<!--
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
     <positionref ref="radiator_quartz_pos" />
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
-
+-->
 
 
    <!--Right Light Guide Assembly-->
