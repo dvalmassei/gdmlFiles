@@ -228,6 +228,10 @@
     <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
   </opticalsurface>
 
+  <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+    <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
+  </opticalsurface>
+
  </solids>
 
  <structure>
@@ -449,6 +453,32 @@
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
+
+
+
+  <skinsurface name="rightBotPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightBotPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightOutterPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightOutterPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightInnerPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightInnerPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightTopPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightTopPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightRefPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightRefPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightBackPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="rightBackPlate_vol"/>
+  </skinsurface>
 
 
  </structure>
