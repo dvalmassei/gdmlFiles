@@ -456,28 +456,28 @@
 
 
 
-  <skinsurface name="rightBotPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightBotPlate_vol"/>
+  <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="botPlate_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightOutterPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightOutterPlate_vol"/>
+  <skinsurface name="outterPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="outterPlate_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightInnerPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightInnerPlate_vol"/>
+  <skinsurface name="innerPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="innerPlate_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightTopPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightTopPlate_vol"/>
+  <skinsurface name="topPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="topPlate_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightRefPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightRefPlate_vol"/>
+  <skinsurface name="refPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="refPlate_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightBackPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="rightBackPlate_vol"/>
+  <skinsurface name="backPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="backPlate_vol"/>
   </skinsurface>
 
 
