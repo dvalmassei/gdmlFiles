@@ -68,8 +68,8 @@
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
 
-  <position name="rightBotPlate_pos" unit="mm" x="180 - 60" y="65" z="-(thickness + d3/2)" />
-  <rotation name="rightBotPlate_rot" unit="deg" x="90" y="90" z="0" />
+  <position name="rightBotPlate_pos" unit="mm" x="180 - 60/2" y="65" z="(thickness + d3/2)" />
+  <rotation name="rightBotPlate_rot" unit="deg" x="90" y="0" z="90" />
 
 
 
@@ -347,14 +347,13 @@
     <rotationref ref="rightBackPlate_rot" />
    </physvol>
 
-<!--
    <physvol name="rightBotPlate_phys">
     <volumeref ref="botPlate_vol" />
     <positionref ref="rightBotPlate_pos" />
     <rotationref ref="rightBotPlate_rot" />
    </physvol>
 
--->
+
 
 
    <!--Left Light Guide Assembly-->
