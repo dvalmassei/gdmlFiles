@@ -58,7 +58,7 @@
   <position name="rightInnerPlate_pos" unit="mm" x="180 - 60 - 0.5/2" y="65 - d4" z="-(thickness/2)" />
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65-d4" z="-thickness/2" />
+  <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65-d4" z="-thickness/2 - 0.5/2" />
   <rotation name="rightRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
   <position name="rightTopPlate_pos" unit="mm" x="180 - 60/2" y="65 + d6 + 0.5/2" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
@@ -80,7 +80,7 @@
   <position name="leftInnerPlate_pos" unit="mm" x="-(180 - 60 - 0.5/2)" y="65 - d4" z="-(thickness/2)" />
   <rotation name="leftInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="leftRefPlate_pos" unit="mm" x="-(180 - 60/2)" y="65-d4" z="-thickness/2" />
+  <position name="leftRefPlate_pos" unit="mm" x="-(180 - 60/2)" y="65-d4" z="-thickness/2 - 0.5/2" />
   <rotation name="leftRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
   <position name="leftTopPlate_pos" unit="mm" x="-(180 - 60/2)" y="65 + d6 + 0.5/2" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
