@@ -304,13 +304,13 @@
    <materialref ref="vacuum" />
    <solidref ref="DetBox" />
 
-<!--
+
    <physvol name="radiator_quartz_phys">
     <volumeref ref="radiator_quartz_vol" />
     <positionref ref="radiator_quartz_pos" />
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
--->
+
 
 
    <!--Right Light Guide Assembly-->
