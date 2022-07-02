@@ -59,7 +59,7 @@
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
   <position name="rightRefPlate_pos" unit="mm" x="180 - 60" y="65-d4" z="-thickness/2" />
-  <rotation name="rightRefPlate_rot" unit="deg" x="90" y="0" z="90" />
+  <rotation name="rightRefPlate_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="rightBackPlate_pos" unit="mm" x="180 - 60/2" y="65 + 10/2" z="-thickness/2" />
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="90" z="0" />
@@ -200,7 +200,7 @@
 
   <arb8 name="lightguide_ref_plate" v1x="0 - 0.5/2" v1y="0" v2x="-((d1+d3)-d2) - 0.5/2" v2y="d4 + d6" v3x="-((d1+d3)-d2) + 0.5/2" v3y="d4 + d6"
     v4x="0 + 0.5/2" v4y="0" v5x="0 -0.5/2" v5y="0" v6x="-((d1+d3)-d2) - 0.5/2" v6y="d4 + d6" v7x="-((d1+d3)-d2) + 0.5/2" v7y="d4 + d6"
-    v8x="0 + 0.5/2" v8y="0" dz="60" lunit= "mm"/>
+    v8x="0 + 0.5/2" v8y="0" dz="60/2" lunit= "mm"/>
 
   <box lunit="mm" name="lightguide_top" x="d2" y="60" z="0.5"/>
 
