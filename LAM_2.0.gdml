@@ -61,7 +61,7 @@
   <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65-d4" z="-thickness/2" />
   <rotation name="rightRefPlate_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="rightBackPlate_pos" unit="mm" x="180 - 60/2" y="65 + 10/2" z="-thickness/2" />
+  <position name="rightBackPlate_pos" unit="mm" x="180 - 60/2" y="65 + 10/2" z="thickness/2" />
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="rightTopPlate_pos" unit="mm" x="180 - 60/2" y="65 + d4 + d6" z="0" />
@@ -331,13 +331,14 @@
     <positionref ref="rightRefPlate_pos" />
     <rotationref ref="rightRefPlate_rot" />
    </physvol>
-<!--
 
    <physvol name="rightTopPlate_phys">
     <volumeref ref="topPlate_vol" />
     <positionref ref="rightTopPlate_pos" />
     <rotationref ref="rightTopPlate_rot" />
    </physvol>
+
+<!--
 
    <physvol name="rightBackPlate_phys">
     <volumeref ref="backPlate_vol" />
