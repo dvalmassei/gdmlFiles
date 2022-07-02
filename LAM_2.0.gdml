@@ -59,7 +59,7 @@
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
   <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65-d4" z="-thickness/2 - 0.5/2" />
-  <rotation name="rightRefPlate_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="rightRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
   <position name="rightTopPlate_pos" unit="mm" x="180 - 60/2" y="65 + d6" z="d2/2 - d3/2" />
   <rotation name="rightTopPlate_rot" unit="deg" x="90" y="0" z="90" />
