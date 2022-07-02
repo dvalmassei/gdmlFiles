@@ -446,17 +446,6 @@
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
 
-  <bordersurface name="bordersrf1" surfaceproperty="surf2" >
-    <physvolref ref="pmt1_window_phys"/>
-    <physvolref ref="pmt1_cathode_phys"/>
-  </bordersurface>
-  <bordersurface name="bordersrf2" surfaceproperty="surf2" >
-    <physvolref ref="pmt2_window_phys"/>
-    <physvolref ref="pmt2_cathode_phys"/>
-  </bordersurface>
-
-
-
   <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="botPlate_vol"/>
   </skinsurface>
@@ -480,6 +469,19 @@
   <skinsurface name="backPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="backPlate_vol"/>
   </skinsurface>
+
+  <bordersurface name="bordersrf1" surfaceproperty="surf2" >
+    <physvolref ref="pmt1_window_phys"/>
+    <physvolref ref="pmt1_cathode_phys"/>
+  </bordersurface>
+  <bordersurface name="bordersrf2" surfaceproperty="surf2" >
+    <physvolref ref="pmt2_window_phys"/>
+    <physvolref ref="pmt2_cathode_phys"/>
+  </bordersurface>
+
+
+
+
 
 
  </structure>
