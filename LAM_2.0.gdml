@@ -67,9 +67,31 @@
   <position name="rightBackPlate_pos" unit="mm" x="180 - 60/2" y="65 - d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
-
   <position name="rightBotPlate_pos" unit="mm" x="180 - 60/2" y="65" z="thickness/2 + d3/2" />
   <rotation name="rightBotPlate_rot" unit="deg" x="90" y="0" z="90" />
+
+
+
+
+
+  <position name="leftOutterPlate_pos" unit="mm" x="-(180 + 0.5/2)" y="65 - d4" z="-(thickness/2)" />
+  <rotation name="leftOutterPlate_rot" unit="deg" x="90" y="90" z="90" />
+
+  <position name="leftInnerPlate_pos" unit="mm" x="-(180 - 60 - 0.5/2)" y="65 - d4" z="-(thickness/2)" />
+  <rotation name="leftInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
+
+  <position name="leftRefPlate_pos" unit="mm" x="-(180 - 60/2)" y="65-d4" z="-thickness/2 - 0.5/2" />
+  <rotation name="leftRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
+
+  <position name="leftTopPlate_pos" unit="mm" x="-(180 - 60/2)" y="65 + d6" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <rotation name="leftTopPlate_rot" unit="deg" x="90" y="0" z="90" />
+
+  <position name="leftBackPlate_pos" unit="mm" x="-(180 - 60/2)" y="65 - d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
+  <rotation name="leftBackPlate_rot" unit="deg" x="0" y="0" z="90" />
+
+  <position name="leftBotPlate_pos" unit="mm" x="-(180 - 60/2)" y="65" z="thickness/2 + d3/2" />
+  <rotation name="leftBotPlate_rot" unit="deg" x="90" y="0" z="90" />
+
 
 
 
@@ -356,10 +378,43 @@
     <rotationref ref="rightBotPlate_rot" />
    </physvol>
 
-
-
-
    <!--Left Light Guide Assembly-->
+
+   <physvol name="leftOutterPlate_phys">
+    <volumeref ref="outterPlate_vol" />
+    <positionref ref="leftOutterPlate_pos" />
+    <rotationref ref="leftOutterPlate_rot" />
+   </physvol>
+
+   <physvol name="leftInnerPlate_phys">
+    <volumeref ref="innerPlate_vol" />
+    <positionref ref="leftInnerPlate_pos" />
+    <rotationref ref="leftInnerPlate_rot" />
+   </physvol>
+
+   <physvol name="leftRefPlate_phys">
+    <volumeref ref="refPlate_vol" />
+    <positionref ref="leftRefPlate_pos" />
+    <rotationref ref="leftRefPlate_rot" />
+   </physvol>
+
+   <physvol name="leftTopPlate_phys">
+    <volumeref ref="topPlate_vol" />
+    <positionref ref="leftTopPlate_pos" />
+    <rotationref ref="leftTopPlate_rot" />
+   </physvol>
+
+   <physvol name="leftBackPlate_phys">
+    <volumeref ref="backPlate_vol" />
+    <positionref ref="leftBackPlate_pos" />
+    <rotationref ref="leftBackPlate_rot" />
+   </physvol>
+
+   <physvol name="leftBotPlate_phys">
+    <volumeref ref="botPlate_vol" />
+    <positionref ref="leftBotPlate_pos" />
+    <rotationref ref="leftBotPlate_rot" />
+   </physvol>
 
 
 
