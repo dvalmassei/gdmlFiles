@@ -52,10 +52,10 @@
 
 
 
-  <position name="rightOutterPlate_pos" unit="mm" x="180 + 0.5/2" y="65 - d4" z="-(thickness/2)" />
+  <position name="rightOutterPlate_pos" unit="mm" x="180 + 0.5/2" y="65 - d4" z="-(thickness/2 + 0.5/2)" />
   <rotation name="rightOutterPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="rightInnerPlate_pos" unit="mm" x="180 - 60 - 0.5/2" y="65 - d4" z="-(thickness/2)" />
+  <position name="rightInnerPlate_pos" unit="mm" x="180 - 60 - 0.5/2" y="65 - d4" z="-(thickness/2 + 0.5/2)" />
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
   <position name="rightRefPlate_pos" unit="mm" x="180 - 60/2" y="65-d4" z="-thickness/2 - 0.5/2" />
