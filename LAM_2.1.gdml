@@ -271,7 +271,7 @@
   </subtraction>
 
   <box lunit="mm" name="backPlate" x="360" y="120" z="0.5"/>
-  <box lunit="mm" name="topPlate" x="thickness" y="360 - (2*60)" z="0.5"/>
+  <box lunit="mm" name="topPlate" x="thickness" y="360 - (2*60) - 1" z="0.5"/>
   <box lunit="mm" name="botPlate" x="thickness" y="360" z="0.5"/>
   <box lunit="mm" name="leftPlate" x="thickness" y="120" z="0.5"/>
   <box lunit="mm" name="rightPlate" x="thickness" y="120" z="0.5"/>
@@ -389,6 +389,11 @@
   <volume name="enclosure_rightPlate_vol">
     <materialref ref="Al_mat"/>
     <solidref ref="rightPlate"/>
+  </volume>
+
+  <volume name="enclosure_leftPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="leftPlate"/>
   </volume>
 
   <volume name="enclosure_botPlate_vol">
