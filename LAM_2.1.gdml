@@ -95,10 +95,10 @@
 
 
 
-  <position name="frontPlate_pos" unit="mm" x="0" y="0" z="thickness/2 + 0.5/2" />
+  <position name="frontPlate_pos" unit="mm" x="0" y="0" z="-(thickness/2 + 0.5/2)" />
   <rotation name="frontPlate_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="backPlate_pos" unit="mm" x="0" y="0" z="-(thickness/2 + 0.5/2)" />
+  <position name="backPlate_pos" unit="mm" x="0" y="0" z="thickness/2 + 0.5/2" />
   <rotation name="backPlate_rot" unit="radian" x="0" y="0" z="0" />
 
 
