@@ -102,16 +102,16 @@
   <rotation name="backPlate_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="topPlate_pos" unit="mm" x="0" y="65 + 0.7/2" z="0" />
-  <rotation name="topPlate_rot" unit="radian" x="0" y="0" z="90" />
+  <rotation name="topPlate_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="botPlate_pos" unit="mm" x="0" y="-(65 + 0.7/2)" z="0" />
-  <rotation name="botPlate_rot" unit="radian" x="0" y="0" z="90" />
+  <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="rightPlate_pos" unit="mm" x="180 + 0.7/2" y="0" z="0" />
-  <rotation name="rightPlate_rot" unit="radian" x="90" y="0" z="0" />
+  <rotation name="rightPlate_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="leftPlate_pos" unit="mm" x="-(180 + 0.7/2)" y="0" z="0" />
-  <rotation name="leftPlate_rot" unit="radian" x="90" y="0" z="0" />
+  <rotation name="leftPlate_rot" unit="deg" x="0" y="90" z="0" />
 
 
 
