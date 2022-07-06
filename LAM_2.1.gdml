@@ -101,6 +101,18 @@
   <position name="backPlate_pos" unit="mm" x="0" y="-5" z="thickness/2 + 0.7/2" />
   <rotation name="backPlate_rot" unit="radian" x="0" y="0" z="0" />
 
+  <position name="topPlate_pos" unit="mm" x="0" y="65 + 0.7/2" z="0" />
+  <rotation name="topPlate_rot" unit="radian" x="0" y="0" z="90" />
+
+  <position name="botPlate_pos" unit="mm" x="0" y="-(65 + 0.7/2)" z="0" />
+  <rotation name="botPlate_rot" unit="radian" x="0" y="0" z="90" />
+
+  <position name="botPlate_pos" unit="mm" x="180 + 0.7/2" y="0" z="0" />
+  <rotation name="botPlate_rot" unit="radian" x="90" y="0" z="0" />
+
+  <position name="botPlate_pos" unit="mm" x="-(180 + 0.7/2)" y="0" z="0" />
+  <rotation name="botPlate_rot" unit="radian" x="90" y="0" z="0" />
+
 
 
   &matrices;
@@ -369,6 +381,26 @@
     <solidref ref="frontPlate"/>
   </volume>
 
+  <volume name="enclosure_topPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="topPlate"/>
+  </volume>
+
+  <volume name="enclosure_rightPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="rightPlate"/>
+  </volume>
+
+  <volume name="enclosure_botPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="botPlate"/>
+  </volume>
+
+  <volume name="enclosure_topPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="topPlate"/>
+  </volume>
+
 
 
 
@@ -474,6 +506,30 @@
     <volumeref ref="enclosure_frontPlate_vol" />
     <positionref ref="frontPlate_pos" />
     <rotationref ref="frontPlate_rot" />
+   </physvol>
+
+   <physvol name="enclosure_botPlate_phys">
+    <volumeref ref="enclosure_botPlate_vol" />
+    <positionref ref="botPlate_pos" />
+    <rotationref ref="botPlate_rot" />
+   </physvol>
+
+   <physvol name="enclosure_topPlate_phys">
+    <volumeref ref="enclosure_topPlate_vol" />
+    <positionref ref="topPlate_pos" />
+    <rotationref ref="topPlate_rot" />
+   </physvol>
+
+   <physvol name="enclosure_leftPlate_phys">
+    <volumeref ref="enclosure_leftPlate_vol" />
+    <positionref ref="leftPlate_pos" />
+    <rotationref ref="leftPlate_rot" />
+   </physvol>
+
+   <physvol name="enclosure_rightPlate_phys">
+    <volumeref ref="enclosure_rightPlate_vol" />
+    <positionref ref="rightPlate_pos" />
+    <rotationref ref="rightPlate_rot" />
    </physvol>
 
 
