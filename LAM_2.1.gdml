@@ -220,11 +220,6 @@
 
   <box lunit="mm" name="lightguide_outter_2" x="d3" y="d6" z="0.5"/>
 
-<!---
-  <arb8 name="lightguide_outter_2" v1x="d1" v1y="d4" v2x="d1" v2y="d4 + d6" v3x="d1 + d3" v3y="d4 + d6"
-    v4x="d1 + d3" v4y="d4" v5x="d1" v5y="d4" v6x="d1" v6y="d4 + d6" v7x="d1 + d3" v7y="d4"
-    v8x="d1" v8y="d4" dz="0.5/2" lunit= "mm"/>
--->
   <arb8 name="lightguide_inner_sub" v1x="-0.25" v1y="0" v2x="-0.25" v2y="10 + 0.25" v3x="d1 - 0.25" v3y="10 + 0.25"
     v4x="d1-0.25" v4y="0" v5x="-.25" v5y="0" v6x="-0.25" v6y="10 + 0.25" v7x="d1-0.25" v7y="10 + 0.25"
     v8x="d1-0.25" v8y="0" dz="0.7/2" lunit= "mm"/>
