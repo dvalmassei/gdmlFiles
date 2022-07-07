@@ -217,7 +217,6 @@
     v4x="d1" v4y="0" v5x="0" v5y="0" v6x="(d1+d3)-d2" v6y="d4 + d6" v7x="d1" v7y="d4 + d6"
     v8x="d1" v8y="0" dz="0.5/2" lunit= "mm"/>
 
-
   <box lunit="mm" name="lightguide_outter_2" x="d3" y="d6" z="0.5"/>
 
   <arb8 name="lightguide_inner_sub" v1x="-0.25" v1y="0" v2x="-0.25" v2y="10 + 0.25" v3x="d1 - 0.25" v3y="10 + 0.25"
@@ -247,7 +246,6 @@
   <box lunit="mm" name="lightguide_bot" x="d3" y="60" z="0.5"/>
 
   <box lunit="mm" name="lightguide_back" x="d4" y="60" z="0.5"/>
-
 
   <!--End Light Guide Pieces-->
 
