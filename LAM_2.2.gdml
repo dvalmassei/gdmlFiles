@@ -14,7 +14,7 @@
   <constant name="d4" value="10" />
   <constant name="d6" value="30" />
 
-  <constant name="chamfer" value="60" />
+  <constant name="chamfer" value="30" />
 
 
 
@@ -192,9 +192,9 @@
 
   <box lunit="mm" name="radiator_quartz" x="360" y="130" z="thickness"/>
 
-  <arb8 name="radiator_cut" v1x="0" v1y="-1" v2x="0" v2y="11" v3x="61" v3y="11"
-    v4x="61" v4y="-1" v5x="0" v5y="11" v6x="0" v6y="11" v7x="61" v7y="11"
-    v8x="61" v8y="11" dz="12/2" lunit= "mm"/>
+  <arb8 name="radiator_cut" v1x="0" v1y="-1" v2x="0" v2y="11" v3x="chamfer + 1" v3y="11"
+    v4x="chamfer + 1" v4y="-1" v5x="0" v5y="11" v6x="0" v6y="11" v7x="chamfer + 1" v7y="11"
+    v8x="chamfer + 1" v8y="11" dz="12/2" lunit= "mm"/>
 
   <subtraction name="radiator_1_cut" >
     <first ref="radiator_quartz"/>
