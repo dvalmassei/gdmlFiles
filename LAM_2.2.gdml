@@ -35,10 +35,10 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="right_rad_cut_pos" unit="mm" x="180 - chamfer - 1" y="130/2 - 10" z="0" />
+  <position name="right_rad_cut_pos" unit="mm" x="180 - chamfer" y="130/2 - 10" z="0" />
   <rotation name="right_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="left_rad_cut_pos" unit="mm" x="-180 - 1" y="130/2 - 10" z="0" />
+  <position name="left_rad_cut_pos" unit="mm" x="-180 - 1 " y="130/2 - 10" z="0" />
   <rotation name="left_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="pmt1_window_pos" unit="mm" x="180-chamfer/2" y="130/2 + d6/2" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
@@ -293,8 +293,8 @@
   </opticalsurface>
 
   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
-    <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
     <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
+    <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
   </opticalsurface>
 
 
@@ -651,7 +651,7 @@
   </skinsurface>
 
 
-<!--
+
   <bordersurface name="bordersrf1" surfaceproperty="surf2" >
     <physvolref ref="pmt1_window_phys"/>
     <physvolref ref="pmt1_cathode_phys"/>
@@ -660,7 +660,7 @@
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
--->
+
 
 
 
