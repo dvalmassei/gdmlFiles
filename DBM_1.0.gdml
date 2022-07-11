@@ -17,7 +17,7 @@
   <position name="pmt1_window_pos" unit="mm" x="0" y="0" z="100 + 3.0/2.0" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="90" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="0" y="0" z="100  3.0 + 3e-06/2.0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="0" y="0" z="100 + 3.0 + 3e-06/2.0" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="90" />
 
 
@@ -90,8 +90,8 @@
  </materials>
 
  <solids>
-  <box lunit="mm" name="WorldBox" x="5000" y="5000" z="5000"/>
-  <box lunit="mm" name="DetBox" x="500" y="500" z="30"/>
+  <box lunit="mm" name="WorldBox" x="1000" y="1000" z="1000"/>
+  <box lunit="mm" name="DetBox" x="500" y="500" z="100"/>
   <box lunit="mm" name="radiator_quartz" x="100" y="76" z="10"/>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
