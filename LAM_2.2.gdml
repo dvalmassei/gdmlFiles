@@ -12,7 +12,7 @@
   <constant name="d2" value="18" />
   <constant name="d3" value="10" />
   <constant name="d4" value="10" />
-  <constant name="d6" value="30" />
+  <constant name="d6" value="30*2" />
   <constant name="chamfer" value="23*2" />
 
 
