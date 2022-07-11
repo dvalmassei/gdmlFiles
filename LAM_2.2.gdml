@@ -13,7 +13,7 @@
   <constant name="d3" value="10" />
   <constant name="d4" value="10" />
   <constant name="d6" value="30" />
-  <constant name="chamfer" value="30" />
+  <constant name="chamfer" value="23*2" />
 
 
 
@@ -656,12 +656,13 @@
     <physvolref ref="pmt1_window_phys"/>
     <physvolref ref="pmt1_cathode_phys"/>
   </bordersurface>
+<!--
   <bordersurface name="bordersrf2" surfaceproperty="surf2" >
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
 
-
+-->
 
 
 
