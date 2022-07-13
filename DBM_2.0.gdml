@@ -11,7 +11,7 @@
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="radiator_quartz_pos" unit="mm" x="-100/2" y="0" z="10/2" />
+  <position name="radiator_quartz_pos" unit="mm" x="-100/2" y="0" z="-50 + 10/2" />
   <rotation name="radiator_quartz_rot" unit="deg" x="90" y="0" z="45" />
 
   <position name="pmt1_window_pos" unit="mm" x="100/2 + 3.0/2.0 - 10/2" y="0" z="0" />
