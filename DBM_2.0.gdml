@@ -151,13 +151,13 @@
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
 
-
+<!--
    <physvol name="pmt1_window_phys">
     <volumeref ref="pmt_window_vol" />
     <positionref ref="pmt1_window_pos" />
     <rotationref ref="pmt1_window_rot" />
    </physvol>
-
+-->
    <physvol name="pmt1_cathode_phys">
     <volumeref ref="pmt_cathode_vol" />
     <positionref ref="pmt1_cathode_pos" />
