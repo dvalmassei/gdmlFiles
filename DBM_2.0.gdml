@@ -9,7 +9,7 @@
  <define>
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="-10/2" />
 
   <position name="radiator_quartz_pos" unit="mm" x="-100/2" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="deg" x="90" y="0" z="0" />
