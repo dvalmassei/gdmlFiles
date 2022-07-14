@@ -113,7 +113,7 @@
 
   <arb8 name="sidePlate_1" v1x="0" v1y="10" v2x="0" v2y="d6" v3x="d2" v3y="d6"
      v4x="d1+10" v4y="10" v5x="0" v5y="10" v6x="0" v6y="d6" v7x="d2" v7y="d6"
-     v8x="d1+10" v8y="0" dz="0.5" lunit= "mm"/>
+     v8x="d1+10" v8y="0" dz="0.5/2" lunit= "mm"/>
 
   <box lunit="mm" name="sidePlate_2" x="d1+10" y="20" z="0.5"/>
   <box lunit="mm" name="sidePlate_3" x="d1" y="10" z="0.5"/>
@@ -143,6 +143,9 @@
   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98">
   </opticalsurface>
 
+  <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+    <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
+  </opticalsurface>
 
   <!--Cathode-->
   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
@@ -218,8 +221,6 @@
     <solidref ref="WorldBox" />
 
 
-
-
     <physvol name="DetBox_phys" >
       <volumeref ref="DetBox_vol" />
       <positionref ref="DetBox_pos"/>
@@ -232,6 +233,10 @@
 
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
+  </skinsurface>
+
+  <skinsurface name="rightPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="sidePlate_5_vol"/>
   </skinsurface>
 
 <!--
