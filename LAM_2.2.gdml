@@ -51,6 +51,11 @@
   <position name="pmt2_cathode_pos" unit="mm" x="-(180-chamfer/2)" y="130/2 + d6/2" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
+  <position name="pmt1_blackPlate_pos" unit="mm" x="180-chamfer/2" y="130/2 + d6/2" z="thickness/2 +3-3e-06/2.0 + d3 + 0.5" />
+  <rotation name="pmt1_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt2_blackPlate_pos" unit="mm" x="-(180-chamfer/2)" y="130/2 + d6/2" z="thickness/2 +3-3e-06/2.0 + d3 + 0.5" />
+  <rotation name="pmt2_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
+
 
 
   <position name="rightOutterPlate_pos" unit="mm" x="180 + 0.5/2" y="65 - d4" z="-(thickness/2)" />
@@ -211,6 +216,17 @@
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+  <tube name="solid_pmt_blackPlate_1" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+  <box lunit="mm" name="solid_pmt_blackPlate_2" x="chamfer + 1" y="d6 + 1" z="1"/>
+
+  <subtraction name="solid_pmt_blackPlate" >
+    <first ref="solid_pmt_blackPlate_1"/>
+    <second ref="solid_pmt_blackPlate"/>
+    <position lunit="mm" x="0" y="0" z="0" />
+    <rotation unit="deg" x="0" y="0" z="0" />
+  </subtraction>
+
+
 
   <!--Light Guide Pieces-->
 
@@ -352,6 +368,11 @@
    <solidref ref="solid_pmt_cathode" />
    <auxiliary auxtype="SensDet" auxvalue="PhotoCathode"/>
    <auxiliary auxtype="Color" auxvalue="blue"/>
+  </volume>
+
+  <volume name="pmt_blackPlate_vol">
+    <materialref ref="Al_mat"/>
+    <solidref ref="solid_pmt_blackPlate"/>
   </volume>
 
 
@@ -552,6 +573,12 @@
     <rotationref ref="pmt1_cathode_rot" />
    </physvol>
 
+   <physvol name="pmt1_blackPlate_phys">
+    <volumeref ref="pmt_blackPlate_vol" />
+    <positionref ref="pmt1_blackPlate_pos" />
+    <rotationref ref="pmt1_blackPlate_rot" />
+   </physvol>
+
    <physvol name="pmt2_window_phys">
     <volumeref ref="pmt_window_vol" />
     <positionref ref="pmt2_window_pos" />
@@ -562,6 +589,12 @@
     <volumeref ref="pmt_cathode_vol" />
     <positionref ref="pmt2_cathode_pos" />
     <rotationref ref="pmt2_cathode_rot" />
+   </physvol>
+
+   <physvol name="pmt2_blackPlate_phys">
+    <volumeref ref="pmt_blackPlate_vol" />
+    <positionref ref="pmt2_blackPlate_pos" />
+    <rotationref ref="pmt2_blackPlate_rot" />
    </physvol>
 
   </volume>
