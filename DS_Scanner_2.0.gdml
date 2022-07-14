@@ -21,10 +21,10 @@
   <rotation name="radiator_quartz_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="leftPlate_pos" unit="mm" x="-(10/2+0.5/2)" y="0" z="0" />
-  <rotation name="leftPlate_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="leftPlate_rot" unit="deg" x="90" y="90" z="180" />
 
   <position name="rightPlate_pos" unit="mm" x="10/2 + 0.5/2" y="0" z="0" />
-  <rotation name="rightPlate_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="rightPlate_rot" unit="deg" x="90" y="90" z="180" />
 
   <position name="pmt1_window_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="0" z="0" />
