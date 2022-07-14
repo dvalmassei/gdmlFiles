@@ -106,10 +106,7 @@
   <!--Quartz-->
   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98">
   </opticalsurface>
-  <!--Aluminum-->
-  <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
-    <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
-  </opticalsurface>
+
 
   <!--Cathode-->
   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
