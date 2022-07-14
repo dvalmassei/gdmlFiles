@@ -221,7 +221,7 @@
 
   <subtraction name="solid_pmt_blackPlate" >
     <first ref="solid_pmt_blackPlate_1"/>
-    <second ref="solid_pmt_blackPlate"/>
+    <second ref="solid_pmt_blackPlate_2"/>
     <position lunit="mm" x="0" y="0" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
