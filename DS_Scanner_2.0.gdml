@@ -43,8 +43,8 @@
   <position name="rightPlate_pos" unit="mm" x="10/2 + 0.5/2" y="d1+10" z="10" />
   <rotation name="rightPlate_rot" unit="deg" x="90" y="90" z="180" />
 -->
-  <position name="pmt1_window_pos" unit="mm" x="0" y="d1 + 10" z="0" />
-  <rotation name="pmt1_window_rot" unit="deg" x="0" y="0" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="0" y="d1 + 10 + 3/2" z="d6/2 + 10" />
+  <rotation name="pmt1_window_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="pmt1_cathode_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="0" z="0" />
