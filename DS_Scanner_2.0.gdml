@@ -308,6 +308,18 @@
     <volumeref ref="sidePlate_6_vol"/>
   </skinsurface>
 
+  <skinsurface name="topPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="topPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="botPlate_vol"/>
+  </skinsurface>
+
+  <skinsurface name="refPlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="refPlate_vol"/>
+  </skinsurface>
+
 <!--
   <bordersurface name="bordersrf1" surfaceproperty="surf2" >
     <physvolref ref="pmt1_window_phys"/>
