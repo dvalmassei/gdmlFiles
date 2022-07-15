@@ -25,6 +25,17 @@
 
   <position name="rightPlate_pos" unit="mm" x="10/2 + 0.5/2" y="(d1+10)/2" z="(d6+10)/2" />
   <rotation name="rightPlate_rot" unit="deg" x="90" y="90" z="180" />
+
+  <position name="topPlate_pos" unit="mm" x="0" y="d2/2 + 10 + " z="d6 + 10" />
+  <rotation name="topPlate_rot" unit="deg" x="0" y="0" z="0" />
+
+  <position name="botPlate_pos" unit="mm" x="0" y="d1/2 + 10 + (d1-d2 + 10)" z="10" />
+  <rotation name="botPlate_rot" unit="deg" x="0" y="0" z="0" />
+
+  <position name="refPlate_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="refPlate_rot" unit="deg" x="0" y="0" z="0" />
+
+
 <!--
   <position name="leftPlate_pos" unit="mm" x="-(10/2+0.5/2)" y="d1+10" z="10" />
   <rotation name="leftPlate_rot" unit="deg" x="90" y="90" z="180" />
@@ -140,6 +151,16 @@
 
   <box lunit="mm" name="sidePlate_6" x="d1+10" y="d6+10" z="0.5"/>
 
+  <box lunit="mm" name="topPlate" x="0.5" y="d2" z="10"/>
+  <box lunit="mm" name="botPlate" x="0.5" y="d1" z="10"/>
+
+  <arb8 name="refPlate" v1x="0" v1y="0.5/2" v2x="d1-d2+10" v2y="-(d6-10) + 0.5/2" v3x="d1-d2+10" v3y="-(d6-10) - 0.5/2"
+     v4x="0" v4y="-0.5/2" v5x="0" v5y="0.5/2" v6x="d1-d2+10" v6y="-(d6-10) + 0.5/2" v7x="d1-d2+10" v7y="-(d6-10) - 0.5/2"
+     v8x="0" v8y="-0.5/2" dz="10/2" lunit= "mm"/>
+
+
+
+
 
 
 
@@ -186,6 +207,21 @@
    <solidref ref="sidePlate_6" />
   </volume>
 
+  <volume name="topPlate_vol" >
+   <materialref ref="Al_mat" />
+   <solidref ref="topPlate" />
+  </volume>
+
+  <volume name="botPlate_vol" >
+   <materialref ref="Al_mat" />
+   <solidref ref="botPlate" />
+  </volume>
+
+  <volume name="refPlate_vol" >
+   <materialref ref="Al_mat" />
+   <solidref ref="refPlate" />
+  </volume>
+
 <!--
   <volume name="pmt_window_vol" >
    <materialref ref="Quartz" />
@@ -224,6 +260,24 @@
     <volumeref ref="sidePlate_6_vol" />
     <positionref ref="rightPlate_pos" />
     <rotationref ref="rightPlate_rot" />
+   </physvol>
+
+   <physvol name="topPlate_phys">
+    <volumeref ref="topPlate_vol" />
+    <positionref ref="topPlate_pos" />
+    <rotationref ref="topPlate_rot" />
+   </physvol>
+
+   <physvol name="botPlate_phys">
+    <volumeref ref="botPlate_vol" />
+    <positionref ref="botPlate_pos" />
+    <rotationref ref="botPlate_rot" />
+   </physvol>
+
+   <physvol name="refPlate_phys">
+    <volumeref ref="refPlate_vol" />
+    <positionref ref="refPlate_pos" />
+    <rotationref ref="refPlate_rot" />
    </physvol>
 
 
