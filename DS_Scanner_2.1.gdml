@@ -18,7 +18,7 @@
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="radiator_quartz_rot" unit="deg" x="0" y="90" z="180" />
+  <rotation name="radiator_quartz_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="leftPlate_pos" unit="mm" x="-(10/2+0.5/2)" y="(d1+10)/2" z="(d6+10)/2" />
   <rotation name="leftPlate_rot" unit="deg" x="90" y="90" z="180" />
@@ -123,9 +123,9 @@
   <box lunit="mm" name="DetBox" x="100" y="1500" z="200"/>
 
 
-  <arb8 name="radiator_quartz" v1x="-10" v1y="0" v2x="10" v2y="10" v3x="20" v3y="10"
-     v4x="0" v4y="0" v5x="-10" v5y="0" v6x="10" v6y="10" v7x="20" v7y="10"
-     v8x="0" v8y="0" dz="10/2" lunit= "mm"/>
+  <arb8 name="radiator_quartz" v1x="10" v1y="0" v2x="0" v2y="10" v3x="10" v3y="10"
+     v4x="20" v4y="0" v5x="10" v5y="0" v6x="0" v6y="10" v7x="10" v7y="10"
+     v8x="20" v8y="0" dz="10/2" lunit= "mm"/>
 
   <arb8 name="sidePlate_1" v1x="0" v1y="10" v2x="0" v2y="d6" v3x="d2" v3y="d6"
      v4x="d1+10" v4y="10" v5x="0" v5y="10" v6x="0" v6y="d6" v7x="d2" v7y="d6"
