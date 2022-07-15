@@ -33,7 +33,7 @@
   <rotation name="botPlate_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="refPlate_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="refPlate_rot" unit="deg" x="0" y="0" z="90" />
+  <rotation name="refPlate_rot" unit="deg" x="0" y="90" z="0" />
 
 
 <!--
