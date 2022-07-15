@@ -32,8 +32,8 @@
   <position name="botPlate_pos" unit="mm" x="0" y="d1/2 + 10" z="10 - 0.5/2" />
   <rotation name="botPlate_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="refPlate_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="refPlate_rot" unit="deg" x="0" y="90" z="0" />
+  <position name="refPlate_pos" unit="mm" x="0" y="0" z="20 + 0.5/2" />
+  <rotation name="refPlate_rot" unit="deg" x="90" y="90" z="0" />
 
 
 <!--
