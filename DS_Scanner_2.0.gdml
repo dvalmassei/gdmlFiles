@@ -110,7 +110,6 @@
      v4x="20" v4y="0" v5x="0" v5y="0" v6x="0" v6y="10" v7x="10" v7y="10"
      v8x="20" v8y="0" dz="10/2" lunit= "mm"/>
 
-
   <arb8 name="sidePlate_1" v1x="0" v1y="10" v2x="0" v2y="d6" v3x="d2" v3y="d6"
      v4x="d1+10" v4y="10" v5x="0" v5y="10" v6x="0" v6y="d6" v7x="d2" v7y="d6"
      v8x="d1+10" v8y="0" dz="0.5/2" lunit= "mm"/>
@@ -125,6 +124,7 @@
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
+
   <union name="sidePlate_5" >
     <first ref="sidePlate_1"/>
     <second ref="sidePlate_4"/>
@@ -134,9 +134,10 @@
 
 
 
-
+<!--
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+-->
 
   <!--Optical Properties-->
   <!--Quartz-->
@@ -171,7 +172,7 @@
    <solidref ref="sidePlate_5" />
   </volume>
 
-
+<!--
   <volume name="pmt_window_vol" >
    <materialref ref="Quartz" />
    <solidref ref="solid_pmt_window" />
@@ -184,7 +185,7 @@
    <auxiliary auxtype="SensDet" auxvalue="PhotoCathode"/>
    <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
-
+-->
 
 
 
