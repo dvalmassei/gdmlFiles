@@ -9,7 +9,7 @@
  <define>
 
    <constant name="d1" value="600" />
-   <constant name="d2" value="570" />
+   <constant name="d2" value="550" />
    <constant name="d4" value="10" />
    <constant name="d5" value="6.5" />
    <constant name="d6" value="40" />
@@ -278,6 +278,22 @@
     <positionref ref="refPlate_pos" />
     <rotationref ref="refPlate_rot" />
    </physvol>
+
+
+
+   <physvol name="pmt1_window_phys">
+    <volumeref ref="pmt_window_vol" />
+    <positionref ref="pmt1_window_pos" />
+    <rotationref ref="pmt1_window_rot" />
+   </physvol>
+<!--
+   <physvol name="pmt1_cathode_phys">
+    <volumeref ref="pmt_cathode_vol" />
+    <positionref ref="pmt1_cathode_pos" />
+    <rotationref ref="pmt1_cathode_rot" />
+   </physvol>
+
+-->
 
 
   </volume>
