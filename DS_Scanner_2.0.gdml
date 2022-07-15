@@ -20,12 +20,18 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="deg" x="0" y="90" z="0" />
 
+  <position name="leftPlate_pos" unit="mm" x="-(10/2+0.5/2)" y="(d1+10)/2" z="10" />
+  <rotation name="leftPlate_rot" unit="deg" x="90" y="90" z="180" />
+
+  <position name="rightPlate_pos" unit="mm" x="10/2 + 0.5/2" y="(d1+10)/2" z="10" />
+  <rotation name="rightPlate_rot" unit="deg" x="90" y="90" z="180" />
+<!--
   <position name="leftPlate_pos" unit="mm" x="-(10/2+0.5/2)" y="d1+10" z="10" />
   <rotation name="leftPlate_rot" unit="deg" x="90" y="90" z="180" />
 
   <position name="rightPlate_pos" unit="mm" x="10/2 + 0.5/2" y="d1+10" z="10" />
   <rotation name="rightPlate_rot" unit="deg" x="90" y="90" z="180" />
-
+-->
   <position name="pmt1_window_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="0" z="0" />
 
@@ -132,6 +138,9 @@
     <rotation unit="deg" x="0" y="0" z="0" />
   </union>
 
+  <box lunit="mm" name="sidePlate_6" x="d1+10" y="d6+10" z="0.5"/>
+
+
 
 
 <!--
@@ -166,10 +175,15 @@
    <materialref ref="Quartz" />
    <solidref ref="radiator_quartz" />
   </volume>
-
+<!--
   <volume name="sidePlate_5_vol" >
    <materialref ref="Al_mat" />
    <solidref ref="sidePlate_5" />
+  </volume>
+-->
+  <volume name="sidePlate_6_vol" >
+   <materialref ref="Al_mat" />
+   <solidref ref="sidePlate_6" />
   </volume>
 
 <!--
@@ -201,13 +215,13 @@
    </physvol>
 
    <physvol name="leftPlate_phys">
-    <volumeref ref="sidePlate_5_vol" />
+    <volumeref ref="sidePlate_6_vol" />
     <positionref ref="leftPlate_pos" />
     <rotationref ref="leftPlate_rot" />
    </physvol>
 
    <physvol name="rightPlate_phys">
-    <volumeref ref="sidePlate_5_vol" />
+    <volumeref ref="sidePlate_6_vol" />
     <positionref ref="rightPlate_pos" />
     <rotationref ref="rightPlate_rot" />
    </physvol>
@@ -236,8 +250,8 @@
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
 
-  <skinsurface name="rightPlate_skinsrf" surfaceproperty="surf3" >
-    <volumeref ref="sidePlate_5_vol"/>
+  <skinsurface name="sidePlate_skinsrf" surfaceproperty="surf3" >
+    <volumeref ref="sidePlate_6_vol"/>
   </skinsurface>
 
 <!--
