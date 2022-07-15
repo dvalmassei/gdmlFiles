@@ -121,7 +121,7 @@
   <subtraction name="sidePlate_4" >
     <first ref="sidePlate_2"/>
     <second ref="sidePlate_3"/>
-    <position lunit="mm" x="-10" y="-5" z="0" />
+    <position lunit="mm" x="-5" y="-5" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
