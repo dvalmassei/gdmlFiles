@@ -9,7 +9,7 @@
  <define>
 
    <constant name="d1" value="600" />
-   <constant name="d2" value="540" />
+   <constant name="d2" value="530" />
    <constant name="d4" value="10" />
    <constant name="d5" value="6.5" />
    <constant name="d6" value="40" />
@@ -46,8 +46,8 @@
   <position name="pmt1_window_pos" unit="mm" x="0" y="d1 + 10 + 3/2" z="d6/2 + 10" />
   <rotation name="pmt1_window_rot" unit="deg" x="90" y="0" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="0" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="0" y="d1 + 10 + 3 +3e-06/2.0" z="d6/2 + 10" />
+  <rotation name="pmt1_cathode_rot" unit="deg" x="90" y="0" z="0" />
 
 
   &matrices;
@@ -227,14 +227,14 @@
    <solidref ref="solid_pmt_window" />
    <auxiliary auxtype="Color" auxvalue="red"/>
   </volume>
-<!--
+
   <volume name="pmt_cathode_vol" >
    <materialref ref="Bialkali" />
    <solidref ref="solid_pmt_cathode" />
    <auxiliary auxtype="SensDet" auxvalue="PhotoCathode"/>
    <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
--->
+
 
 
 
@@ -286,14 +286,13 @@
     <positionref ref="pmt1_window_pos" />
     <rotationref ref="pmt1_window_rot" />
    </physvol>
-<!--
+
    <physvol name="pmt1_cathode_phys">
     <volumeref ref="pmt_cathode_vol" />
     <positionref ref="pmt1_cathode_pos" />
     <rotationref ref="pmt1_cathode_rot" />
    </physvol>
 
--->
 
 
   </volume>
@@ -335,12 +334,12 @@
     <volumeref ref="refPlate_vol"/>
   </skinsurface>
 
-<!--
+
   <bordersurface name="bordersrf1" surfaceproperty="surf2" >
     <physvolref ref="pmt1_window_phys"/>
     <physvolref ref="pmt1_cathode_phys"/>
   </bordersurface>
--->
+
 
  </structure>
  <setup name="Default" version="1.0" >
