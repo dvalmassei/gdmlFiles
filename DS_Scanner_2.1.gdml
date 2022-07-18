@@ -15,7 +15,7 @@
    <constant name="d6" value="40" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="-5" z="0" />
-  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="90" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="deg" x="0" y="90" z="0" />
