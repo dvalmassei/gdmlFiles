@@ -673,14 +673,14 @@
    </physvol>
 
 
-<!--
+
    <physvol name="Collar2_OuterRing_phys">
     <volumeref ref="logic_Collar2_OuterRing" />
     <positionref ref="PbBox_pos" />
     <rotationref ref="PbBox_rot" />
    </physvol>
 
-
+<!--
    <physvol name="DSwindow_flange_phys">
     <volumeref ref="logic_DSwindow_flange" />
     <positionref ref="AlBox_pos" />
