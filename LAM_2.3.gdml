@@ -46,7 +46,7 @@
   <position name="DetBoxAll_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBoxAll_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="AlBox_pos" unit="mm" x="0" y="0" z="-(63.5/2 + 150 + 50/2 + 10)" />
+  <position name="AlBox_pos" unit="mm" x="0" y="0" z="-(63.5 + 150 + 50/2 + 10)" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="PbBox_pos" unit="mm" x="0" y="0" z="-(150/2 + 50/2 + 10)" />
