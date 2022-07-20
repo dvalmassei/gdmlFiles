@@ -20,25 +20,25 @@
   <constant name="thickness" value="10" />
   <constant name="offset" value="60" />
 
-  <position name="DetBox1_pos" unit="mm" x="-1060" y="0" z="0" />
+  <position name="DetBox1_pos" unit="mm" x="-1081" y="0" z="0" />
   <rotation name="DetBox1_rot" unit="deg" x="0" y="0" z="-90" />
 
-  <position name="DetBox2_pos" unit="mm" x="-660.9" y="828.7" z="0" />
+  <position name="DetBox2_pos" unit="mm" x="-674.0" y="845.2" z="0" />
   <rotation name="DetBox2_rot" unit="deg" x="0" y="0" z="-38.6" />
 
-  <position name="DetBox3_pos" unit="mm" x="235.9" y="1033.4" z="0" />
+  <position name="DetBox3_pos" unit="mm" x="240.5" y="1053.9" z="0" />
   <rotation name="DetBox3_rot" unit="deg" x="0" y="0" z="12.9" />
 
-  <position name="DetBox4_pos" unit="mm" x="955" y="459.9" z="0" />
+  <position name="DetBox4_pos" unit="mm" x="973.9" y="469.0" z="0" />
   <rotation name="DetBox4_rot" unit="deg" x="0" y="0" z="64.3" />
 
-  <position name="DetBox5_pos" unit="mm" x="955" y="-459.9" z="0" />
+  <position name="DetBox5_pos" unit="mm" x="973.9" y="-469.0" z="0" />
   <rotation name="DetBox5_rot" unit="deg" x="0" y="0" z="118.7" />
 
-  <position name="DetBox6_pos" unit="mm" x="235.9" y="-1033.4" z="0" />
+  <position name="DetBox6_pos" unit="mm" x="240.5" y="-1053.9" z="0" />
   <rotation name="DetBox6_rot" unit="deg" x="0" y="0" z="167.1" />
 
-  <position name="DetBox7_pos" unit="mm" x="-660.9" y="-828.7" z="0" />
+  <position name="DetBox7_pos" unit="mm" x="-674.0" y="-845.2" z="0" />
   <rotation name="DetBox7_rot" unit="deg" x="0" y="0" z="218.6" />
 
 
@@ -524,13 +524,13 @@
     <positionref ref="leftTopPlate_pos" />
     <rotationref ref="leftTopPlate_rot" />
    </physvol>
-<!--
+
    <physvol name="leftBackPlate_phys">
     <volumeref ref="backPlate_vol" />
     <positionref ref="leftBackPlate_pos" />
     <rotationref ref="leftBackPlate_rot" />
    </physvol>
--->
+
    <physvol name="leftBotPlate_phys">
     <volumeref ref="botPlate_vol" />
     <positionref ref="leftBotPlate_pos" />
