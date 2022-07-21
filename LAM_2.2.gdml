@@ -67,13 +67,13 @@
   <position name="rightRefPlate_pos" unit="mm" x="180 - chamfer/2" y="65-d4" z="-thickness/2 - 0.5/2" />
   <rotation name="rightRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
-  <position name="rightTopPlate_pos" unit="mm" x="180 - chamfer/2" y="65 + d6 + 0.5/2" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <position name="rightTopPlate_pos" unit="mm" x="180 - chamfer/2" y="65 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
   <rotation name="rightTopPlate_rot" unit="deg" x="90" y="0" z="90" />
 
-  <position name="rightBackPlate_pos" unit="mm" x="180 - chamfer/2" y="65 - d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
+  <position name="rightBackPlate_pos" unit="mm" x="180 - chamfer/2" y="65 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
-  <position name="rightBotPlate_pos" unit="mm" x="180 - chamfer/2" y="65" z="thickness/2 + d3/2" />
+  <position name="rightBotPlate_pos" unit="mm" x="180 - chamfer/2" y="65 + d4" z="thickness/2 + d3/2" />
   <rotation name="rightBotPlate_rot" unit="deg" x="90" y="0" z="90" />
 
 
@@ -89,13 +89,13 @@
   <position name="leftRefPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65-d4" z="-thickness/2 - 0.5/2" />
   <rotation name="leftRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
-  <position name="leftTopPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65 + d6 + 0.5/2" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <position name="leftTopPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
   <rotation name="leftTopPlate_rot" unit="deg" x="90" y="0" z="90" />
 
-  <position name="leftBackPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65 - d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
+  <position name="leftBackPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
   <rotation name="leftBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
-  <position name="leftBotPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65" z="thickness/2 + d3/2" />
+  <position name="leftBotPlate_pos" unit="mm" x="-(180 - chamfer/2)" y="65 + d4" z="thickness/2 + d3/2" />
   <rotation name="leftBotPlate_rot" unit="deg" x="90" y="0" z="90" />
 
 
