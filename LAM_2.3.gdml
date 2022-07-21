@@ -495,13 +495,13 @@
     <positionref ref="rightTopPlate_pos" />
     <rotationref ref="rightTopPlate_rot" />
    </physvol>
-<!--
+
    <physvol name="rightBackPlate_phys">
     <volumeref ref="backPlate_vol" />
     <positionref ref="rightBackPlate_pos" />
     <rotationref ref="rightBackPlate_rot" />
    </physvol>
--->
+
    <physvol name="rightBotPlate_phys">
     <volumeref ref="botPlate_vol" />
     <positionref ref="rightBotPlate_pos" />
@@ -693,13 +693,13 @@
     <rotationref ref="PbBox2_rot" />
    </physvol>
 
-<!--
+
    <physvol name="DSwindow_flange_phys">
     <volumeref ref="logic_DSwindow_flange" />
     <positionref ref="AlBox_pos" />
     <rotationref ref="AlBox_rot" />
    </physvol>
--->
+
 
   </volume>
 
