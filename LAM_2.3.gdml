@@ -52,7 +52,7 @@
   <position name="PbBox_pos" unit="mm" x="0" y="0" z="-(150/2 + 50/2 + 10)" />
   <rotation name="PbBox_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="PbBox2_pos" unit="mm" x="0" y="0" z="-(150/2 + 50/2 + 10 + 200)" />
+  <position name="PbBox2_pos" unit="mm" x="0" y="0" z="-(150/2 + 50/2 + 10) + 200" />
   <rotation name="PbBox2_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
