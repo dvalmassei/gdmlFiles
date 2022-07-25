@@ -13,7 +13,7 @@
   <constant name="d3" value="50" />
   <constant name="d4" value="0" />
   <constant name="d6" value="70" />
-  <constant name="chamfer" value="35*2" />
+  <constant name="chamfer" value="35" />
 
 
 
