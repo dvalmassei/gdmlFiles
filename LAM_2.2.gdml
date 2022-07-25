@@ -11,8 +11,8 @@
   <constant name="d1" value="10.5" />
   <constant name="d2" value="20.5" />
   <constant name="d3" value="10" />
-  <constant name="d4" value="30" />
-  <constant name="d6" value="14*2" />
+  <constant name="d4" value="20" />
+  <constant name="d6" value="60" />
   <constant name="chamfer" value="35*2" />
 
 
