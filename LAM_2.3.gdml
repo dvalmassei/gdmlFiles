@@ -43,7 +43,7 @@
 
 
 
-  <position name="DetBoxAll_pos" unit="mm" x="0" y="0" z="0" />
+  <position name="DetBoxAll_pos" unit="mm" x="0" y="0" z="263.5" />
   <rotation name="DetBoxAll_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="AlBox_pos" unit="mm" x="0" y="0" z="-(63.5 + 150 + 50/2)" />
