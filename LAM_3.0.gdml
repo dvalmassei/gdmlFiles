@@ -308,7 +308,7 @@
 
   <subtraction name="DetBox" >
     <first ref="DetBox_1"/>
-    <second ref="logic_Collar2_InnerRing"/>
+    <second ref="solidCollar2_InnerRing"/>
     <position unit="mm" x="0" y="-1081" z="-(150/2 + 50/2) + 200"/>
     <rotation unit="deg" x="0" y="0" z="0"/>
   </subtraction>
