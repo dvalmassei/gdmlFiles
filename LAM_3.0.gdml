@@ -262,8 +262,9 @@
 
   <box lunit="mm" name="lightguide_bot" x="d3" y="chamfer" z="0.5"/>
 
+<!--
   <box lunit="mm" name="lightguide_back" x="d4" y="chamfer" z="0.5"/>
-
+-->
   <!--End Light Guide Pieces-->
 
   <!--Quartz Enclosure-->
@@ -349,11 +350,12 @@
     <materialref ref="Al_mat"/>
     <solidref ref="lightguide_bot"/>
   </volume>
-
+<!--
   <volume name="backPlate_vol">
     <materialref ref="Al_mat"/>
     <solidref ref="lightguide_back"/>
   </volume>
+-->
   <!--End Light Guide Pieces-->
 
 
@@ -467,12 +469,13 @@
     <rotationref ref="rightTopPlate_rot" />
    </physvol>
 
+<!--
    <physvol name="rightBackPlate_phys">
     <volumeref ref="backPlate_vol" />
     <positionref ref="rightBackPlate_pos" />
     <rotationref ref="rightBackPlate_rot" />
    </physvol>
-
+-->
    <physvol name="rightBotPlate_phys">
     <volumeref ref="botPlate_vol" />
     <positionref ref="rightBotPlate_pos" />
@@ -505,12 +508,13 @@
     <rotationref ref="leftTopPlate_rot" />
    </physvol>
 
+<!--
    <physvol name="leftBackPlate_phys">
     <volumeref ref="backPlate_vol" />
     <positionref ref="leftBackPlate_pos" />
     <rotationref ref="leftBackPlate_rot" />
    </physvol>
-
+-->
    <physvol name="leftBotPlate_phys">
     <volumeref ref="botPlate_vol" />
     <positionref ref="leftBotPlate_pos" />
