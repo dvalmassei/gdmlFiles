@@ -675,11 +675,11 @@
   <skinsurface name="refPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="refPlate_vol"/>
   </skinsurface>
-
+<!--
   <skinsurface name="backPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="backPlate_vol"/>
   </skinsurface>
-
+-->
   <skinsurface name="enclosure_backPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="enclosure_backPlate_vol"/>
   </skinsurface>
