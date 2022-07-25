@@ -306,10 +306,17 @@
   <cone name="solidCollar2_InnerRing" lunit="mm" aunit="rad" startphi="0" deltaphi="2*pi" rmin1="1010" rmax1="1146.35" rmin2="1019" rmax2="1146.35" z="100+50"/> <!--the information of the inner ring is taken from Chandan Ghosh-->
 
 
-  <subtraction name="DetBox" >
+  <subtraction name="DetBox_2" >
     <first ref="DetBox_1"/>
     <second ref="solidCollar2_InnerRing"/>
     <position unit="mm" x="0" y="-1081" z="-(150/2 + 50/2) + 200"/>
+    <rotation unit="deg" x="0" y="0" z="0"/>
+  </subtraction>
+
+  <subtraction name="DetBox" >
+    <first ref="DetBox_2"/>
+    <second ref="solidCollar2_OutterRing"/>
+    <position unit="mm" x="0" y="-1081" z="-(150/2 + 50/2)"/>
     <rotation unit="deg" x="0" y="0" z="0"/>
   </subtraction>
 
