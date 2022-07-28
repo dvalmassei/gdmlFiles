@@ -15,10 +15,10 @@
   <rotation name="radiator_quartz_rot" unit="deg" x="90" y="0" z="45" />
 
   <position name="pmt1_window_pos" unit="mm" x="100/2 + 3.0/2.0" y="0" z="0" />
-  <rotation name="pmt1_window_rot" unit="deg" x="0" y="45" z="0" />
+  <rotation name="pmt1_window_rot" unit="deg" x="0" y="135" z="0" />
 
   <position name="pmt1_cathode_pos" unit="mm" x="100/2 + 3.0 + 3e-06/2.0" y="0" z="0" />
-  <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="45" z="0" />
+  <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="135" z="0" />
 
 
   &matrices;
