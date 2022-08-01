@@ -20,12 +20,15 @@
   <constant name="thickness" value="10" />
   <constant name="offset" value="60" />
 
+  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
+<!--
   <position name="DetBox_pos" unit="mm" x="-1081" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="-90" />
 
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="263.5" />
   <rotation name="DetBox2_rot" unit="deg" x="0" y="0" z="0" />
-
+-->
   <position name="AlBox_pos" unit="mm" x="0" y="0" z="-(63.5 + 150 + 50/2)" />
   <rotation name="AlBox_rot" unit="deg" x="0" y="0" z="0" />
 
@@ -621,7 +624,7 @@
      <rotationref ref="DetBox_rot"/>
    </physvol>
 
-
+<!--
    <physvol name="Collar2_OuterRing_phys">
     <volumeref ref="logic_Collar2_OuterRing" />
     <positionref ref="PbBox_pos" />
@@ -640,7 +643,7 @@
     <positionref ref="AlBox_pos" />
     <rotationref ref="AlBox_rot" />
    </physvol>
-
+-->
 
   </volume>
 
