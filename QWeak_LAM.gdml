@@ -105,7 +105,7 @@
 
  <solids>
   <box lunit="mm" name="WorldBox" x="7000" y="7000" z="7000"/>
-  <box lunit="mm" name="DetBox" x="500" y="500" z="20"/>
+  <box lunit="mm" name="DetBox" x="650" y="500" z="20"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
   <box lunit="mm" name="radiator_quartz" x="600" y="120" z="thickness"/>
