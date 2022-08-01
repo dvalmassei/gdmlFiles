@@ -25,14 +25,14 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_window_pos" unit="mm" x="180+60/2" y="0" z="thickness/2 +3.0/2.0" />
+  <position name="pmt1_window_pos" unit="mm" x="180+60" y="0" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_window_pos" unit="mm" x="-(180+60/2)" y="0" z="thickness/2 +3.0/2.0" />
+  <position name="pmt2_window_pos" unit="mm" x="-(180+60)" y="0" z="thickness/2 +3.0/2.0" />
   <rotation name="pmt2_window_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="180+60/2" y="0" z="thickness/2 +3+3e-06/2.0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="180+60" y="0" z="thickness/2 +3+3e-06/2.0" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_cathode_pos" unit="mm" x="-(180+60/2)" y="0" z="thickness/2 +3+3e-06/2.0" />
+  <position name="pmt2_cathode_pos" unit="mm" x="-(180+60)" y="0" z="thickness/2 +3+3e-06/2.0" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
   &matrices;
@@ -108,7 +108,7 @@
   <box lunit="mm" name="DetBox" x="500" y="500" z="20"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
-  <box lunit="mm" name="radiator_quartz" x="480" y="120" z="thickness"/>
+  <box lunit="mm" name="radiator_quartz" x="600" y="120" z="thickness"/>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
