@@ -21,9 +21,13 @@
   <constant name="thickness" value="10" />
   <constant name="offset" value="60" />
 
+  <position name="DetBox1_pos" unit="mm" x="0" y="0" z="0" />
+  <rotation name="DetBox1_rot" unit="deg" x="0" y="0" z="0" />
+
+<!--
   <position name="DetBox1_pos" unit="mm" x="-1081" y="0" z="0" />
   <rotation name="DetBox1_rot" unit="deg" x="0" y="0" z="-90" />
-
+-->
   <position name="DetBox2_pos" unit="mm" x="-674.0" y="845.2" z="0" />
   <rotation name="DetBox2_rot" unit="deg" x="0" y="0" z="-38.6" />
 
@@ -640,7 +644,7 @@
      <positionref ref="DetBox1_pos"/>
      <rotationref ref="DetBox1_rot"/>
    </physvol>
-
+<!--
    <physvol name="DetBox2_phys" >
      <volumeref ref="DetBox_vol" />
      <positionref ref="DetBox2_pos"/>
@@ -700,7 +704,7 @@
     <positionref ref="AlBox_pos" />
     <rotationref ref="AlBox_rot" />
    </physvol>
-
+-->
 
   </volume>
 
