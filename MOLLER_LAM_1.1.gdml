@@ -10,9 +10,13 @@
    <constant name="thickness" value="5" />
   <constant name="offset" value="60" />
 
-  <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="10 + 63.5 + 150 + 20/2" />
+  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
+<!--
+  <position name="DetBox_pos" unit="mm" x="0" y="60 - offset" z="10 + 63.5 + 150 + 20/2" />
+  <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
+-->
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox2_rot" unit="deg" x="0" y="0" z="0" />
 
