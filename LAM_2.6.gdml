@@ -13,7 +13,7 @@
   <constant name="d3" value="10" />
   <constant name="d4" value="20" />
   <constant name="d6" value="60" />
-  <constant name="chamfer" value="5000" />
+  <constant name="chamfer" value="35*2" />
   <constant name="length" value="360" />
 
 
@@ -207,25 +207,25 @@
 
   <box lunit="mm" name="radiator_quartz" x="length" y="130" z="thickness"/>
 
-  <arb8 name="radiator_cut" v1x="0" v1y="-1" v2x="0" v2y="11" v3x="chamfer + 1" v3y="11"
-    v4x="chamfer + 1" v4y="-1" v5x="0" v5y="11" v6x="0" v6y="11" v7x="chamfer + 1" v7y="11"
+  <arb8 name="radiator_cut" v1x="0" v1y="-1" v2x="0" v2y="11" v3x="5000 + 1" v3y="11"
+    v4x="chamfer + 1" v4y="-1" v5x="0" v5y="11" v6x="0" v6y="11" v7x="5000 + 1" v7y="11"
     v8x="chamfer + 1" v8y="11" dz="12/2" lunit= "mm"/>
 
-  <subtraction name="radiator_2_cut" >
+  <subtraction name="radiator_1_cut" >
     <first ref="radiator_quartz"/>
     <second ref="radiator_cut"/>
     <positionref ref="right_rad_cut_pos"/>
     <rotationref ref="right_rad_cut_rot"/>
   </subtraction>
 
-<!--
+
   <subtraction name="radiator_2_cut" >
     <first ref="radiator_1_cut"/>
     <second ref="radiator_cut"/>
     <positionref ref="left_rad_cut_pos"/>
     <rotationref ref="left_rad_cut_rot"/>
   </subtraction>
--->
+
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_blackPlate_1" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
