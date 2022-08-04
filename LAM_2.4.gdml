@@ -14,7 +14,7 @@
   <constant name="d4" value="60" />
   <constant name="d6" value="60" />
   <constant name="chamfer" value="35*2" />
-  <constant name="length" value="250" />
+  <constant name="length" value="360" />
 
 
 
