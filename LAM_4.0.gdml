@@ -22,7 +22,7 @@
   <constant name="thickness" value="10" />
   <constant name="offset" value="60" />
 
-  <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="0" y="35" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="0" />
@@ -46,10 +46,10 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="right_rad_cut_pos" unit="mm" x="0" y="130/2 - 10" z="0" />
+  <position name="right_rad_cut_pos" unit="mm" x="0" y="200/2" z="0" />
   <rotation name="right_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="left_rad_cut_pos" unit="mm" x="-length/2 - 1 " y="130/2 - 10 - 76" z="0" />
+  <position name="left_rad_cut_pos" unit="mm" x="-length/2 - 1 " y="200/2 - 76" z="0" />
   <rotation name="left_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="pmt1_window_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
@@ -205,7 +205,7 @@
   <box lunit="mm" name="DetBox" x="400" y="500" z="50"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
-  <box lunit="mm" name="radiator_quartz" x="length" y="130" z="thickness"/>
+  <box lunit="mm" name="radiator_quartz" x="length" y="200" z="thickness"/>
 
   <arb8 name="radiator_cut" v1x="0" v1y="-1" v2x="0" v2y="11" v3x="300 + 1" v3y="11"
     v4x="300 + 1" v4y="-1" v5x="0" v5y="11" v6x="0" v6y="11" v7x="300 + 1" v7y="11"
