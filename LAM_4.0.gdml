@@ -72,6 +72,7 @@
   <position name="rightOutterPlate_pos" unit="mm" x="length/2 + 0.5/2" y="65 - 10" z="-(thickness/2)" />
   <rotation name="rightOutterPlate_rot" unit="deg" x="90" y="90" z="90" />
 
+
   <position name="rightInnerPlate_pos" unit="mm" x="length/2 - chamfer - 0.5/2" y="65 - 10" z="-(thickness/2)" />
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
@@ -467,13 +468,13 @@
     <positionref ref="rightOutterPlate_pos" />
     <rotationref ref="rightOutterPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="rightInnerPlate_phys">
     <volumeref ref="innerPlate_vol" />
     <positionref ref="rightInnerPlate_pos" />
     <rotationref ref="rightInnerPlate_rot" />
    </physvol>
-
+-->
    <physvol name="rightRefPlate_phys">
     <volumeref ref="refPlate_vol" />
     <positionref ref="rightRefPlate_pos" />
@@ -505,13 +506,13 @@
     <positionref ref="leftOutterPlate_pos" />
     <rotationref ref="leftOutterPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="leftInnerPlate_phys">
     <volumeref ref="innerPlate_vol" />
     <positionref ref="leftInnerPlate_pos" />
     <rotationref ref="leftInnerPlate_rot" />
    </physvol>
-
+-->
    <physvol name="leftRefPlate_phys">
     <volumeref ref="refPlate_vol" />
     <positionref ref="leftRefPlate_pos" />
@@ -556,13 +557,13 @@
     <positionref ref="botPlate_pos" />
     <rotationref ref="botPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="enclosure_topPlate_phys">
     <volumeref ref="enclosure_topPlate_vol" />
     <positionref ref="topPlate_pos" />
     <rotationref ref="topPlate_rot" />
    </physvol>
-
+-->
    <physvol name="enclosure_leftPlate_phys">
     <volumeref ref="enclosure_leftPlate_vol" />
     <positionref ref="leftPlate_pos" />
