@@ -293,20 +293,20 @@
   <!--End Light Guide Pieces-->
 
   <!--Quartz Enclosure-->
-  <box lunit="mm" name="frontPlate_1" x="length" y="130" z="0.5"/>
+  <box lunit="mm" name="frontPlate_1" x="length" y="400" z="0.5"/>
   <box lunit="mm" name="frontPlate_sub" x="chamfer" y="12" z="0.7"/>
 
   <subtraction name="frontPlate_2" >
     <first ref="frontPlate_1"/>
     <second ref="frontPlate_sub"/>
-    <position unit="mm" x="length/2 - chamfer/2" y="130/2 - 4" z="0" />
+    <position unit="mm" x="length/2 - chamfer/2" y="-130/2 - 4" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
   <subtraction name="frontPlate" >
     <first ref="frontPlate_2"/>
     <second ref="frontPlate_sub"/>
-    <position unit="mm" x="-(length/2 - chamfer/2)" y="130/2 - 4" z="0" />
+    <position unit="mm" x="-(length/2 - chamfer/2)" y="-130/2 - 4" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
@@ -488,12 +488,13 @@
     <rotationref ref="rightInnerPlate_rot" />
    </physvol>
 
+<!--
    <physvol name="rightRefPlate_phys">
     <volumeref ref="refPlate_vol" />
     <positionref ref="rightRefPlate_pos" />
     <rotationref ref="rightRefPlate_rot" />
    </physvol>
-
+-->
    <physvol name="rightTopPlate_phys">
     <volumeref ref="topPlate_vol" />
     <positionref ref="rightTopPlate_pos" />
@@ -525,13 +526,13 @@
     <positionref ref="leftInnerPlate_pos" />
     <rotationref ref="leftInnerPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="leftRefPlate_phys">
     <volumeref ref="refPlate_vol" />
     <positionref ref="leftRefPlate_pos" />
     <rotationref ref="leftRefPlate_rot" />
    </physvol>
-
+-->
    <physvol name="leftTopPlate_phys">
     <volumeref ref="topPlate_vol" />
     <positionref ref="leftTopPlate_pos" />
