@@ -216,7 +216,7 @@
     <first ref="radiator_quartz"/>
     <second ref="radiator_cut"/>
     <position unit="mm" x="131.1" y="200/2 + 280" z="10/2"/>
-    <rotation unit="deg" x="-90" y="-90" z="-25"/>
+    <rotation unit="deg" x="-90" y="0" z="-25"/>
   </subtraction>
 
 
@@ -335,6 +335,11 @@
   <volume name="radiator_quartz_vol" >
    <materialref ref="Quartz" />
    <solidref ref="radiator_2_cut" />
+  </volume>
+
+  <volume name="radiator_cut_vol" >
+   <materialref ref="Quartz" />
+   <solidref ref="radiator_cut" />
   </volume>
 
 
@@ -459,6 +464,14 @@
     <positionref ref="radiator_quartz_pos" />
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
+
+
+   <physvol name="radiator_cut_phys">
+    <volumeref ref="radiator_cut_vol" />
+    <position unit="mm" x="131.1" y="200/2 + 280" z="10/2"/>
+    <rotation unit="deg" x="-90" y="0" z="-25"/>
+   </physvol>
+
 
 
 
