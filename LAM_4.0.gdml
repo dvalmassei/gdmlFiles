@@ -539,7 +539,7 @@
 
    <!--End Light Guide Assembly-->
 
-   <!--Quartz Enclosure Assembly-->
+   <!--Quartz Enclosure Assembly
    <physvol name="enclosure_backPlate_phys">
     <volumeref ref="enclosure_backPlate_vol" />
     <positionref ref="backPlate_pos" />
@@ -557,13 +557,13 @@
     <positionref ref="botPlate_pos" />
     <rotationref ref="botPlate_rot" />
    </physvol>
-<!--
+
    <physvol name="enclosure_topPlate_phys">
     <volumeref ref="enclosure_topPlate_vol" />
     <positionref ref="topPlate_pos" />
     <rotationref ref="topPlate_rot" />
    </physvol>
--->
+
    <physvol name="enclosure_leftPlate_phys">
     <volumeref ref="enclosure_leftPlate_vol" />
     <positionref ref="leftPlate_pos" />
@@ -577,7 +577,7 @@
    </physvol>
 
 
-   <!--End Quartz Enclosure Assembly-->
+   End Quartz Enclosure Assembly-->
 
 
 
