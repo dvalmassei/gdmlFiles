@@ -570,13 +570,13 @@
     <positionref ref="botPlate_pos" />
     <rotationref ref="botPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="enclosure_topPlate_phys">
     <volumeref ref="enclosure_topPlate_vol" />
     <positionref ref="topPlate_pos" />
     <rotationref ref="topPlate_rot" />
    </physvol>
-
+-->
    <physvol name="enclosure_leftPlate_phys">
     <volumeref ref="enclosure_leftPlate_vol" />
     <positionref ref="leftPlate_pos" />
