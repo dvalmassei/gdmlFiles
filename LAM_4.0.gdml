@@ -215,7 +215,7 @@
   <subtraction name="radiator_1_cut" >
     <first ref="radiator_quartz"/>
     <second ref="radiator_cut"/>
-    <positionref ref="right_rad_cut_pos"/>
+    <position unit="mm" x="131.1" y="200/2 + 280" z="0"/>
     <rotation unit="deg" x="90" y="0" z="-25"/>
   </subtraction>
 
