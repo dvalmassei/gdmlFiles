@@ -216,7 +216,7 @@
     <first ref="radiator_quartz"/>
     <second ref="radiator_cut"/>
     <positionref ref="right_rad_cut_pos"/>
-    <rotation unit="deg" x="0" y="90" z="-25"/>
+    <rotation unit="deg" x="0" y="0" z="-25"/>
   </subtraction>
 
 
@@ -224,7 +224,7 @@
     <first ref="radiator_1_cut"/>
     <second ref="radiator_cut"/>
     <positionref ref="left_rad_cut_pos"/>
-    <rotation unit="deg" x="0" y="90" z="25"/>
+    <rotation unit="deg" x="0" y="0" z="25"/>
   </subtraction>
 
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
