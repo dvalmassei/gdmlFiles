@@ -71,7 +71,7 @@
 
   <position name="pmt3_cathode_pos" unit="mm" x="length/4-72/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt3_cathode_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt4_cathode_pos" unit="mm" x="-(length/4-872/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt4_cathode_pos" unit="mm" x="-(length/4-72/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt4_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
 
