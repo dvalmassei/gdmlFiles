@@ -469,7 +469,7 @@
    <physvol name="radiator_cut_phys">
     <volumeref ref="radiator_cut_vol" />
     <position unit="mm" x="131.1" y="200/2 + 280" z="-12/2"/>
-    <rotation unit="deg" x="-90" y="-90" z="-25"/>
+    <rotation unit="deg" x="-90 -25" y="-90" z="0"/>
   </physvol>
 
 
