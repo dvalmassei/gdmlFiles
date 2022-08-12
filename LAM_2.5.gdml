@@ -14,7 +14,7 @@
   <constant name="d4" value="20" />
   <constant name="d6" value="60" />
   <constant name="chamfer" value="35*2" />
-  <constant name="length" value="360" />
+  <constant name="length" value="250" />
 
 
 
@@ -56,16 +56,22 @@
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
   <position name="pmt2_window_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
   <rotation name="pmt2_window_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt3_window_pos" unit="mm" x="0" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
+  <rotation name="pmt3_window_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="pmt1_cathode_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
   <position name="pmt2_cathode_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt3_cathode_pos" unit="mm" x="0" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
+  <rotation name="pmt3_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
   <position name="pmt1_blackPlate_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt1_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
   <position name="pmt2_blackPlate_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
+  <position name="pmt3_blackPlate_pos" unit="mm" x="0" y="130/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
+  <rotation name="pmt3_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
 
 
 
@@ -130,6 +136,9 @@
   <position name="leftPlate_pos" unit="mm" x="-(length/2 + 0.7/2)" y="-5" z="0" />
   <rotation name="leftPlate_rot" unit="deg" x="0" y="90" z="0" />
 
+
+  <position name="centerRefPlate_pos" unit="mm" x="0" y="65-10" z="-thickness/2 - 0.5/2" />
+  <rotation name="centerRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
 
   &matrices;
@@ -247,9 +256,9 @@
 
   <box lunit="mm" name="lightguide_outter_2" x="d3" y="d6" z="0.5"/>
 
-  <arb8 name="lightguide_inner_sub" v1x="-0.25" v1y="0" v2x="-0.25" v2y="10 + 0.25" v3x="d1 - 0.25" v3y="10 + 0.25"
-    v4x="d1-0.25" v4y="0" v5x="-.25" v5y="0" v6x="-0.25" v6y="10 + 0.25" v7x="d1-0.25" v7y="10 + 0.25"
-    v8x="d1-0.25" v8y="0" dz="0.7/2" lunit= "mm"/>
+  <arb8 name="lightguide_inner_sub" v1x="-0.25" v1y="0" v2x="-0.25" v2y="10 + 0.25" v3x="1000 - 0.25" v3y="10 + 0.25"
+    v4x="1000-0.25" v4y="0" v5x="-.25" v5y="0" v6x="-0.25" v6y="10 + 0.25" v7x="1000-0.25" v7y="10 + 0.25"
+    v8x="1000-0.25" v8y="0" dz="0.7/2" lunit= "mm"/>
 
   <union name="lightguide_outter" >
     <first ref="lightguide_outter_1"/>
@@ -497,6 +506,12 @@
     <rotationref ref="rightBotPlate_rot" />
    </physvol>
 
+   <physvol name="centerRefPlate_phys">
+    <volumeref ref="refPlate_vol" />
+    <positionref ref="centerRefPlate_pos" />
+    <rotationref ref="centerRefPlate_rot" />
+   </physvol>
+
    <!--Left Light Guide Assembly-->
 
    <physvol name="leftOutterPlate_phys">
@@ -556,11 +571,13 @@
     <rotationref ref="botPlate_rot" />
    </physvol>
 
+<!--
    <physvol name="enclosure_topPlate_phys">
     <volumeref ref="enclosure_topPlate_vol" />
     <positionref ref="topPlate_pos" />
     <rotationref ref="topPlate_rot" />
    </physvol>
+-->
 
    <physvol name="enclosure_leftPlate_phys">
     <volumeref ref="enclosure_leftPlate_vol" />
@@ -613,6 +630,25 @@
     <volumeref ref="pmt_blackPlate_vol" />
     <positionref ref="pmt2_blackPlate_pos" />
     <rotationref ref="pmt2_blackPlate_rot" />
+   </physvol>
+
+
+   <physvol name="pmt3_window_phys">
+    <volumeref ref="pmt_window_vol" />
+    <positionref ref="pmt3_window_pos" />
+    <rotationref ref="pmt3_window_rot" />
+   </physvol>
+
+   <physvol name="pmt3_cathode_phys">
+    <volumeref ref="pmt_cathode_vol" />
+    <positionref ref="pmt3_cathode_pos" />
+    <rotationref ref="pmt3_cathode_rot" />
+   </physvol>
+
+   <physvol name="pmt3_blackPlate_phys">
+    <volumeref ref="pmt_blackPlate_vol" />
+    <positionref ref="pmt3_blackPlate_pos" />
+    <rotationref ref="pmt3_blackPlate_rot" />
    </physvol>
 
   </volume>
@@ -687,11 +723,11 @@
   <skinsurface name="innerPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="innerPlate_vol"/>
   </skinsurface>
-
+<!--
   <skinsurface name="topPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="topPlate_vol"/>
   </skinsurface>
-
+-->
   <skinsurface name="refPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="refPlate_vol"/>
   </skinsurface>
@@ -717,6 +753,11 @@
   <bordersurface name="bordersrf2" surfaceproperty="surf2" >
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
+  </bordersurface>
+
+  <bordersurface name="bordersrf3" surfaceproperty="surf2" >
+    <physvolref ref="pmt3_window_phys"/>
+    <physvolref ref="pmt3_cathode_phys"/>
   </bordersurface>
 
 
