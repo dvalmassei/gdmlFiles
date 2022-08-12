@@ -643,14 +643,15 @@
     <volumeref ref="pmt_cathode_vol" />
     <positionref ref="pmt3_cathode_pos" />
     <rotationref ref="pmt3_cathode_rot" />
-   </physvol>
+  </physvol>
 
+<!--
    <physvol name="pmt3_blackPlate_phys">
     <volumeref ref="pmt_blackPlate_vol" />
     <positionref ref="pmt3_blackPlate_pos" />
     <rotationref ref="pmt3_blackPlate_rot" />
    </physvol>
-
+-->
   </volume>
 
 
