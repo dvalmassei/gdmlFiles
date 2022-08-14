@@ -95,6 +95,15 @@
 
 
 
+  <position name="centerInnerPlate1_pos" unit="mm" x="chamfer/2 + 0.5/2" y="65 - 10" z="-(thickness/2)" />
+  <rotation name="centerInnerPlate1_rot" unit="deg" x="90" y="90" z="90" />
+
+  <position name="centerInnerPlate2_pos" unit="mm" x="-chamfer/2 - 0.5/2" y="65 - 10" z="-(thickness/2)" />
+  <rotation name="centerInnerPlate2_rot" unit="deg" x="90" y="90" z="90" />
+
+  <position name="centerTopPlate_pos" unit="mm" x="0" y="65 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <rotation name="centerTopPlate_rot" unit="deg" x="90" y="0" z="90" />
+
 
 
   <position name="leftOutterPlate_pos" unit="mm" x="-(length/2 + 0.5/2)" y="65 - 10" z="-(thickness/2)" />
@@ -510,6 +519,24 @@
     <volumeref ref="refPlate_vol" />
     <positionref ref="centerRefPlate_pos" />
     <rotationref ref="centerRefPlate_rot" />
+   </physvol>
+
+   <physvol name="centerInnerPlate1_phys">
+    <volumeref ref="innerPlate_vol" />
+    <positionref ref="centerInnerPlate1_pos" />
+    <rotationref ref="centerInnerPlate1_rot" />
+   </physvol>
+
+   <physvol name="centerInnerPlate2_phys">
+    <volumeref ref="innerPlate_vol" />
+    <positionref ref="centerInnerPlate2_pos" />
+    <rotationref ref="centerInnerPlate2_rot" />
+   </physvol>
+
+   <physvol name="cenetrTopPlate_phys">
+    <volumeref ref="topPlate_vol" />
+    <positionref ref="centerTopPlate_pos" />
+    <rotationref ref="centerTopPlate_rot" />
    </physvol>
 
    <!--Left Light Guide Assembly-->
