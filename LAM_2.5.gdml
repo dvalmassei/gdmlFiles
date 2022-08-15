@@ -314,7 +314,7 @@
   </subtraction>
 
   <box lunit="mm" name="backPlate" x="length" y="120" z="0.5"/>
-  <box lunit="mm" name="topPlate" x="thickness" y="length" z="0.5"/>
+  <box lunit="mm" name="topPlate" x="thickness" y="length - (2*chamfer) - 1" z="0.5"/>
   <box lunit="mm" name="botPlate" x="thickness" y="length" z="0.5"/>
   <box lunit="mm" name="leftPlate" x="thickness" y="120" z="0.5"/>
   <box lunit="mm" name="rightPlate" x="thickness" y="120" z="0.5"/>
