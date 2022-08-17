@@ -503,7 +503,7 @@
     <positionref ref="rightTopPlate_pos" />
     <rotationref ref="rightTopPlate_rot" />
    </physvol>
-
+<!--
    <physvol name="rightBackPlate_phys">
     <volumeref ref="backPlate_vol" />
     <positionref ref="rightBackPlate_pos" />
@@ -515,7 +515,7 @@
     <positionref ref="rightBotPlate_pos" />
     <rotationref ref="rightBotPlate_rot" />
    </physvol>
-<!--
+
    <physvol name="centerRefPlate_phys">
     <volumeref ref="refPlate_vol" />
     <positionref ref="centerRefPlate_pos" />
@@ -636,13 +636,13 @@
     <positionref ref="pmt1_cathode_pos" />
     <rotationref ref="pmt1_cathode_rot" />
    </physvol>
-
+<!--
    <physvol name="pmt1_blackPlate_phys">
     <volumeref ref="pmt_blackPlate_vol" />
     <positionref ref="pmt1_blackPlate_pos" />
     <rotationref ref="pmt1_blackPlate_rot" />
    </physvol>
-
+-->
   <!--
    <physvol name="pmt2_window_phys">
     <volumeref ref="pmt_window_vol" />
@@ -742,11 +742,11 @@
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
-
+<!--
   <skinsurface name="botPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="botPlate_vol"/>
   </skinsurface>
-
+-->
   <skinsurface name="outterPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="outterPlate_vol"/>
   </skinsurface>
@@ -763,10 +763,11 @@
     <volumeref ref="refPlate_vol"/>
   </skinsurface>
 
+<!--
   <skinsurface name="backPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="backPlate_vol"/>
   </skinsurface>
-
+-->
   <skinsurface name="enclosure_backPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="enclosure_backPlate_vol"/>
   </skinsurface>
