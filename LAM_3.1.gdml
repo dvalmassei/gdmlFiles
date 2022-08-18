@@ -736,12 +736,12 @@
     <physvolref ref="pmt1_cathode_phys"/>
   </bordersurface>
 
-<!--
+
   <bordersurface name="bordersrf2" surfaceproperty="surf2" >
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
--->
+
 
 
 
