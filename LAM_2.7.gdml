@@ -60,7 +60,7 @@
   <position name="pmt3_window_pos" unit="mm" x="0" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
   <rotation name="pmt3_window_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt1_cathode_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10 - 20" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
   <position name="pmt2_cathode_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
