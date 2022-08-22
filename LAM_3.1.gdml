@@ -39,7 +39,7 @@
   <rotation name="PbBox2_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
-  <rotation name="radiator_quartz_rot" unit="deg" x="0" y="180" z="0" />
+  <rotation name="radiator_quartz_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="right_rad_cut_pos" unit="mm" x="180 - chamfer" y="130/2 - 10" z="0" />
   <rotation name="right_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
