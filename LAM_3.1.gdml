@@ -15,6 +15,7 @@
   <constant name="d6" value="70" />
   <constant name="chamfer" value="70" />
   <constant name="length" value="250" />
+  <constant name="detBox_r" value="1100"/>
 
 
 
@@ -24,7 +25,7 @@
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 -->
-  <position name="DetBox_pos" unit="mm" x="-1200" y="0" z="0" />
+  <position name="DetBox_pos" unit="mm" x="-1 * detBox_r" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="-90" />
 
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="163.5" />
@@ -323,14 +324,14 @@
   <subtraction name="DetBox_2" >
     <first ref="DetBox_1"/>
     <second ref="solidCollar2_InnerRing"/>
-    <position unit="mm" x="0" y="-1090" z="-(150/2 + 50/2) + 200"/>
+    <position unit="mm" x="0" y="-1 * detBox_r" z="-(150/2 + 50/2) + 200"/>
     <rotation unit="deg" x="0" y="0" z="0"/>
   </subtraction>
 
   <subtraction name="DetBox" >
     <first ref="DetBox_2"/>
     <second ref="solidCollar2_OuterRing"/>
-    <position unit="mm" x="0" y="-1090" z="-(150/2 + 50/2)"/>
+    <position unit="mm" x="0" y="-1 * detBox_r" z="-(150/2 + 50/2)"/>
     <rotation unit="deg" x="0" y="0" z="0"/>
   </subtraction>
 
