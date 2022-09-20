@@ -248,7 +248,7 @@
     <positionref ref="radiator_quartz_pos" />
     <rotationref ref="radiator_quartz_rot" />
    </physvol>
-
+<!--
    <physvol name="leftPlate_phys">
     <volumeref ref="sidePlate_6_vol" />
     <positionref ref="leftPlate_pos" />
@@ -278,7 +278,7 @@
     <positionref ref="refPlate_pos" />
     <rotationref ref="refPlate_rot" />
    </physvol>
-
+-->
 
 
    <physvol name="pmt1_window_phys">
@@ -317,7 +317,7 @@
   <skinsurface name="skinsrf1" surfaceproperty="surf1" >
     <volumeref ref="radiator_quartz_vol"/>
   </skinsurface>
-
+<!--
   <skinsurface name="sidePlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="sidePlate_6_vol"/>
   </skinsurface>
@@ -333,7 +333,7 @@
   <skinsurface name="refPlate_skinsrf" surfaceproperty="surf3" >
     <volumeref ref="refPlate_vol"/>
   </skinsurface>
-
+-->
 
   <bordersurface name="bordersrf1" surfaceproperty="surf2" >
     <physvolref ref="pmt1_window_phys"/>
