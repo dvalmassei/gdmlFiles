@@ -120,7 +120,7 @@
 
  <solids>
   <box lunit="mm" name="WorldBox" x="1000" y="2000" z="1000"/>
-  <box lunit="mm" name="DetBox" x="100" y="1500" z="200"/>
+  <box lunit="mm" name="DetBox" x="100" y="1800" z="200"/>
 
 
   <arb8 name="radiator_quartz" v1x="-10" v1y="0" v2x="-20" v2y="10" v3x="10" v3y="10"
