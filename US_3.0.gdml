@@ -18,16 +18,16 @@
   <rotation name="preRad_rot" unit="deg" x="0" y="0" z="0" />
 
 
-  <position name="pmt1_window_pos" unit="mm" x="20 + 500 + 3.0/2" y="0" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="10/2 + 20 + 500 + 3.0/2" y="0" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="20 + 500 + 3 +3e-06/2.0" y="0" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="10/2 + 20 + 500 + 3 +3e-06/2.0" y="0" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="lightguide_tube_pos" unit="mm" x="20 + 500/2" y="0" z="0" />
+  <position name="lightguide_tube_pos" unit="mm" x="10/2 + 20 + 500/2" y="0" z="0" />
   <rotation name="lightguide_tube_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="lightguide_cone_pos" unit="mm" x="20/2" y="0" z="0" />
+  <position name="lightguide_cone_pos" unit="mm" x="10/2 + 20/2" y="0" z="0" />
   <rotation name="lightguide_cone_rot" unit="deg" x="0" y="90" z="0" />
 
 
