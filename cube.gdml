@@ -14,7 +14,7 @@
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="preRad_pos" unit="mm" x="0" y="0" z="5" />
+  <position name="preRad_pos" unit="mm" x="0" y="0" z="10" />
   <rotation name="preRad_rot" unit="deg" x="0" y="0" z="0" />
 
 
