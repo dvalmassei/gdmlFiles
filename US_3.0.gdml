@@ -28,7 +28,7 @@
   <rotation name="lightguide_tube_rot" unit="deg" x="0" y="90" z="0" />
 
   <position name="lightguide_cone_pos" unit="mm" x="10/2 + 20/2" y="0" z="0" />
-  <rotation name="lightguide_cone_rot" unit="deg" x="0" y="90" z="0" />
+  <rotation name="lightguide_cone_rot" unit="deg" x="0" y="-90" z="0" />
 
 
   &matrices;
