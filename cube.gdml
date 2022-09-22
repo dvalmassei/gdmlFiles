@@ -169,13 +169,13 @@
         <positionref ref="quartz_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
-
+<!--
       <physvol name="preRad_phys">
         <volumeref ref="preRad_vol" />
         <positionref ref="preRad_pos" />
         <rotationref ref="preRad_rot" />
       </physvol>
-
+-->
       <physvol name="pmt1_window_phys">
        <volumeref ref="pmt_window_vol" />
        <positionref ref="pmt1_window_pos" />
