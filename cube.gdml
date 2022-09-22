@@ -14,7 +14,7 @@
   <position name="quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="quartz_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="preRad_pos" unit="mm" x="0" y="0" z="10" />
+  <position name="preRad_pos" unit="mm" x="0" y="0" z="10.5" />
   <rotation name="preRad_rot" unit="deg" x="0" y="0" z="0" />
 
 
@@ -169,13 +169,13 @@
         <positionref ref="quartz_pos" />
         <rotationref ref="quartz_rot" />
       </physvol>
-<!--
+
       <physvol name="preRad_phys">
         <volumeref ref="preRad_vol" />
         <positionref ref="preRad_pos" />
         <rotationref ref="preRad_rot" />
       </physvol>
--->
+
       <physvol name="pmt1_window_phys">
        <volumeref ref="pmt_window_vol" />
        <positionref ref="pmt1_window_pos" />
