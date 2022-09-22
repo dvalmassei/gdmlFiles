@@ -15,7 +15,8 @@
   <constant name="d6" value="70" />
   <constant name="chamfer" value="70" />
   <constant name="length" value="250" />
-  <constant name="detBox_r" value="1096.5"/>
+  <constant name="length" value="165" />
+  <constant name="detBox_r" value="1033.5 + height/2"/>
 
 
 
@@ -43,67 +44,67 @@
   <position name="radiator_quartz_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="radiator_quartz_rot" unit="deg" x="0" y="180" z="0" />
 
-  <position name="right_rad_cut_pos" unit="mm" x="length/2 - chamfer" y="130/2 - 10" z="0" />
+  <position name="right_rad_cut_pos" unit="mm" x="length/2 - chamfer" y="height/2 - 10" z="0" />
   <rotation name="right_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="left_rad_cut_pos" unit="mm" x="-length/2 - 1 " y="130/2 - 10" z="0" />
+  <position name="left_rad_cut_pos" unit="mm" x="-length/2 - 1 " y="height/2 - 10" z="0" />
   <rotation name="left_rad_cut_rot" unit="deg" x="0" y="0" z="0" />
 
-  <position name="pmt1_window_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
+  <position name="pmt1_window_pos" unit="mm" x="length/2-chamfer/2" y="height/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
   <rotation name="pmt1_window_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_window_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
+  <position name="pmt2_window_pos" unit="mm" x="-(length/2-chamfer/2)" y="height/2 + d6/2 + d4 -10" z="thickness/2 +3.0/2.0 + d3 + 0.5" />
   <rotation name="pmt2_window_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt1_cathode_pos" unit="mm" x="length/2-chamfer/2" y="height/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt1_cathode_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_cathode_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt2_cathode_pos" unit="mm" x="-(length/2-chamfer/2)" y="height/2 + d6/2 + d4 -10" z="thickness/2 +3+3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_cathode_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="pmt1_blackPlate_pos" unit="mm" x="length/2-chamfer/2" y="130/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt1_blackPlate_pos" unit="mm" x="length/2-chamfer/2" y="height/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt1_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
-  <position name="pmt2_blackPlate_pos" unit="mm" x="-(length/2-chamfer/2)" y="130/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
+  <position name="pmt2_blackPlate_pos" unit="mm" x="-(length/2-chamfer/2)" y="height/2 + d6/2 + d4 -10" z="thickness/2 - 3e-06/2.0 + d3 + 0.5" />
   <rotation name="pmt2_blackPlate_rot" unit="radian" x="0" y="0" z="0" />
 
 
 
-  <position name="rightOutterPlate_pos" unit="mm" x="length/2 + 0.5/2" y="65 - 10" z="-(thickness/2)" />
+  <position name="rightOutterPlate_pos" unit="mm" x="length/2 + 0.5/2" y="height/2 - 10" z="-(thickness/2)" />
   <rotation name="rightOutterPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="rightInnerPlate_pos" unit="mm" x="length/2 - chamfer - 0.5/2" y="65 - 10" z="-(thickness/2)" />
+  <position name="rightInnerPlate_pos" unit="mm" x="length/2 - chamfer - 0.5/2" y="height/2 - 10" z="-(thickness/2)" />
   <rotation name="rightInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="rightRefPlate_pos" unit="mm" x="length/2 - chamfer/2" y="65-10" z="-thickness/2 - 0.5/2" />
+  <position name="rightRefPlate_pos" unit="mm" x="length/2 - chamfer/2" y="height/2-10" z="-thickness/2 - 0.5/2" />
   <rotation name="rightRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
-  <position name="rightTopPlate_pos" unit="mm" x="length/2 - chamfer/2" y="65 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <position name="rightTopPlate_pos" unit="mm" x="length/2 - chamfer/2" y="height/2 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
   <rotation name="rightTopPlate_rot" unit="deg" x="90" y="0" z="90" />
 
-  <position name="rightBackPlate_pos" unit="mm" x="length/2 - chamfer/2" y="65 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
+  <position name="rightBackPlate_pos" unit="mm" x="length/2 - chamfer/2" y="height/2 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
   <rotation name="rightBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
-  <position name="rightBotPlate_pos" unit="mm" x="length/2 - chamfer/2" y="65 - 10 + d4" z="thickness/2 + d3/2" />
+  <position name="rightBotPlate_pos" unit="mm" x="length/2 - chamfer/2" y="height/2 - 10 + d4" z="thickness/2 + d3/2" />
   <rotation name="rightBotPlate_rot" unit="deg" x="90" y="0" z="90" />
 
 
 
 
 
-  <position name="leftOutterPlate_pos" unit="mm" x="-(length/2 + 0.5/2)" y="65 - 10" z="-(thickness/2)" />
+  <position name="leftOutterPlate_pos" unit="mm" x="-(length/2 + 0.5/2)" y="height/2 - 10" z="-(thickness/2)" />
   <rotation name="leftOutterPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="leftInnerPlate_pos" unit="mm" x="-(length/2 - chamfer - 0.5/2)" y="65 - 10" z="-(thickness/2)" />
+  <position name="leftInnerPlate_pos" unit="mm" x="-(length/2 - chamfer - 0.5/2)" y="height/2 - 10" z="-(thickness/2)" />
   <rotation name="leftInnerPlate_rot" unit="deg" x="90" y="90" z="90" />
 
-  <position name="leftRefPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="65-10" z="-thickness/2 - 0.5/2" />
+  <position name="leftRefPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="height/2-10" z="-thickness/2 - 0.5/2" />
   <rotation name="leftRefPlate_rot" unit="deg" x="0" y="-90" z="0" />
 
-  <position name="leftTopPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="65 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
+  <position name="leftTopPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="height/2 + d6 + 0.5/2 + d4 - 10" z="-d2/2 + thickness/2 + d3 + 0.5/2" />
   <rotation name="leftTopPlate_rot" unit="deg" x="90" y="0" z="90" />
 
-  <position name="leftBackPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="65 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
+  <position name="leftBackPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="height/2 - 10 + d4/2 - 0.5/2" z="thickness/2 + 0.5/2" />
   <rotation name="leftBackPlate_rot" unit="deg" x="0" y="0" z="90" />
 
-  <position name="leftBotPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="65 - 10 + d4" z="thickness/2 + d3/2" />
+  <position name="leftBotPlate_pos" unit="mm" x="-(length/2 - chamfer/2)" y="height/2 - 10 + d4" z="thickness/2 + d3/2" />
   <rotation name="leftBotPlate_rot" unit="deg" x="90" y="0" z="90" />
 
 
@@ -115,10 +116,10 @@
   <position name="backPlate_pos" unit="mm" x="0" y="-5 - 0.5" z="thickness/2 + 0.7/2" />
   <rotation name="backPlate_rot" unit="radian" x="0" y="0" z="0" />
 
-  <position name="topPlate_pos" unit="mm" x="0" y="65 + 0.7/2" z="0" />
+  <position name="topPlate_pos" unit="mm" x="0" y="height/2 + 0.7/2" z="0" />
   <rotation name="topPlate_rot" unit="deg" x="90" y="0" z="90" />
 
-  <position name="botPlate_pos" unit="mm" x="0" y="-(65 + 0.7/2)" z="0" />
+  <position name="botPlate_pos" unit="mm" x="0" y="-(height/2 + 0.7/2)" z="0" />
   <rotation name="botPlate_rot" unit="deg" x="90" y="0" z="90" />
 
   <position name="rightPlate_pos" unit="mm" x="length/2 + 0.7/2" y="-5" z="0" />
@@ -202,7 +203,7 @@
   <box lunit="mm" name="DetBox_1" x="500" y="500" z="200"/>
   <box lunit="mm" name="DetBox2" x="4000" y="5000" z="4000"/>
 
-  <box lunit="mm" name="radiator_quartz" x="length" y="130" z="thickness"/>
+  <box lunit="mm" name="radiator_quartz" x="length" y="height" z="thickness"/>
 
   <box lunit="mm" name="radiator_quartz_cut2" x="length" y="5" z="thickness"/>
 
@@ -286,20 +287,20 @@
   <!--End Light Guide Pieces-->
 
   <!--Quartz Enclosure-->
-  <box lunit="mm" name="frontPlate_1" x="length" y="130" z="0.5"/>
+  <box lunit="mm" name="frontPlate_1" x="length" y="height" z="0.5"/>
   <box lunit="mm" name="frontPlate_sub" x="chamfer" y="12" z="0.7"/>
 
   <subtraction name="frontPlate_2" >
     <first ref="frontPlate_1"/>
     <second ref="frontPlate_sub"/>
-    <position unit="mm" x="length/2 - chamfer/2" y="130/2 - 4" z="0" />
+    <position unit="mm" x="length/2 - chamfer/2" y="height/2 - 4" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
   <subtraction name="frontPlate" >
     <first ref="frontPlate_2"/>
     <second ref="frontPlate_sub"/>
-    <position unit="mm" x="-(length/2 - chamfer/2)" y="130/2 - 4" z="0" />
+    <position unit="mm" x="-(length/2 - chamfer/2)" y="height/2 - 4" z="0" />
     <rotation unit="deg" x="0" y="0" z="0" />
   </subtraction>
 
