@@ -244,13 +244,13 @@
 
 
     <skinsurface name="skinsrf2" surfaceproperty="surf3" >
-      <volumeref ref="lightguide_cone"/>
+      <volumeref ref="lightguide_cone_vol"/>
     </skinsurface>
 
     <skinsurface name="skinsrf3" surfaceproperty="surf3" >
-      <volumeref ref="lightguide_tube"/>
+      <volumeref ref="lightguide_tube_vol"/>
     </skinsurface>
-    
+
     <skinsurface name="skinsrf1" surfaceproperty="surf1" >
       <volumeref ref="quartz_vol"/>
     </skinsurface>
