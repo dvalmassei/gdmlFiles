@@ -111,8 +111,8 @@
    <box lunit="mm" name="quartz" x="10" y="10" z="10"/>
    <box lunit="mm" name="preRad" x="10" y="10" z="10"/>
 
-   <cone name="lightguide_cone" lunit="mm" aunit="rad" startphi="0" deltaphi="2*pi" rmin1="7.07" rmax1="7.57" rmin2="20" rmax2="20.5" z="20"/>
-   <tube name="lightguide_tube" rmin="20" rmax="20.5" z="500" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <cone name="lightguide_cone" lunit="mm" aunit="rad" startphi="0" deltaphi="2*pi" rmin1="7.07" rmax1="7.57" rmin2="30" rmax2="30.5" z="20"/>
+   <tube name="lightguide_tube" rmin="30" rmax="30.5" z="500" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
 
 
