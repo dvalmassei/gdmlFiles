@@ -22,13 +22,13 @@
 
   <constant name="thickness" value="10" />
   <constant name="offset" value="60" />
-<!--
+
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
--->
+<!--
   <position name="DetBox_pos" unit="mm" x="-1 * detBox_r" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="-90" />
-
+-->
   <position name="DetBox2_pos" unit="mm" x="0" y="0" z="163.5" />
   <rotation name="DetBox2_rot" unit="deg" x="0" y="0" z="0" />
 
