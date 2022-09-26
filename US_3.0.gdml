@@ -8,6 +8,11 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
 
+   <constant name="length" value="500" />
+   <constant name="tubeRad" value="20" />
+   <constant name="coneLength" value="20" />
+
+
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
 
@@ -18,16 +23,16 @@
   <rotation name="preRad_rot" unit="deg" x="0" y="0" z="0" />
 
 
-  <position name="pmt1_window_pos" unit="mm" x="10/2 + 20 + 500 + 3.0/2" y="0" z="0" />
+  <position name="pmt1_window_pos" unit="mm" x="10/2 + length + 3.0/2" y="0" z="0" />
   <rotation name="pmt1_window_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="pmt1_cathode_pos" unit="mm" x="10/2 + 20 + 500 + 3 +3e-06/2.0" y="0" z="0" />
+  <position name="pmt1_cathode_pos" unit="mm" x="10/2 + length + 3 + 3e-06/2.0" y="0" z="0" />
   <rotation name="pmt1_cathode_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="lightguide_tube_pos" unit="mm" x="10/2 + 20 + 500/2" y="0" z="0" />
+  <position name="lightguide_tube_pos" unit="mm" x="10/2 + coneLength + (length-coneLength)/2" y="0" z="0" />
   <rotation name="lightguide_tube_rot" unit="deg" x="0" y="90" z="0" />
 
-  <position name="lightguide_cone_pos" unit="mm" x="10/2 + 20/2" y="0" z="0" />
+  <position name="lightguide_cone_pos" unit="mm" x="10/2 + coneLength/2" y="0" z="0" />
   <rotation name="lightguide_cone_rot" unit="deg" x="0" y="-90" z="0" />
 
 
@@ -111,8 +116,8 @@
    <box lunit="mm" name="quartz" x="10" y="10" z="10"/>
    <box lunit="mm" name="preRad" x="10" y="10" z="10"/>
 
-   <cone name="lightguide_cone" lunit="mm" aunit="rad" startphi="0" deltaphi="2*pi" rmin1="7.07" rmax1="7.57" rmin2="25" rmax2="25.5" z="20"/>
-   <tube name="lightguide_tube" rmin="25" rmax="25.5" z="500" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
+   <cone name="lightguide_cone" lunit="mm" aunit="rad" startphi="0" deltaphi="2*pi" rmin1="7.07" rmax1="7.57" rmin2="tubeRad" rmax2="tubeRad + 0.5" z="coneLength"/>
+   <tube name="lightguide_tube" rmin="tubeRad" rmax="tubeRad + 0.5" z="length - coneLength" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
 
 
