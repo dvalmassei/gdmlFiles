@@ -9,8 +9,8 @@
  <define>
 
    <constant name="length" value="500" />
-   <constant name="tubeRad" value="20" />
-   <constant name="coneLength" value="20" />
+   <constant name="tubeRad" value="19/2" />
+   <constant name="coneLength" value="tubeRad - 7.07" />
 
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
