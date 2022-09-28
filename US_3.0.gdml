@@ -9,7 +9,7 @@
  <define>
 
    <constant name="length" value="500" />
-   <constant name="tubeRad" value="19/2" />
+   <constant name="tubeRad" value="51/2" />
    <constant name="coneLength" value="tubeRad - 7.07" />
 
 
