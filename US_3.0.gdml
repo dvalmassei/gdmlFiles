@@ -8,8 +8,8 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
  <define>
 
-   <constant name="length" value="500" />
-   <constant name="tubeRad" value="51/2" />
+   <constant name="length" value="800" />
+   <constant name="tubeRad" value="19/2" />
    <constant name="coneLength" value="tubeRad - 7.07" />
 
 
