@@ -36,19 +36,19 @@
   <rotation name="lightguide_cone_rot" unit="deg" x="0" y="-90" z="0" />
 
   <position name="lightguide_plate1_pos" unit="mm" x="0" y="5 + 0.5/2" z="0" />
-  <rotation name="lightguide_plate1_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="lightguide_plate1_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="lightguide_plate2_pos" unit="mm" x="0" y="- 5 - 0.5/2" z="0" />
-  <rotation name="lightguide_plate2_rot" unit="deg" x="0" y="0" z="0" />
+  <rotation name="lightguide_plate2_rot" unit="deg" x="90" y="0" z="0" />
 
   <position name="lightguide_plate3_pos" unit="mm" x="0" y="0" z="5 + 0.5/2" />
-  <rotation name="lightguide_plate3_rot" unit="deg" x="90" y="0" z="0" />
+  <rotation name="lightguide_plate3_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="lightguide_plate4_pos" unit="mm" x="0" y="0" z="-5 - 0.5/2" />
-  <rotation name="lightguide_plate4_rot" unit="deg" x="90" y="0" z="0" />
+  <rotation name="lightguide_plate4_rot" unit="deg" x="0" y="0" z="0" />
 
   <position name="lightguide_plate5_pos" unit="mm" x="-5 - 0.5/2" y="0" z="0" />
-  <rotation name="lightguide_plate5_rot" unit="deg" x="0" y="0" z="90" />
+  <rotation name="lightguide_plate5_rot" unit="deg" x="0" y="90" z="90" />
 
   &matrices;
  </define>
