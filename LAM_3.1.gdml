@@ -8,7 +8,7 @@
 
  <define>
   <!--Light Guide Dimensions-->
-  <constant name="d1" value="10.5" />
+  <constant name="d1" value="9.525 + 0.5" />
   <constant name="d2" value="35.9" />
   <constant name="d3" value="25.4" />
   <constant name="d4" value="0" />
