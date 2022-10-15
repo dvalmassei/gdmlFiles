@@ -1,3 +1,39 @@
+<!-- Lucite -->
+ <matrix coldim="2" name="ABSLENGTH_LUCITE" values="
+   1.54986*eV 263160*mm
+   1.77127*eV 250000*mm
+   2.06648*eV 227270*mm
+   2.47978*eV 200000*mm
+   3.09973*eV 131580*mm
+   4.13297*eV 16130*mm
+   4.95956*eV 740*mm
+   5.51063*eV 125*mm
+   5.90424*eV 10*mm"/>
+ <matrix coldim="2" name="RINDEX_LUCITE" values="
+   1.54986*eV 1.45338
+   1.77127*eV 1.45536
+   2.06648*eV 1.4581
+   2.47978*eV 1.46239
+   3.09973*eV 1.47018
+   4.13297*eV 1.48786
+   4.95956*eV 1.50751
+   5.51063*eV 1.52422
+   5.90424*eV 1.53842"/>
+
+ <matrix name="RINDEX_LUCITE_surf" coldim="2" values="
+   2.038*eV 1.46
+   4.144*eV 1.46"/>
+ <matrix name="SPECLOBE_LUCITE" coldim="2" values="
+   2.038*eV 0.3
+   4.144*eV 0.3"/>
+ <matrix name="SPECSPIKE_LUCITE" coldim="2" values="
+   2.038*eV 0.2
+   4.144*eV 0.2"/>
+ <matrix name="BACKSCATTER_LUCITE" coldim="2" values="
+   2.038*eV 0.2
+   4.144*eV 0.2"/>
+
+
 <matrix name="Quartz_RINDEX" coldim="2" values="
 2.00214948263954*eV 1.45684048062583
 2.01276737263045*eV 1.45692234805593
