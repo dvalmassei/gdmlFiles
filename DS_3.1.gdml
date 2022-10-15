@@ -84,7 +84,7 @@
   <material formula="noFormula" name="Air" >
    <property name="RINDEX" ref="Air_RINDEX"/>
    <property name="ABSLENGTH" ref="AIR_ABSLENGTH"/>
-   <D value="0.000129" />
+   <D value="0.00129" />
    <fraction n="0.3" ref="Oxygen" />
    <fraction n="0.7" ref="Nitrogen" />
   </material>
@@ -93,6 +93,8 @@
    <P value=" 3.0E-18" unit="pascal" />
    <Dref ref="universe_mean_density" />
    <atom value="1.01" />
+   <property name="RINDEX" value="1.000"/>
+   <property name="ABSLENGTH" value="25*m"/>
   </material>
   <material formula="SiO2" name="Quartz" >
    <property name="RINDEX" ref="Quartz_RINDEX"/>
