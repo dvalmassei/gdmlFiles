@@ -20,7 +20,7 @@
 
 
 
-  <constant name="thickness" value="10" />
+  <constant name="thickness" value="9.525" />
   <constant name="offset" value="60" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
@@ -137,6 +137,13 @@
   <define>
    <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
   </define>
+
+  <element Z="1" formula="H" name="Hydrogen" >
+   <atom value="1" />
+  </element>
+  <element Z="6" formula="C" name="Carbon" >
+   <atom value="12" />
+  </element>
   <element Z="8" formula="O" name="Oxygen" >
    <atom value="16" />
   </element>
@@ -161,6 +168,7 @@
   <element Z="82" formula="Pb" name="Lead" >
    <atom value="206.14" />
   </element>
+
   <material formula="noFormula" name="Air" >
    <property name="RINDEX" ref="Air_RINDEX"/>
    <D value="0.00129" />
@@ -196,6 +204,20 @@
    <D value="11.34" />
    <composite n="1" ref="Lead" />
   </material>
+
+
+
+<!--Lucite-->
+  <material formula="C5O2H8" name="Lucite" >
+   <property name="RINDEX" ref="RINDEX_LUCITE"/>
+   <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
+   <D value="1.18" />
+   <composite n="5" ref="Carbon" />
+   <composite n="2" ref="Oxygen" />
+   <composite n="8" ref="Hydrogen" />
+  </material>
+
+
  </materials>
 
  <solids>
@@ -354,7 +376,7 @@
  <structure>
 
   <volume name="radiator_quartz_vol" >
-   <materialref ref="Quartz" />
+   <materialref ref="Lucite" />
    <solidref ref="radiator_2_cut" />
   </volume>
 
