@@ -179,7 +179,7 @@
    <property name="RINDEX" ref="Vacuum_RINDEX"/>
    <T value="2.73" />
    <P value=" 3.0E-18" unit="pascal" />
-   <D value="0.00000001" />
+   <Dref ref="universe_mean_density" />
    <atom value="1.01" />
   </material>
   <material formula="SiO2" name="Quartz" >
