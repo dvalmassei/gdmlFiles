@@ -55,7 +55,7 @@
 
  <materials>
   <define>
-   <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
+   <quantity type="density" name="universe_mean_density" value="0.00000001" unit="g/cm3" />
   </define>
   <element Z="8" formula="O" name="Oxygen" >
    <atom value="16" />
@@ -148,6 +148,13 @@
    <opticalsurface name="surf3" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
      <property name="REFLECTIVITY" ref="Aluminium_Surf_Reflectivity" />
    </opticalsurface>
+
+
+   <!--Mylar-->
+   <opticalsurface name="surf4" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+     <property name="REFLECTIVITY" ref="REFLECTIVITY_MYLAR" />
+   </opticalsurface>
+
 
    <!--Cathode-->
    <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
@@ -309,7 +316,7 @@
       <volumeref ref="lightguide_tube_vol"/>
     </skinsurface>
 
-    <skinsurface name="skinsrf3" surfaceproperty="surf3" >
+    <skinsurface name="skinsrf4" surfaceproperty="surf3" >
       <volumeref ref="lightguide_plate_vol"/>
     </skinsurface>
 
