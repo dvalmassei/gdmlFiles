@@ -215,7 +215,7 @@
 
     <!--Detector Assembly-->
     <volume name="DetBox_vol" >
-      <materialref ref="vacuum" />
+      <materialref ref="Air" />
       <solidref ref="DetBox" />
 
       <physvol name="quartz_phys">
