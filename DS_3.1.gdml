@@ -93,6 +93,8 @@
     <P unit="pascal" value="3e-18"/>
     <D unit="g/cm3" value="1e-25"/>
     <atom unit="g/mole" value="1.01"/>
+    <property name="RINDEX" ref="Air_RINDEX"/>
+    <property name="ABSLENGTH" ref="AIR_ABSLENGTH"/>
   </material>
   <material formula="SiO2" name="Quartz" >
    <property name="RINDEX" ref="Quartz_RINDEX"/>
