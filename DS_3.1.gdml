@@ -88,7 +88,7 @@
    <fraction n="0.3" ref="Oxygen" />
    <fraction n="0.7" ref="Nitrogen" />
   </material>
-  <material Z="1" name="vaccum" state="gas">
+  <material Z="1" name="vacuum" state="gas">
     <T unit="K" value="2.73"/>
     <P unit="pascal" value="3e-18"/>
     <D unit="g/cm3" value="1e-25"/>
