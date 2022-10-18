@@ -33,30 +33,6 @@
    5.51063*eV 1.52422
    5.90424*eV 1.53842"/>
 
-<!--Vacuum-->
-   <matrix coldim="2" name="RINDEX_VACUUM" values="
-     1.54986*eV 1.00000
-     1.77127*eV 1.00000
-     2.06648*eV 1.00000
-     2.47978*eV 1.00000
-     3.09973*eV 1.00000
-     4.13297*eV 1.00000
-     4.95956*eV 1.00000
-     5.51063*eV 1.00000
-     5.90424*eV 1.00000"/>
-
-
-     <matrix coldim="2" name="ABSLENGTH_VACUUM" values="
-       1.54986*eV 1000*m
-       1.77127*eV 1000*m
-       2.06648*eV 1000*m
-       2.47978*eV 1000*m
-       3.09973*eV 1000*m
-       4.13297*eV 1000*m
-       4.95956*eV 1000*m
-       5.51063*eV 1000*m
-       5.90424*eV 1000*m"/>
-
  <matrix name="RINDEX_LUCITE_surf" coldim="2" values="
    2.038*eV 1.46
    4.144*eV 1.46"/>
@@ -69,6 +45,31 @@
  <matrix name="BACKSCATTER_LUCITE" coldim="2" values="
    2.038*eV 0.2
    4.144*eV 0.2"/>
+
+
+<!--Vacuum-->
+      <matrix coldim="2" name="RINDEX_VACUUM" values="
+        1.54986*eV 1.00000
+        1.77127*eV 1.00000
+        2.06648*eV 1.00000
+        2.47978*eV 1.00000
+        3.09973*eV 1.00000
+        4.13297*eV 1.00000
+        4.95956*eV 1.00000
+        5.51063*eV 1.00000
+        5.90424*eV 1.00000"/>
+
+
+        <matrix coldim="2" name="ABSLENGTH_VACUUM" values="
+          1.54986*eV 1000*m
+          1.77127*eV 1000*m
+          2.06648*eV 1000*m
+          2.47978*eV 1000*m
+          3.09973*eV 1000*m
+          4.13297*eV 1000*m
+          4.95956*eV 1000*m
+          5.51063*eV 1000*m
+          5.90424*eV 1000*m"/>
 
 
 <matrix name="Quartz_RINDEX" coldim="2" values="
