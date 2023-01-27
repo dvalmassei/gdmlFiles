@@ -20,7 +20,7 @@
    4.13297*eV 16.130*m
    4.95956*eV 0.740*m
    5.51063*eV 0.125*m
-   5.90424*eV 0.010*mm"/>
+   5.90424*eV 0.010*m"/>
 
  <matrix coldim="2" name="RINDEX_LUCITE" values="
    1.54986*eV 1.45338
