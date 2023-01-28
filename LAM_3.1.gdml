@@ -420,7 +420,7 @@
 
 
   <volume name="pmt_window_vol" >
-   <materialref ref="Quartz" />
+   <materialref ref="Lucite" />
    <solidref ref="solid_pmt_window" />
    <auxiliary auxtype="Color" auxvalue="red"/>
   </volume>
