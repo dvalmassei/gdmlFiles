@@ -183,8 +183,10 @@
    <atom value="1.01" />
   </material>
   <material formula="SiO2" name="Quartz" >
+    <!--
    <property name="RINDEX" ref="Quartz_RINDEX"/>
    <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
+ -->
    <D value="2.203" />
    <composite n="1" ref="Silicon" />
    <composite n="2" ref="Oxygen" />
