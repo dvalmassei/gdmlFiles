@@ -209,8 +209,8 @@
 
 <!--Lucite-->
   <material formula="C5O2H8" name="Lucite" >
-   <property name="RINDEX" ref="RINDEX_LUCITE"/>
-   <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
+   <property name="RINDEX" ref="LUCITE_RINDEX"/>
+   <property name="ABSLENGTH" ref="LUCITE_ABSLENGTH"/>
    <D value="1.18" />
    <composite n="5" ref="Carbon" />
    <composite n="2" ref="Oxygen" />
