@@ -182,16 +182,16 @@
    <Dref ref="universe_mean_density" />
    <atom value="1.01" />
   </material>
-  <material formula="SiO2" name="Quartz" >
-   <property name="RINDEX" ref="Quartz_RINDEX"/>
-   <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
+  <material formula="SiO2" name="QuartzRadDam" >
+   <property name="RINDEX" ref="QuartzRadDam_RINDEX"/>
+   <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
    <D value="2.203" />
    <composite n="1" ref="Silicon" />
    <composite n="2" ref="Oxygen" />
   </material>
-  <material formula="SiO2" name="QuartzRadDam" >
-   <property name="RINDEX" ref="QuartzRadDam_RINDEX"/>
-   <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
+  <material formula="SiO2" name="Quartz" >
+   <property name="RINDEX" ref="Quartz_RINDEX"/>
+   <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
    <D value="2.203" />
    <composite n="1" ref="Silicon" />
    <composite n="2" ref="Oxygen" />
@@ -213,17 +213,6 @@
   </material>
 
 
-
-<!--Lucite-->
-  <material name="Lucite" formula="(C5O2H8)n">
-    <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
-    <property name="RINDEX"    ref="RINDEX_LUCITE"/>
-    <MEE value="125.663" unit="eV"/>
-    <D value="1.18" unit="g/cm3"/>
-    <fraction n="0.080538" ref="Hydrogen"/>
-    <fraction n="0.599848" ref="Carbon"/>
-    <fraction n="0.319614" ref="Oxygen"/>
-  </material>
 
 
  </materials>
