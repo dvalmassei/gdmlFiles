@@ -208,13 +208,14 @@
 
 
 <!--Lucite-->
-  <material formula="C5O2H8" name="Lucite" >
-   <property name="RINDEX" ref="LUCITE_RINDEX"/>
-   <property name="ABSLENGTH" ref="LUCITE_ABSLENGTH"/>
-   <D value="1.18" />
-   <composite n="5" ref="Carbon" />
-   <composite n="2" ref="Oxygen" />
-   <composite n="8" ref="Hydrogen" />
+  <material name="Lucite" formula="(C5O2H8)n">
+    <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
+    <property name="RINDEX"    ref="RINDEX_LUCITE"/>
+    <MEE value="125.663" unit="eV"/>
+    <D value="1.18" unit="g/cm3"/>
+    <fraction n="0.080538" ref="Hydrogen"/>
+    <fraction n="0.599848" ref="Carbon"/>
+    <fraction n="0.319614" ref="Oxygen"/>
   </material>
 
 
