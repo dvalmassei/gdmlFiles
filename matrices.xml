@@ -12,11 +12,13 @@
 
 <!-- Lucite -->
  <matrix coldim="2" name="ABSLENGTH_LUCITE" values="
-   3.30652*eV 1.26*m
-   3.0613506*eV 3.87*m
-   2.817834*eV 4.89*m
+   1.9617832*eV 24.9*m
    2.283328*eV 10.1*m
-   1.9617832*eV 24.9*m"/>
+   2.817834*eV 4.89*m
+   3.0613506*eV 3.87*m
+   3.30652*eV 1.26*m"/>
+
+
 
  <matrix coldim="2" name="RINDEX_LUCITE" values="
    1.54986*eV 1.45338
