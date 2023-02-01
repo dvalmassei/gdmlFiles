@@ -103,6 +103,13 @@
    <Dref ref="universe_mean_density" />
    <atom value="1.01" />
   </material>
+  <material formula="SiO2" name="QuartzRadDam" >
+   <D value="2.203" />
+   <composite n="1" ref="Silicon" />
+   <composite n="2" ref="Oxygen" />
+   <property name="RINDEX" ref="QuartzRadDam_RINDEX"/>
+   <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
+  </material>
   <material formula="SiO2" name="Quartz" >
    <property name="RINDEX" ref="Quartz_RINDEX"/>
    <property name="ABSLENGTH" ref="Quartz_ABSLENGTH"/>
@@ -187,7 +194,7 @@
   <structure>
     <!--Quartz-->
     <volume name="quartz_vol">
-      <materialref ref="Quartz" />
+      <materialref ref="QuartzRadDam" />
       <solidref ref="quartz" />
     </volume>
 
