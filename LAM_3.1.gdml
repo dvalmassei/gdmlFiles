@@ -214,8 +214,8 @@
     <fraction n="0.080538" ref="Hydrogen"/>
     <fraction n="0.599848" ref="Carbon"/>
     <fraction n="0.319614" ref="Oxygen"/>
-    <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
-    <property name="RINDEX"    ref="RINDEX_LUCITE"/>
+    <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
+    <property name="RINDEX"    ref="QuartzRadDam_RINDEX"/>
   </material>
 
 
