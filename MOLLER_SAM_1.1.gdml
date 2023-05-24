@@ -71,6 +71,13 @@
   <define>
    <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
   </define>
+
+  <element Z="1" formula="H" name="Hydrogen" >
+   <atom value="1" />
+  </element>
+  <element Z="6" formula="C" name="Carbon" >
+   <atom value="12" />
+  </element>
   <element Z="8" formula="O" name="Oxygen" >
    <atom value="16" />
   </element>
@@ -92,25 +99,22 @@
   <element Z="19" formula="K" name="Potassium" >
    <atom value="39.0983" />
   </element>
+  <element Z="82" formula="Pb" name="Lead" >
+   <atom value="206.14" />
+  </element>
+
   <material formula="noFormula" name="Air" >
    <property name="RINDEX" ref="Air_RINDEX"/>
-   <property name="ABSLENGTH" ref="AIR_ABSLENGTH"/>
    <D value="0.00129" />
    <fraction n="0.3" ref="Oxygen" />
    <fraction n="0.7" ref="Nitrogen" />
   </material>
   <material Z="1" name="vacuum" >
+   <property name="RINDEX" ref="Vacuum_RINDEX"/>
    <T value="2.73" />
    <P value=" 3.0E-18" unit="pascal" />
    <Dref ref="universe_mean_density" />
    <atom value="1.01" />
-  </material>
-  <material formula="SiO2" name="QuartzRadDam" >
-   <D value="2.203" />
-   <composite n="1" ref="Silicon" />
-   <composite n="2" ref="Oxygen" />
-   <property name="RINDEX" ref="QuartzRadDam_RINDEX"/>
-   <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
   </material>
   <material formula="SiO2" name="Quartz" >
    <property name="RINDEX" ref="Quartz_RINDEX"/>
@@ -130,7 +134,27 @@
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
   </material>
+  <material formula="Pb" name="Pb_mat" >
+   <D value="11.34" />
+   <composite n="1" ref="Lead" />
+  </material>
+
+
+
+<!--Lucite-->
+  <material name="Lucite" formula="(C5O2H8)n" state="solid">
+    <MEE value="125.663" unit="eV"/>
+    <D value="1.18" unit="g/cm3"/>
+    <fraction n="0.080538" ref="Hydrogen"/>
+    <fraction n="0.599848" ref="Carbon"/>
+    <fraction n="0.319614" ref="Oxygen"/>
+    <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
+    <property name="RINDEX"    ref="QuartzRadDam_RINDEX"/>
+  </material>
+
+
  </materials>
+
 
  <solids>
    <box lunit="mm" name="WorldBox" x="1500" y="1500" z="1500"/>
