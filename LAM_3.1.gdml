@@ -7,8 +7,11 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
-  <!--Light Guide Dimensions-->
-  <constant name="d1" value="9.525 + 0.5" />
+  <!-- Radiator and Light Guide Parameters-->
+  <constant name="thickness" value="10" />
+  <constant name="offset" value="60" />
+
+  <constant name="d1" value="thickness + 0.5" />
   <constant name="d2" value="35.9" />
   <constant name="d3" value="25.4" />
   <constant name="d4" value="0" />
@@ -18,10 +21,6 @@
   <constant name="height" value="165" />
   <constant name="detBox_r" value="1033.5 + height/2"/>
 
-
-
-  <constant name="thickness" value="9.525" />
-  <constant name="offset" value="60" />
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
@@ -214,8 +213,8 @@
     <fraction n="0.080538" ref="Hydrogen"/>
     <fraction n="0.599848" ref="Carbon"/>
     <fraction n="0.319614" ref="Oxygen"/>
-    <property name="ABSLENGTH" ref="QuartzRadDam_ABSLENGTH"/>
-    <property name="RINDEX"    ref="QuartzRadDam_RINDEX"/>
+    <property name="ABSLENGTH" ref="ABSLENGTH_Lucite"/>
+    <property name="RINDEX"    ref="RINDEX_Lucite"/>
   </material>
 
 
