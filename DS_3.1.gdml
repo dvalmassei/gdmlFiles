@@ -130,7 +130,7 @@
     <property name="ABSLENGTH" ref="ABSLENGTH_Lucite"/>
     <property name="RINDEX"    ref="RINDEX_Lucite"/>
   </material>
-  
+
  </materials>
 
  <solids>
@@ -183,7 +183,7 @@
   <structure>
     <!--Quartz-->
     <volume name="quartz_vol">
-      <materialref ref="Quartz" />
+      <materialref ref="Lucite" />
       <solidref ref="quartz" />
     </volume>
 

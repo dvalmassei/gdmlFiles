@@ -203,7 +203,7 @@
   <structure>
     <!--Quartz-->
     <volume name="quartz_vol">
-      <materialref ref="Quartz" />
+      <materialref ref="Lucite" />
       <solidref ref="quartz" />
     </volume>
 
