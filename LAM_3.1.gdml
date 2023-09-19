@@ -213,8 +213,8 @@
     <fraction n="0.080538" ref="Hydrogen"/>
     <fraction n="0.599848" ref="Carbon"/>
     <fraction n="0.319614" ref="Oxygen"/>
-    <property name="ABSLENGTH" ref="ABSLENGTH_Lucite"/>
-    <property name="RINDEX"    ref="RINDEX_Lucite"/>
+    <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
+    <property name="RINDEX"    ref="RINDEX_LUCITE"/>
   </material>
 
 
@@ -764,12 +764,12 @@
     <physvolref ref="pmt1_cathode_phys"/>
   </bordersurface>
 
-
+<!---
   <bordersurface name="bordersrf2" surfaceproperty="surf2" >
     <physvolref ref="pmt2_window_phys"/>
     <physvolref ref="pmt2_cathode_phys"/>
   </bordersurface>
-
+-->
 
 
 
