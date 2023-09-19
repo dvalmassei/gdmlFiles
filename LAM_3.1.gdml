@@ -646,25 +646,25 @@
     <positionref ref="pmt1_blackPlate_pos" />
     <rotationref ref="pmt1_blackPlate_rot" />
    </physvol>
-
+<!---
    <physvol name="pmt2_window_phys">
     <volumeref ref="pmt_window_vol" />
     <positionref ref="pmt2_window_pos" />
     <rotationref ref="pmt2_window_rot" />
    </physvol>
-<!---
+
    <physvol name="pmt2_cathode_phys">
     <volumeref ref="pmt_cathode_vol" />
     <positionref ref="pmt2_cathode_pos" />
     <rotationref ref="pmt2_cathode_rot" />
    </physvol>
--->
+
    <physvol name="pmt2_blackPlate_phys">
     <volumeref ref="pmt_blackPlate_vol" />
     <positionref ref="pmt2_blackPlate_pos" />
     <rotationref ref="pmt2_blackPlate_rot" />
    </physvol>
-
+-->
   </volume>
 
 
