@@ -263,7 +263,7 @@
        <rotationref ref="pmt1_cathode_rot" />
       </physvol>
 
-<!--
+
       <physvol name="lightguide_cone_phys">
        <volumeref ref="lightguide_cone_vol" />
        <positionref ref="lightguide_cone_pos" />
@@ -306,7 +306,7 @@
        <positionref ref="lightguide_plate5_pos" />
        <rotationref ref="lightguide_plate5_rot" />
       </physvol>
--->
+
 
     </volume>
 
