@@ -60,6 +60,9 @@
   <element Z="1" formula="H" name="Hydrogen" >
    <atom value="1" />
   </element>
+  <element Z="6" formula="C" name="Carbon" >
+   <atom value="12" />
+  </element>
   <element Z="8" formula="O" name="Oxygen" >
    <atom value="16" />
   </element>
