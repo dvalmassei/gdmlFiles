@@ -416,7 +416,7 @@
  <structure>
 
   <volume name="radiator_quartz_vol" >
-   <materialref ref="Lucite" />
+   <materialref ref="Quartz" />
    <solidref ref="radiator_2_cut" />
   </volume>
 
