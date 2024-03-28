@@ -7,6 +7,33 @@
 <gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
  <define>
+ <matrix coldim="2" name="ABSLENGTH_LUCITE" values="
+  1.54986*eV 1*mm
+  1.77127*eV 1*mm
+  2.06648*eV 1*mm
+  2.47978*eV 200000*mm
+  2.75556*eV 3670*mm
+  3.09973*eV 1780*mm
+  3.30667*eV 360*mm
+  3.54286*eV 100*mm
+  3.81538*eV 70*mm
+  4.13297*eV 20*mm
+  4.95956*eV 1*mm
+  5.51063*eV 1*mm
+  5.90424*eV 1*mm"/>
+
+
+
+ <matrix coldim="2" name="RINDEX_LUCITE" values="
+   1.54986*eV 1.45338
+   1.77127*eV 1.45536
+   2.06648*eV 1.4581
+   2.47978*eV 1.46239
+   3.09973*eV 1.47018
+   4.13297*eV 1.48786
+   4.95956*eV 1.50751
+   5.51063*eV 1.52422
+   5.90424*eV 1.53842"/>
 
   <position name="DetBox_pos" unit="mm" x="0" y="0" z="0" />
   <rotation name="DetBox_rot" unit="deg" x="0" y="0" z="0" />
@@ -28,6 +55,12 @@
   <define>
    <quantity type="density" name="universe_mean_density" value="1.e-25" unit="g/cm3" />
   </define>
+  <element Z="1" formula="H" name="Hydrogen" >
+   <atom value="1" />
+  </element>
+  <element Z="6" formula="C" name="Carbon" >
+   <atom value="12" />
+  </element>
   <element Z="8" formula="O" name="Oxygen" >
    <atom value="16" />
   </element>
@@ -87,6 +120,16 @@
    <D value="11.34" />
    <composite n="1" ref="Lead" />
   </material>
+
+  <!--Lucite-->
+  <material formula="(C5O2H8)n" name="Lucite">
+    <D value="1.18"/>
+    <fraction n="0.080538" ref="Hydrogen"/>
+    <fraction n="0.599848" ref="Carbon"/>
+    <fraction n="0.319614" ref="Oxygen"/>
+    <property name="RINDEX"    ref="RINDEX_LUCITE"/>
+    <property name="ABSLENGTH" ref="ABSLENGTH_LUCITE"/>
+  </material>
  </materials>
 
  <solids>
@@ -123,7 +166,7 @@
  <structure>
 
   <volume name="radiator_quartz_vol" >
-   <materialref ref="Quartz" />
+   <materialref ref="Lucite" />
    <solidref ref="radiator_quartz" />
   </volume>
 
