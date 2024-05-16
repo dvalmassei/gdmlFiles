@@ -4,7 +4,11 @@
   <!ENTITY matrices SYSTEM "matrices.xml">
 ]>
 
-<gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+<!--This is the verison I've used most recently-->
+<!--All dimensions, except quartz, are defined by constants d1-6. Simply edit these-->
+<!--To edit rotation, change the z-coord of DetBox_rot (negative mimic beam angles)-->
+
+<gdml xmlns:xsi="http://www.w3.org/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd" >
 
  <define>
 
@@ -49,17 +53,14 @@
   <element Z="19" formula="K" name="Potassium" >
    <atom value="39.0983" />
   </element>
-  <element Z="82" formula="Pb" name="Lead" >
-   <atom value="206.14" />
-  </element>
   <material formula="noFormula" name="Air" >
    <property name="RINDEX" ref="Air_RINDEX"/>
+   <property name="ABSLENGTH" ref="AIR_ABSLENGTH"/>
    <D value="0.00129" />
    <fraction n="0.3" ref="Oxygen" />
    <fraction n="0.7" ref="Nitrogen" />
   </material>
   <material Z="1" name="vacuum" >
-   <property name="RINDEX" ref="Vacuum_RINDEX"/>
    <T value="2.73" />
    <P value=" 3.0E-18" unit="pascal" />
    <Dref ref="universe_mean_density" />
@@ -83,10 +84,6 @@
    <!--need to add properties-->
    <composite n="1" ref="Aluminum" />
   </material>
-  <material formula="Pb" name="Pb_mat" >
-   <D value="11.34" />
-   <composite n="1" ref="Lead" />
-  </material>
  </materials>
 
  <solids>
@@ -97,13 +94,14 @@
   <tube name="solid_pmt_window" rmin="0" rmax="38.1" z="3.0" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
   <tube name="solid_pmt_cathode" rmin="0" rmax="38.1" z="3e-06" deltaphi="2*pi" startphi="0" aunit="rad" lunit="mm"/>
 
-  <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98" >
-  </opticalsurface>
+   <opticalsurface name="surf1" model="glisur" finish="ground" type="dielectric_dielectric" value="0.98">
+   </opticalsurface>
 
-  <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
-    <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
-    <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
-  </opticalsurface>
+   <!--Cathode-->
+   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
+     <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
+     <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
+   </opticalsurface>
 
  </solids>
 
@@ -122,14 +120,12 @@
   <volume name="pmt_window_vol" >
    <materialref ref="Quartz" />
    <solidref ref="solid_pmt_window" />
-   <auxiliary auxtype="Color" auxvalue="red"/>
   </volume>
 
   <volume name="pmt_cathode_vol" >
    <materialref ref="Bialkali" />
    <solidref ref="solid_pmt_cathode" />
    <auxiliary auxtype="SensDet" auxvalue="PhotoCathode"/>
-   <auxiliary auxtype="Color" auxvalue="blue"/>
   </volume>
 
 
