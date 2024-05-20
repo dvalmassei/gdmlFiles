@@ -154,7 +154,7 @@
   <!--Cathode-->
   <opticalsurface name="surf2" model="glisur" finish="polished" type="dielectric_metal" value="1.0">
     <property name="REFLECTIVITY" ref="Cathode_Surf_Reflectivity" />
-    <property name="EFFICIENCY" ref="R375_Surf_Efficiency" />
+    <property name="EFFICIENCY" ref="Cathode_Surf_Efficiency" />
   </opticalsurface>
 
  </solids>
